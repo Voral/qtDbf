@@ -1,6 +1,6 @@
 Version:	0.9.3
 Name:		qtDbf
-Release:	alt0.M60T.1
+Release:	alt2
 Summary:	A simple DBF viewer and editor
 License: 	GPLv2+
 Group: 		Databases
@@ -9,7 +9,7 @@ Url:		http://qt-apps.org/content/show.php/qtDbf?content=137863
 Source0:	http://qt-apps.org/CONTENT/content-files/137863-%name-%version.tar.gz
 Source1:	%name.desktop
 
-BuildRequires: /usr/bin/convert gcc-c++ libqt4-devel
+BuildRequires: ImageMagick-tools gcc-c++ libqt4-devel
 
 %description
 A simple DBF viewer and editor. Can be set as default dbf viewer.
@@ -46,8 +46,8 @@ convert -resize 16x16 images/qtdbf.svg %buildroot%_miconsdir/%name.png
 %_datadir/%name
 
 %changelog
-* Wed Jul 10 2013 Motsyo Gennadi <drool@altlinux.ru> 0.9.3-alt0.M60T.1
-- build for t6
+* Wed Jul 10 2013 Motsyo Gennadi <drool@altlinux.ru> 0.9.3-alt2
+- fixed MimeTipe in desktop-file
 
 * Wed Jul 10 2013 Motsyo Gennadi <drool@altlinux.ru> 0.9.3-alt1
 - initial build for ALT Linux

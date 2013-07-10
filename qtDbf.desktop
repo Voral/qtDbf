@@ -13,4 +13,4 @@ Icon=qtDbf
 Terminal=false
 Type=Application
 Categories=Qt;Office;Database;
-MimeType=application/dbase,application/x-dbase,application/dbf,application/x-dbf,zz-application/zz-winassoc-dbf;
+MimeType=application/x-dbf;
