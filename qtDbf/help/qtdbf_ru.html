@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>qtDbf Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<h2 align='center'><font COLOR="#004586">qtDbf 0.9.3</font></h2>
+
+<h3><font color="red">Предупреждение!</font></h3>
+
+<ul>
+<li>Не реактируйте dbf файл не селав сначала резервной копии
+<li>Не открывайте и, особенно, не сохраняйте файлы в многопользовательском дступе
+<li>Приложение может просматривать memo файлы, но не позволяет редактировать их.
+<li>Структура dbf файла пока не редактируется.
+</ul>
+</font>
+
+<p>Итак, давайте посмотрим, что мы можем сделать с приложением :-).</p>
+<p>Приложение может быть установлено как просотрщие dbf файлов по умолчанию.</p>
+<table border='0'>
+<tr>
+        <td width='50'>&nbsp;</td>
+        <td><img src=":help/fill.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Заполнение полей заданным выражением.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/edit.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Редактирование занчений в ячейках.<br>
+            Такой эффект достигается двойным киком по ячейке<br>
+            Если ячека memo типа,содержимое будет отображено в новом окне .</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/add.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Добавление устых записей в конец файла.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/delete.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Уаление записей.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/save.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Сохрание изменений в dbf файл.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/config.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Конфигурационный диалог ля выбора языка интерфейса приложения, коировки dbf файла, размера иконок, просотра структуры dbf файла и назначение цветов для типов полей.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/help.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Открытие этого окна.</td>
+</tr>
+</table>
+</font>
+<p>Несколько технических деталей.</p>
+<ul>
+<li>Это приложение считывает dbf файл базу данных SQLite  в память.<br>
+    Так, что загрузка больших файлов может быть медленной.<br>
+    Все изменеия применяются в базе SQLite, и потом записываются в dbf файл при выборе операции сохранения.
+<li>Приложение поерживает форматы XBase, dBaseIII, IV, Foxpro 2.x, Visual Foxpro.
+<li>Следующие типы полей могут редактироваться: character, numeric, currency, double, integer, float, logical.
+</ul>
+</body>
+</html>

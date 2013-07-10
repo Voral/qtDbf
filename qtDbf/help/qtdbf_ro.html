@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>qtDbf Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<h2 align='center'><font COLOR="#004586">qtDbf 0.9.0</font></h2>
+
+<h3><font color="red">Atenţie !</font></h3>
+
+<ul>
+<li>Nu editaţi un fişier dbf fără să faceţi mai întâi o copie de siguranţă.
+<li>Nu deschideţi, şi în nici un caz nu salvaţi un fişier dbf în mod mutiuser.
+<li>Aplicaţia afişează conţinutul fişierelor memo, dar acestea nu pot fi editate.
+<li>Structura fişierelor dbf nu poate fi modificată.
+</ul>
+</font>
+
+<p>Şi acum, dacă am spus ce nu e posibil sau recomandat să facem cu aplicaţia, ia să vedem ce putem face.</p>
+<p>Aplicaţia poate fi setată ca viewer şi editor implicit pentru fişierele dbf.</p>
+<table border='0'>
+<tr>
+        <td width='50'>&nbsp;</td>
+        <td><img src=":help/fill.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Putem umple celulele selectate cu valuarea dată.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/edit.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Editarea celulei actuale.<br>
+            Acelaşi efect are un click dublu pe celula respectivă<br>
+            Dacă celula este de tip memo, valoarea găsită în fişierul memo va fi afişată într-o fereastră nouă.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/add.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Adăugarea unui rând gol la sfârşitul fişierului.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/delete.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Şterge rândurile în care cel puţin o celulă este selectată.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/save.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Salvarea modificărilor în fişierul dbf.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/config.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Un dialog de configurare cu alegerea limbajului aplicaţiei, mărimea butoanelor şi afişarea structurii fişierului dbf.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/help.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Deschide această fereastră.</td>
+</tr>
+</table>
+</font>
+<p>Câteva cuvinte despre detaliile technice.</p>
+<ul>
+<li>Aplicaţia citeşte fişierul dbf într-o bază de date SQLite creat în memorie.<br>
+    Deci fişierele mari se încarcă mai lent.<br>
+    Toate modificările sunt făcute pe această bază de date SQLite. Modificările se scrie în fişierul dbf doar la salvare.
+<li>Aplicaţia suportă în special fişierele XBase, dBaseIII, IV, FoxPro 2.x., Visual Foxpro.
+<li>Următoarele tipuri de câmpuri sunt editabile: caracter, numeric, float, double, întreg (integer), logic, valută (currency)
+</ul>
+</body>
+</html>

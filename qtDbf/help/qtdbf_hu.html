@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>qtDbf Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<h2 align='center'><font COLOR="#004586">qtDbf 0.9.0</font></h2>
+
+<h3><font color="red">Figyelem !</font></h3>
+
+<ul>
+<li>Mindíg készítsünk biztonsági mentést, mielőtt szerkesztenénk egy DBF állományt.
+<li>Ne nyissunk meg, és főleg ne mentsünk el egy DBF állományt többfelhasználós környezetben.
+<li>Az alkalmazás a memo állományok tartalmát csak megjeleníteni engedi, szerkeszteni nem.
+<li>Az állományok szerkezete egyelőre nem változtatható.
+</ul>
+</font>
+
+<p>Nos, miután felsoroltuk, hogy mit nem ajánlatos, vagy nem lehet tenni, lássuk, hogy mi az amit igen.</p>
+<p>Az alkalmazás beállítható mint alapértelmezett dbf nézőke.</p>
+<table border='0'>
+<tr>
+        <td width='50'>&nbsp;</td>
+        <td><img src=":help/fill.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Megtöltés segítségével a kijelölt cellákat megtölthetjük egy megadott kifejezés értékével.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/edit.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Szerkesztés segítségével az aktuális cella értéke szerkeszthető.<br>
+            Ugyanez elérhető dupla kattintással az illető cellára<br>
+            Ha a cella memo típusú, megjelenik a memo állományból az ide tartozó tartalom.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/add.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Hozzáadás egy üres sort szúr be az állomány végére.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/delete.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Törlés kitörli azokat a sorokat, amelyekben legalább egy cella ki van jelölve.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/save.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Mentés elmenti a változtatásokat a dbf állományba.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/config.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Beállítások megnyit egy párbeszédablakot, amelyben beállítható az alkalmazáas nyelve, 
+        a gombok mérete, megjeleníthető egy táblázatban a dbf állomány szerkezete, és színek rendelhetők a mezőtípusokhoz.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/help.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>A Segítség megnyitja ezt az ablakot.</td>
+</tr>
+</table>
+</font>
+<p>Egy pár szót a technikai részletekről.</p>
+<ul>
+<li>Az alkalmazás beolvassa a dbf állományt egy, a memóriában létrehozott SQLite adatbázisba.<br>
+    Emiatt a nagyon nagyméretű állományok kicsit lassabban töltődnek be.<br>
+    Az összes változtatás ezen az SQLite adatbázison történik, és csak a mentéskor íródnak vissza a dbf állományba.
+<li>Az alkalmazás elsősorban XBase, dBaseIII, IV, FoxPro 2.x, Visual Foxpro állományok szerkesztésére alkalmas.
+<li>A következő mezőtípusok szerkeszthetők: karakteres, numerikus, pénznem, valós (double), egész, float, logikai.
+</ul>
+</body>
+</html>

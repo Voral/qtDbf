@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/add.svg</file>
+        <file>images/delete.svg</file>
+        <file>images/edit.svg</file>
+        <file>images/cancel.svg</file>
+        <file>images/ok.svg</file>
+        <file>images/quit.svg</file>
+        <file>images/search.svg</file>
+        <file>images/save.svg</file>
+        <file>images/fill.svg</file>
+        <file>images/tux.svg</file>
+        <file>images/config.svg</file>
+        <file>images/load.svg</file>
+        <file>images/back.svg</file>
+        <file>images/romana.png</file>
+        <file>images/magyar.png</file>
+        <file>images/english.png</file>
+        <file>images/qtdbf.svg</file>
+        <file>images/help.svg</file>
+        <file>images/structure.svg</file>
+        <file>images/qt.png</file>
+        <file>images/calc.svg</file>
+        <file>help/add.png</file>
+        <file>help/config.png</file>
+        <file>help/delete.png</file>
+        <file>help/edit.png</file>
+        <file>help/fill.png</file>
+        <file>help/help.png</file>
+        <file>help/save.png</file>
+        <file>images/colors.svg</file>
+        <file>images/russia.png</file>
+    </qresource>
+</RCC>

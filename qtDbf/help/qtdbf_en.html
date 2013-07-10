@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>qtDbf Help</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<h2 align='center'><font COLOR="#004586">qtDbf 0.9.0</font></h2>
+
+<h3><font color="red">Warning !</font></h3>
+
+<ul>
+<li>Never edit a dbf file without making first a backup copy 
+<li>Do not open and especially not save dbf files in multiuser environment.
+<li>The application can view memo files, but cannot edit them.
+<li>The dbf file structure it's read only yet.
+</ul>
+</font>
+
+<p>So, let't see what we CAN do with the application :-).</p>
+<p>The application can be set as the default dbf viewer.</p>
+<table border='0'>
+<tr>
+        <td width='50'>&nbsp;</td>
+        <td><img src=":help/fill.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Fills the contents of selected cells with the given expression.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/edit.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Edits the value of the actual cell.<br>
+            Same effect with double click on the cell<br>
+            If the cell is memo, will show the memo string in a new window.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/add.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Appends an empty record to the end of the file.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/delete.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Deletes the records with at least a cell selected.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/save.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Saves modifications in the dbf file.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/config.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Configuration dialog with application language, icon sizes, dbf file structure and field type color chooser.</td>
+</tr>
+<tr>
+        <td>&nbsp;</td>
+        <td><img src=":help/help.png" width='40' hight='40'></td>
+        <td>&nbsp;</td>
+        <td>Opens this window.</td>
+</tr>
+</table>
+</font>
+<p>A few technical details.</p>
+<ul>
+<li>The application reads the dbf file in an in memory SQLite database.<br>
+    So loading large files are a bit slow.<br>
+    All changes are aplied to the SQLite database, and they are written in dbf file with save option.
+<li>The application supports XBase, dBaseIII, IV, Foxpro 2.x, Visual Foxpro files.
+<li>The following field types are editable: character, numeric, currency, double, integer, float, logical.
+</ul>
+</body>
+</html>

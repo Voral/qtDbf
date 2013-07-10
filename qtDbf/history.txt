@@ -1,0 +1,17 @@
+v.0.9.3
+=======
+en
+- Added encoding setting DBF-file
+- Added Russian Language
+- For Linux systems, if the files of Help and translations are not found in the standard path, the application will try to find them in their catalog.
+- Fixed filter in file open dialog
+
+ru:
+- Добавлена настройка коировки DBF-файла
+- Добавлен русский язык интерфейса
+- Для Linux систем если файлы справки и переводов не найдены по стандартному пути, они ищутся в каталоге приложения.
+- Исправлены фильтры в диалогх открытия файлов
+
+v.0.9.2
+=======
+

@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   x="0.0000000"
+   y="0.0000000"
+   width="128"
+   height="128"
+   viewBox="0 0 256 256"
+   id="svg1"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="calc.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"><sodipodi:namedview
+   inkscape:window-height="939"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   showgrid="false"
+   inkscape:zoom="5.5390625"
+   inkscape:cx="64"
+   inkscape:cy="64"
+   inkscape:window-x="0"
+   inkscape:window-y="31"
+   inkscape:current-layer="svg1" />
+  <svg:defs
+   id="defs983"><inkscape:perspective
+     sodipodi:type="inkscape:persp3d"
+     inkscape:vp_x="0 : 30 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_z="60 : 30 : 1"
+     inkscape:persp3d-origin="30 : 20 : 1"
+     id="perspective3791" /></svg:defs>
+  <svg:metadata
+   id="metadata3">
+		<sfw
+   id="sfw5">
+			<optimizationSettings
+   id="optimizationSettings7">
+				<targetSettings
+   fileFormat="PNG24Format"
+   targetSettingsID="0"
+   id="targetSettings9">
+					<PNG24Format
+   transparency="true"
+   interlaced="false"
+   noMatteColor="false"
+   matteColor="#FFFFFF"
+   filtered="false"
+   id="PNG24Format11">
+						</PNG24Format>
+
+				</targetSettings>
+
+				<targetSettings
+   fileFormat="PNG24Format"
+   targetSettingsID="1455260156"
+   id="targetSettings15">
+					<PNG24Format
+   transparency="true"
+   interlaced="false"
+   noMatteColor="false"
+   matteColor="#FFFFFF"
+   filtered="false"
+   id="PNG24Format17">
+						</PNG24Format>
+
+				</targetSettings>
+
+			</optimizationSettings>
+
+			<slices
+   id="slices22">
+				
+					<slice
+   y="0"
+   x="0"
+   name=""
+   type="1"
+   width="256"
+   height="256"
+   groupID="1455260156"
+   url=""
+   target=""
+   message=""
+   altTag=""
+   cellTextIsHTML="false"
+   horzAlign="1"
+   vertAlign="1"
+   background="none"
+   sliceID="268912"
+   id="slice24">
+					<cellText
+   id="cellText26">
+						
+					</cellText>
+
+				</slice>
+
+			</slices>
+
+			<sliceSourceBounds
+   y="0"
+   x="0"
+   width="256"
+   height="256"
+   bottomLeftOrigin="true"
+   id="sliceSourceBounds32" />
+
+		</sfw>
+
+<svg:xpacket
+   id="xpacket35" />
+<xmpmeta
+   xmptk="XMP toolkit 3.0-29, framework 1.6"
+   id="xmpmeta36">
+
+<svg:metadata
+   id="metadata984">
+  <RDF
+   id="RDF38">
+
+ <Description
+   about="uuid:69705109-60a6-4913-8378-d90d07d20004"
+   id="Description40">
+  <Producer
+   id="Producer42">Adobe PDF library 6.66</Producer>
+
+ </Description>
+
+
+ <Description
+   about="uuid:69705109-60a6-4913-8378-d90d07d20004"
+   id="Description46">
+ </Description>
+
+
+ <Description
+   about="uuid:69705109-60a6-4913-8378-d90d07d20004"
+   id="Description49">
+  <CreateDate
+   id="CreateDate51">2004-10-07T19:09:44+02:00</CreateDate>
+
+  <ModifyDate
+   id="ModifyDate54">2005-02-15T09:27:35Z</ModifyDate>
+
+  <CreatorTool
+   id="CreatorTool57">Illustrator</CreatorTool>
+
+  <MetadataDate
+   id="MetadataDate60">2004-10-07T19:09:44+02:00</MetadataDate>
+
+  <Thumbnails
+   id="Thumbnails63">
+   <Alt
+   id="Alt65">
+    <li
+   parseType="Resource"
+   id="li67">
+     <format
+   id="format69">JPEG</format>
+
+     <width
+   id="width72">256</width>
+
+     <height
+   id="height75">256</height>
+
+     <image
+   id="image78">/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA
+AQBIAAAAAQAB/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoK
+DBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8f
+Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgBAAEAAwER
+AAIRAQMRAf/EAaIAAAAHAQEBAQEAAAAAAAAAAAQFAwIGAQAHCAkKCwEAAgIDAQEBAQEAAAAAAAAA
+AQACAwQFBgcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPB
+UtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE
+1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZ
+qbnJ2en5KjpKWmp6ipqqusra6voRAAICAQIDBQUEBQYECAMDbQEAAhEDBCESMUEFURNhIgZxgZEy
+obHwFMHR4SNCFVJicvEzJDRDghaSUyWiY7LCB3PSNeJEgxdUkwgJChgZJjZFGidkdFU38qOzwygp
+0+PzhJSktMTU5PRldYWVpbXF1eX1RlZmdoaWprbG1ub2R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo
++DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A9U4q7FXYq7FXYq7FXYq7
+FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7F
+XYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FX
+Yql2veYtF0DT2v8AV7tLS1XYM9SWbrxRRVmb2AxV5LrP/OS1jHK0ejaO9xGKhbi6lEVff00Em3+y
+GGlSn/oZbXP+rNa/8jJMaVv/AKGV1z/qzWv/ACMkw0rv+hldc/6s1r/yMkxpW/8AoZTXP+rNbf8A
+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</image>
+
+    </li>
+
+   </Alt>
+
+  </Thumbnails>
+
+ </Description>
+
+
+ <Description
+   about="uuid:69705109-60a6-4913-8378-d90d07d20004"
+   id="Description85">
+  <DocumentID
+   id="DocumentID87">uuid:f92d17b8-df7b-4a90-98a2-6bdd0d509372</DocumentID>
+
+ </Description>
+
+
+ <Description
+   about="uuid:69705109-60a6-4913-8378-d90d07d20004"
+   id="Description91">
+  <format
+   id="format93">image/svg+xml</format>
+
+ </Description>
+
+
+<Work
+   about=""
+   id="Work1044">
+  <format
+   id="format1045">image/svg+xml</format>
+  <type
+   id="type1047"
+   resource="http://purl.org/dc/dcmitype/StillImage" />
+</Work>
+</RDF>
+</svg:metadata>
+</xmpmeta>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg:xpacket
+   id="xpacket99" />
+
+			<rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></svg:metadata>
+  <svg:g
+   id="Layer_1">
+    <svg:g
+   id="g104">
+      <svg:linearGradient
+   x1="221.32422"
+   y1="221.32422"
+   x2="3.9899161"
+   y2="3.9899185"
+   id="XMLID_56_"
+   gradientUnits="userSpaceOnUse">
+        <svg:stop
+   style="stop-color:#7d7d99;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop108" />
+        <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop110" />
+        
+        
+        
+      </svg:linearGradient>
+      <svg:path
+   d="M 56.867188,19.667969 C 45.836914,19.667969 36.863281,28.882813 36.863281,40.208008 L 36.863281,215.79199 C 36.863281,227.11816 45.836914,236.33203 56.867188,236.33203 L 199.13281,236.33203 C 204.47949,236.33203 209.50781,234.18555 213.29297,230.28906 C 217.06152,226.4082 219.13672,221.25977 219.13672,215.79199 L 219.13672,40.208008 C 219.13672,34.740234 217.06152,29.591797 213.29199,25.710937 C 209.50781,21.814453 204.47949,19.667969 199.13281,19.667969 L 56.867188,19.667969 L 56.867188,19.667969 z"
+   style="fill:url(#XMLID_56_)"
+   id="path119" />
+      <svg:linearGradient
+   x1="42.459961"
+   y1="128"
+   x2="213.54004"
+   y2="128"
+   id="XMLID_57_"
+   gradientUnits="userSpaceOnUse">
+        <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop123" />
+        <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop125" />
+        
+        
+        
+      </svg:linearGradient>
+      <svg:path
+   d="M 213.54004,215.79199 C 213.54004,224.04395 207.08984,230.73535 199.13281,230.73535 L 56.867188,230.73535 C 48.911133,230.73535 42.459961,224.04395 42.459961,215.79199 L 42.459961,40.208008 C 42.459961,31.955078 48.911133,25.264648 56.867188,25.264648 L 199.13281,25.264648 C 207.08984,25.264648 213.54004,31.955078 213.54004,40.208008 L 213.54004,215.79199 z"
+   style="fill:url(#XMLID_57_)"
+   id="path134" />
+      <svg:linearGradient
+   x1="36.881836"
+   y1="36.881836"
+   x2="219.13611"
+   y2="219.13611"
+   id="XMLID_58_"
+   gradientUnits="userSpaceOnUse">
+        <svg:stop
+   style="stop-color:#f0f0f0;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop138" />
+        <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop140" />
+        
+        
+        
+      </svg:linearGradient>
+      <svg:path
+   d="M 56.867188,28.861328 C 50.90625,28.861328 46.056641,33.951172 46.056641,40.208008 L 46.056641,215.79199 C 46.056641,222.04883 50.90625,227.13867 56.867188,227.13867 L 199.13281,227.13867 C 205.09375,227.13867 209.94336,222.04883 209.94336,215.79199 L 209.94336,40.208008 C 209.94336,33.951172 205.09375,28.861328 199.13281,28.861328 L 56.867188,28.861328 L 56.867188,28.861328 z"
+   style="fill:url(#XMLID_58_)"
+   id="path149" />
+      <svg:linearGradient
+   x1="40.673828"
+   y1="37.988281"
+   x2="146.82309"
+   y2="144.13754"
+   id="XMLID_59_"
+   gradientUnits="userSpaceOnUse">
+        <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop153" />
+        <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop155" />
+        
+        
+        
+      </svg:linearGradient>
+      <svg:path
+   d="M 198.43164,28.587891 L 58.767578,28.587891 C 52.915039,28.587891 48.154297,33.584961 48.154297,39.727539 L 48.154297,212.10059 C 48.154297,218.24219 52.915039,223.23926 58.767578,223.23926 L 63.246094,223.23926 C 57.568359,223.23926 52.950195,218.3916 52.950195,212.43262 L 52.950195,45.197266 C 52.950195,39.238281 57.568359,34.389648 63.246094,34.389648 L 198.74805,34.389648 C 204.4248,34.389648 209.04492,39.238281 209.04492,45.197266 L 209.04492,39.727539 C 209.04492,33.584961 204.2832,28.587891 198.43164,28.587891 z"
+   style="fill:url(#XMLID_59_)"
+   id="path164" />
+      <svg:g
+   id="g166">
+        <svg:linearGradient
+   x1="67.495117"
+   y1="58.60791"
+   x2="188.50488"
+   y2="58.60791"
+   id="XMLID_60_"
+   gradientUnits="userSpaceOnUse">
+          <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop170" />
+          <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop172" />
+          
+          
+          
+        </svg:linearGradient>
+        <svg:rect
+   width="121.00977"
+   height="35.758789"
+   x="67.495117"
+   y="40.728516"
+   style="fill:url(#XMLID_60_)"
+   id="rect181" />
+        <svg:path
+   d="M 69.197266,42.431641 C 69.197266,45.367188 69.197266,71.849609 69.197266,74.78418 C 72.460938,74.78418 183.53906,74.78418 186.80176,74.78418 C 186.80176,71.849609 186.80176,45.367188 186.80176,42.431641 C 183.53906,42.431641 72.460938,42.431641 69.197266,42.431641 z"
+   id="path183" />
+        <svg:linearGradient
+   x1="93.06543"
+   y1="23.67334"
+   x2="162.93573"
+   y2="93.54364"
+   id="XMLID_61_"
+   gradientUnits="userSpaceOnUse">
+          <svg:stop
+   style="stop-color:#009933;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop187" />
+          <svg:stop
+   style="stop-color:#006a00;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop189" />
+          
+          
+          
+        </svg:linearGradient>
+        <svg:path
+   d="M 71.751953,44.985352 C 71.751953,48.948242 71.751953,68.268555 71.751953,72.230469 C 76.532226,72.230469 179.46777,72.230469 184.24805,72.230469 C 184.24805,68.268555 184.24805,48.948242 184.24805,44.985352 C 179.46777,44.985352 76.532227,44.985352 71.751953,44.985352 z"
+   style="fill:url(#XMLID_61_)"
+   id="path198" />
+        <svg:linearGradient
+   x1="93.067871"
+   y1="23.67627"
+   x2="162.9393"
+   y2="93.547699"
+   id="XMLID_62_"
+   gradientUnits="userSpaceOnUse">
+          <svg:stop
+   style="stop-color:#009933;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop202" />
+          <svg:stop
+   style="stop-color:#66cc33;stop-opacity:1.0000000;"
+   offset="0.039326001"
+   id="stop204" />
+          <svg:stop
+   style="stop-color:#009933;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop206" />
+          
+          
+          
+          
+          
+        </svg:linearGradient>
+        <svg:path
+   d="M 74.305664,47.540039 C 74.305664,51.301758 74.305664,65.915039 74.305664,69.675781 C 79.072266,69.675781 176.92871,69.675781 181.69336,69.675781 C 181.69336,65.915039 181.69336,51.301758 181.69336,47.540039 C 176.92871,47.540039 79.072266,47.540039 74.305664,47.540039 z"
+   style="fill:url(#XMLID_62_)"
+   id="path219" />
+      </svg:g>
+      <svg:g
+   id="g222">
+        <svg:g
+   id="g224">
+          <svg:linearGradient
+   x1="74.362305"
+   y1="130.26953"
+   x2="74.362305"
+   y2="152.40659"
+   id="XMLID_63_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop228" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop230" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 60.740234,141.33789 C 60.740234,148.84863 66.850586,154.95996 74.362305,154.95996 C 81.873047,154.95996 87.984375,148.84863 87.984375,141.33789 C 87.984375,133.82715 81.873047,127.71484 74.362305,127.71484 C 66.850586,127.71484 60.740234,133.82715 60.740234,141.33789 z"
+   style="fill:url(#XMLID_63_)"
+   id="path239" />
+          <svg:linearGradient
+   x1="74.362305"
+   y1="152.40527"
+   x2="74.362305"
+   y2="130.26953"
+   id="XMLID_64_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop243" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop245" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="74.362305"
+   cy="141.33789"
+   r="11.068359"
+   style="fill:url(#XMLID_64_)"
+   id="circle254"
+   sodipodi:cx="74.362305"
+   sodipodi:cy="141.33789"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="130.26953"
+   x2="110.12109"
+   y2="152.40659"
+   id="XMLID_65_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop258" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop260" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 96.499023,141.33789 C 96.499023,148.84863 102.60938,154.95996 110.12109,154.95996 C 117.63281,154.95996 123.74316,148.84863 123.74316,141.33789 C 123.74316,133.82715 117.63281,127.71484 110.12109,127.71484 C 102.60938,127.71484 96.499023,133.82715 96.499023,141.33789 z"
+   style="fill:url(#XMLID_65_)"
+   id="path269" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="152.40527"
+   x2="110.12109"
+   y2="130.26953"
+   id="XMLID_66_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop273" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop275" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="110.12109"
+   cy="141.33789"
+   r="11.068359"
+   style="fill:url(#XMLID_66_)"
+   id="circle284"
+   sodipodi:cx="110.12109"
+   sodipodi:cy="141.33789"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="130.26953"
+   x2="145.87891"
+   y2="152.40659"
+   id="XMLID_67_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop288" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop290" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 132.25684,141.33789 C 132.25684,148.84863 138.36816,154.95996 145.87891,154.95996 C 153.38965,154.95996 159.50098,148.84863 159.50098,141.33789 C 159.50098,133.82715 153.38965,127.71484 145.87891,127.71484 C 138.36816,127.71484 132.25684,133.82715 132.25684,141.33789 z"
+   style="fill:url(#XMLID_67_)"
+   id="path299" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="152.40527"
+   x2="145.87891"
+   y2="130.26953"
+   id="XMLID_68_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop303" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop305" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="145.87939"
+   cy="141.33789"
+   r="11.067871"
+   style="fill:url(#XMLID_68_)"
+   id="circle314"
+   sodipodi:cx="145.87939"
+   sodipodi:cy="141.33789"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="130.26953"
+   x2="181.63867"
+   y2="152.40659"
+   id="XMLID_69_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop318" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop320" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 168.0166,141.33789 C 168.0166,148.84863 174.12598,154.95996 181.63867,154.95996 C 189.14941,154.95996 195.26074,148.84863 195.26074,141.33789 C 195.26074,133.82715 189.14941,127.71484 181.63867,127.71484 C 174.12598,127.71484 168.0166,133.82715 168.0166,141.33789 z"
+   style="fill:url(#XMLID_69_)"
+   id="path329" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="152.40527"
+   x2="181.63867"
+   y2="130.26953"
+   id="XMLID_70_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop333" />
+            <svg:stop
+   style="stop-color:#c9e6ff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop335" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="181.63818"
+   cy="141.33789"
+   r="11.067871"
+   style="fill:url(#XMLID_70_)"
+   id="circle344"
+   sodipodi:cx="181.63818"
+   sodipodi:cy="141.33789"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+        </svg:g>
+        <svg:g
+   id="g347">
+          <svg:linearGradient
+   x1="74.361816"
+   y1="130.27051"
+   x2="74.361816"
+   y2="152.40605"
+   id="XMLID_71_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop351" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop353" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 65.847656,141.33789 C 65.847656,146.03223 69.666992,149.85156 74.362305,149.85156 C 79.056641,149.85156 82.875977,146.03223 82.875977,141.33789 C 82.875977,136.64355 79.056641,132.82422 74.362305,132.82422 C 69.666992,132.82422 65.847656,136.64355 65.847656,141.33789 z"
+   style="fill:url(#XMLID_71_)"
+   id="path362" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="130.27051"
+   x2="110.12109"
+   y2="152.40605"
+   id="XMLID_72_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop366" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop368" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 101.60645,141.33789 C 101.60645,146.03223 105.42676,149.85156 110.12109,149.85156 C 114.81543,149.85156 118.63574,146.03223 118.63574,141.33789 C 118.63574,136.64355 114.81543,132.82422 110.12109,132.82422 C 105.42676,132.82422 101.60645,136.64355 101.60645,141.33789 z"
+   style="fill:url(#XMLID_72_)"
+   id="path377" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="130.27051"
+   x2="145.87891"
+   y2="152.40605"
+   id="XMLID_73_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop381" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop383" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 137.36523,141.33789 C 137.36523,146.03223 141.18457,149.85156 145.87891,149.85156 C 150.57324,149.85156 154.39258,146.03223 154.39258,141.33789 C 154.39258,136.64355 150.57324,132.82422 145.87891,132.82422 C 141.18457,132.82422 137.36523,136.64355 137.36523,141.33789 z"
+   style="fill:url(#XMLID_73_)"
+   id="path392" />
+          <svg:linearGradient
+   x1="181.6377"
+   y1="130.27051"
+   x2="181.6377"
+   y2="152.40605"
+   id="XMLID_74_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop396" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop398" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 173.12305,141.33789 C 173.12305,146.03223 176.94434,149.85156 181.63867,149.85156 C 186.33301,149.85156 190.15234,146.03223 190.15234,141.33789 C 190.15234,136.64355 186.33301,132.82422 181.63867,132.82422 C 176.94434,132.82422 173.12305,136.64355 173.12305,141.33789 z"
+   style="fill:url(#XMLID_74_)"
+   id="path407" />
+        </svg:g>
+      </svg:g>
+      <svg:g
+   id="g411">
+        <svg:g
+   id="g413">
+          <svg:linearGradient
+   x1="74.362305"
+   y1="88.451172"
+   x2="74.362305"
+   y2="110.58704"
+   id="XMLID_75_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop417" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop419" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 60.740234,99.520508 C 60.740234,107.03223 66.850586,113.14258 74.362305,113.14258 C 81.873047,113.14258 87.984375,107.03223 87.984375,99.520508 C 87.984375,92.008789 81.873047,85.898438 74.362305,85.898438 C 66.850586,85.898438 60.740234,92.008789 60.740234,99.520508 z"
+   style="fill:url(#XMLID_75_)"
+   id="path428" />
+          <svg:linearGradient
+   x1="74.362305"
+   y1="110.58887"
+   x2="74.362305"
+   y2="88.453125"
+   id="XMLID_76_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#9b95ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop432" />
+            <svg:stop
+   style="stop-color:#b3caff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop434" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="74.362305"
+   cy="99.520508"
+   r="11.068359"
+   style="fill:url(#XMLID_76_)"
+   id="circle443"
+   sodipodi:cx="74.362305"
+   sodipodi:cy="99.520508"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="88.451172"
+   x2="110.12109"
+   y2="110.58704"
+   id="XMLID_77_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop447" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop449" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 96.499023,99.520508 C 96.499023,107.03223 102.60938,113.14258 110.12109,113.14258 C 117.63281,113.14258 123.74316,107.03223 123.74316,99.520508 C 123.74316,92.008789 117.63281,85.898438 110.12109,85.898438 C 102.60938,85.898438 96.499023,92.008789 96.499023,99.520508 z"
+   style="fill:url(#XMLID_77_)"
+   id="path458" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="110.58887"
+   x2="110.12109"
+   y2="88.453125"
+   id="XMLID_78_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#9b95ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop462" />
+            <svg:stop
+   style="stop-color:#b3caff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop464" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="110.12109"
+   cy="99.520508"
+   r="11.068359"
+   style="fill:url(#XMLID_78_)"
+   id="circle473"
+   sodipodi:cx="110.12109"
+   sodipodi:cy="99.520508"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="88.451172"
+   x2="145.87891"
+   y2="110.58704"
+   id="XMLID_79_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop477" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop479" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 132.25684,99.520508 C 132.25684,107.03223 138.36816,113.14258 145.87891,113.14258 C 153.38965,113.14258 159.50098,107.03223 159.50098,99.520508 C 159.50098,92.008789 153.38965,85.898438 145.87891,85.898438 C 138.36816,85.898438 132.25684,92.008789 132.25684,99.520508 z"
+   style="fill:url(#XMLID_79_)"
+   id="path488" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="110.58887"
+   x2="145.87891"
+   y2="88.453125"
+   id="XMLID_80_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#9b95ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop492" />
+            <svg:stop
+   style="stop-color:#b3caff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop494" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="145.87939"
+   cy="99.520508"
+   r="11.067871"
+   style="fill:url(#XMLID_80_)"
+   id="circle503"
+   sodipodi:cx="145.87939"
+   sodipodi:cy="99.520508"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="88.451172"
+   x2="181.63867"
+   y2="110.58704"
+   id="XMLID_81_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop507" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop509" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 168.0166,99.520508 C 168.0166,107.03223 174.12598,113.14258 181.63867,113.14258 C 189.14941,113.14258 195.26074,107.03223 195.26074,99.520508 C 195.26074,92.008789 189.14941,85.898438 181.63867,85.898438 C 174.12598,85.898438 168.0166,92.008789 168.0166,99.520508 z"
+   style="fill:url(#XMLID_81_)"
+   id="path518" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="110.58887"
+   x2="181.63867"
+   y2="88.453125"
+   id="XMLID_82_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#990000;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop522" />
+            <svg:stop
+   style="stop-color:#cf0000;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop524" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="181.63818"
+   cy="99.520508"
+   r="11.067871"
+   style="fill:url(#XMLID_82_)"
+   id="circle533"
+   sodipodi:cx="181.63818"
+   sodipodi:cy="99.520508"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+        </svg:g>
+        <svg:g
+   id="g536">
+          <svg:linearGradient
+   x1="74.361816"
+   y1="88.452637"
+   x2="74.361816"
+   y2="110.58818"
+   id="XMLID_83_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#7c74ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop540" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop542" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 65.847656,99.520508 C 65.847656,104.21582 69.666992,108.03418 74.362305,108.03418 C 79.056641,108.03418 82.875977,104.21582 82.875977,99.520508 C 82.875977,94.826172 79.056641,91.006836 74.362305,91.006836 C 69.666992,91.006836 65.847656,94.826172 65.847656,99.520508 z"
+   style="fill:url(#XMLID_83_)"
+   id="path551" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="88.452637"
+   x2="110.12109"
+   y2="110.58818"
+   id="XMLID_84_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#7c74ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop555" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop557" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 101.60645,99.520508 C 101.60645,104.21582 105.42676,108.03418 110.12109,108.03418 C 114.81543,108.03418 118.63574,104.21582 118.63574,99.520508 C 118.63574,94.826172 114.81543,91.006836 110.12109,91.006836 C 105.42676,91.006836 101.60645,94.826172 101.60645,99.520508 z"
+   style="fill:url(#XMLID_84_)"
+   id="path566" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="88.452637"
+   x2="145.87891"
+   y2="110.58818"
+   id="XMLID_85_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#7c74ff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop570" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop572" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 137.36523,99.520508 C 137.36523,104.21582 141.18457,108.03418 145.87891,108.03418 C 150.57324,108.03418 154.39258,104.21582 154.39258,99.520508 C 154.39258,94.826172 150.57324,91.006836 145.87891,91.006836 C 141.18457,91.006836 137.36523,94.826172 137.36523,99.520508 z"
+   style="fill:url(#XMLID_85_)"
+   id="path581" />
+          <svg:linearGradient
+   x1="181.6377"
+   y1="91.57373"
+   x2="181.6377"
+   y2="123.92568"
+   id="XMLID_86_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#ff6666;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop585" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop587" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 173.12305,99.520508 C 173.12305,104.21582 176.94434,108.03418 181.63867,108.03418 C 186.33301,108.03418 190.15234,104.21582 190.15234,99.520508 C 190.15234,94.826172 186.33301,91.006836 181.63867,91.006836 C 176.94434,91.006836 173.12305,94.826172 173.12305,99.520508 z"
+   style="fill:url(#XMLID_86_)"
+   id="path596" />
+        </svg:g>
+      </svg:g>
+      <svg:g
+   id="g600">
+        <svg:g
+   id="g602">
+          <svg:linearGradient
+   x1="74.362305"
+   y1="162.62305"
+   x2="74.362305"
+   y2="184.75891"
+   id="XMLID_87_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop606" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop608" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 60.740234,173.68945 C 60.740234,181.2002 66.850586,187.31152 74.362305,187.31152 C 81.873047,187.31152 87.984375,181.2002 87.984375,173.68945 C 87.984375,166.17871 81.873047,160.06738 74.362305,160.06738 C 66.850586,160.06738 60.740234,166.17871 60.740234,173.68945 z"
+   style="fill:url(#XMLID_87_)"
+   id="path617" />
+          <svg:linearGradient
+   x1="74.362305"
+   y1="184.75879"
+   x2="74.362305"
+   y2="162.62109"
+   id="XMLID_88_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop621" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop623" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="74.362305"
+   cy="173.68945"
+   r="11.068359"
+   style="fill:url(#XMLID_88_)"
+   id="circle632"
+   sodipodi:cx="74.362305"
+   sodipodi:cy="173.68945"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="162.62305"
+   x2="110.12109"
+   y2="184.75891"
+   id="XMLID_89_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop636" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop638" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 96.499023,173.68945 C 96.499023,181.2002 102.60938,187.31152 110.12109,187.31152 C 117.63281,187.31152 123.74316,181.2002 123.74316,173.68945 C 123.74316,166.17871 117.63281,160.06738 110.12109,160.06738 C 102.60938,160.06738 96.499023,166.17871 96.499023,173.68945 z"
+   style="fill:url(#XMLID_89_)"
+   id="path647" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="184.75879"
+   x2="110.12109"
+   y2="162.62109"
+   id="XMLID_90_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop651" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop653" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="110.12109"
+   cy="173.68945"
+   r="11.068359"
+   style="fill:url(#XMLID_90_)"
+   id="circle662"
+   sodipodi:cx="110.12109"
+   sodipodi:cy="173.68945"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="162.62305"
+   x2="145.87891"
+   y2="184.75891"
+   id="XMLID_91_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop666" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop668" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 132.25684,173.68945 C 132.25684,181.2002 138.36816,187.31152 145.87891,187.31152 C 153.38965,187.31152 159.50098,181.2002 159.50098,173.68945 C 159.50098,166.17871 153.38965,160.06738 145.87891,160.06738 C 138.36816,160.06738 132.25684,166.17871 132.25684,173.68945 z"
+   style="fill:url(#XMLID_91_)"
+   id="path677" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="184.75879"
+   x2="145.87891"
+   y2="162.62109"
+   id="XMLID_92_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop681" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop683" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="145.87939"
+   cy="173.68945"
+   r="11.067871"
+   style="fill:url(#XMLID_92_)"
+   id="circle692"
+   sodipodi:cx="145.87939"
+   sodipodi:cy="173.68945"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="162.62305"
+   x2="181.63867"
+   y2="184.75891"
+   id="XMLID_93_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop696" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop698" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 168.0166,173.68945 C 168.0166,181.2002 174.12598,187.31152 181.63867,187.31152 C 189.14941,187.31152 195.26074,181.2002 195.26074,173.68945 C 195.26074,166.17871 189.14941,160.06738 181.63867,160.06738 C 174.12598,160.06738 168.0166,166.17871 168.0166,173.68945 z"
+   style="fill:url(#XMLID_93_)"
+   id="path707" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="184.75879"
+   x2="181.63867"
+   y2="162.62109"
+   id="XMLID_94_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop711" />
+            <svg:stop
+   style="stop-color:#c9e6ff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop713" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="181.63818"
+   cy="173.68945"
+   r="11.067871"
+   style="fill:url(#XMLID_94_)"
+   id="circle722"
+   sodipodi:cx="181.63818"
+   sodipodi:cy="173.68945"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+        </svg:g>
+        <svg:g
+   id="g725">
+          <svg:linearGradient
+   x1="74.361816"
+   y1="162.62207"
+   x2="74.361816"
+   y2="184.75761"
+   id="XMLID_95_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop729" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop731" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 65.847656,173.68945 C 65.847656,178.38379 69.666992,182.20312 74.362305,182.20312 C 79.056641,182.20312 82.875977,178.38379 82.875977,173.68945 C 82.875977,168.99512 79.056641,165.17578 74.362305,165.17578 C 69.666992,165.17578 65.847656,168.99512 65.847656,173.68945 z"
+   style="fill:url(#XMLID_95_)"
+   id="path740" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="162.62207"
+   x2="110.12109"
+   y2="184.75761"
+   id="XMLID_96_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop744" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop746" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 101.60645,173.68945 C 101.60645,178.38379 105.42676,182.20312 110.12109,182.20312 C 114.81543,182.20312 118.63574,178.38379 118.63574,173.68945 C 118.63574,168.99512 114.81543,165.17578 110.12109,165.17578 C 105.42676,165.17578 101.60645,168.99512 101.60645,173.68945 z"
+   style="fill:url(#XMLID_96_)"
+   id="path755" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="162.62207"
+   x2="145.87891"
+   y2="184.75761"
+   id="XMLID_97_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop759" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop761" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 137.36523,173.68945 C 137.36523,178.38379 141.18457,182.20312 145.87891,182.20312 C 150.57324,182.20312 154.39258,178.38379 154.39258,173.68945 C 154.39258,168.99512 150.57324,165.17578 145.87891,165.17578 C 141.18457,165.17578 137.36523,168.99512 137.36523,173.68945 z"
+   style="fill:url(#XMLID_97_)"
+   id="path770" />
+          <svg:linearGradient
+   x1="181.6377"
+   y1="162.62207"
+   x2="181.6377"
+   y2="184.75761"
+   id="XMLID_98_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop774" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop776" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 173.12305,173.68945 C 173.12305,178.38379 176.94434,182.20312 181.63867,182.20312 C 186.33301,182.20312 190.15234,178.38379 190.15234,173.68945 C 190.15234,168.99512 186.33301,165.17578 181.63867,165.17578 C 176.94434,165.17578 173.12305,168.99512 173.12305,173.68945 z"
+   style="fill:url(#XMLID_98_)"
+   id="path785" />
+        </svg:g>
+      </svg:g>
+      <svg:g
+   id="g789">
+        <svg:g
+   id="g791">
+          <svg:linearGradient
+   x1="74.362305"
+   y1="194.97461"
+   x2="74.362305"
+   y2="217.11127"
+   id="XMLID_99_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop795" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop797" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 60.740234,206.04102 C 60.740234,213.55273 66.850586,219.66406 74.362305,219.66406 C 81.873047,219.66406 87.984375,213.55273 87.984375,206.04102 C 87.984375,198.53027 81.873047,192.41895 74.362305,192.41895 C 66.850586,192.41895 60.740234,198.53027 60.740234,206.04102 z"
+   style="fill:url(#XMLID_99_)"
+   id="path806" />
+          <svg:linearGradient
+   x1="74.362305"
+   y1="217.10938"
+   x2="74.362305"
+   y2="194.97266"
+   id="XMLID_100_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop810" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop812" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="74.362305"
+   cy="206.04102"
+   r="11.068359"
+   style="fill:url(#XMLID_100_)"
+   id="circle821"
+   sodipodi:cx="74.362305"
+   sodipodi:cy="206.04102"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="194.97461"
+   x2="110.12109"
+   y2="217.11127"
+   id="XMLID_101_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop825" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop827" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 96.499023,206.04102 C 96.499023,213.55273 102.60938,219.66406 110.12109,219.66406 C 117.63281,219.66406 123.74316,213.55273 123.74316,206.04102 C 123.74316,198.53027 117.63281,192.41895 110.12109,192.41895 C 102.60938,192.41895 96.499023,198.53027 96.499023,206.04102 z"
+   style="fill:url(#XMLID_101_)"
+   id="path836" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="217.10938"
+   x2="110.12109"
+   y2="194.97266"
+   id="XMLID_102_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop840" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop842" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="110.12109"
+   cy="206.04102"
+   r="11.068359"
+   style="fill:url(#XMLID_102_)"
+   id="circle851"
+   sodipodi:cx="110.12109"
+   sodipodi:cy="206.04102"
+   sodipodi:rx="11.068359"
+   sodipodi:ry="11.068359" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="194.97461"
+   x2="145.87891"
+   y2="217.11127"
+   id="XMLID_103_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop855" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop857" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 132.25684,206.04102 C 132.25684,213.55273 138.36816,219.66406 145.87891,219.66406 C 153.38965,219.66406 159.50098,213.55273 159.50098,206.04102 C 159.50098,198.53027 153.38965,192.41895 145.87891,192.41895 C 138.36816,192.41895 132.25684,198.53027 132.25684,206.04102 z"
+   style="fill:url(#XMLID_103_)"
+   id="path866" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="217.10938"
+   x2="145.87891"
+   y2="194.97266"
+   id="XMLID_104_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#b6b6b6;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop870" />
+            <svg:stop
+   style="stop-color:#dadada;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop872" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="145.87939"
+   cy="206.04102"
+   r="11.067871"
+   style="fill:url(#XMLID_104_)"
+   id="circle881"
+   sodipodi:cx="145.87939"
+   sodipodi:cy="206.04102"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="194.97461"
+   x2="181.63867"
+   y2="217.11127"
+   id="XMLID_105_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#494949;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop885" />
+            <svg:stop
+   style="stop-color:#949494;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop887" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 168.0166,206.04102 C 168.0166,213.55273 174.12598,219.66406 181.63867,219.66406 C 189.14941,219.66406 195.26074,213.55273 195.26074,206.04102 C 195.26074,198.53027 189.14941,192.41895 181.63867,192.41895 C 174.12598,192.41895 168.0166,198.53027 168.0166,206.04102 z"
+   style="fill:url(#XMLID_105_)"
+   id="path896" />
+          <svg:linearGradient
+   x1="181.63867"
+   y1="217.10938"
+   x2="181.63867"
+   y2="194.97266"
+   id="XMLID_106_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop900" />
+            <svg:stop
+   style="stop-color:#c9e6ff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop902" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:circle
+   cx="181.63818"
+   cy="206.04102"
+   r="11.067871"
+   style="fill:url(#XMLID_106_)"
+   id="circle911"
+   sodipodi:cx="181.63818"
+   sodipodi:cy="206.04102"
+   sodipodi:rx="11.067871"
+   sodipodi:ry="11.067871" />
+        </svg:g>
+        <svg:g
+   id="g914">
+          <svg:linearGradient
+   x1="74.361816"
+   y1="194.97266"
+   x2="74.361816"
+   y2="217.10947"
+   id="XMLID_107_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop918" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop920" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 65.847656,206.04102 C 65.847656,210.73535 69.666992,214.55566 74.362305,214.55566 C 79.056641,214.55566 82.875977,210.73535 82.875977,206.04102 C 82.875977,201.34668 79.056641,197.52734 74.362305,197.52734 C 69.666992,197.52734 65.847656,201.34668 65.847656,206.04102 z"
+   style="fill:url(#XMLID_107_)"
+   id="path929" />
+          <svg:linearGradient
+   x1="110.12109"
+   y1="194.97266"
+   x2="110.12109"
+   y2="217.10947"
+   id="XMLID_108_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop933" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop935" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 101.60645,206.04102 C 101.60645,210.73535 105.42676,214.55566 110.12109,214.55566 C 114.81543,214.55566 118.63574,210.73535 118.63574,206.04102 C 118.63574,201.34668 114.81543,197.52734 110.12109,197.52734 C 105.42676,197.52734 101.60645,201.34668 101.60645,206.04102 z"
+   style="fill:url(#XMLID_108_)"
+   id="path944" />
+          <svg:linearGradient
+   x1="145.87891"
+   y1="194.97266"
+   x2="145.87891"
+   y2="217.10947"
+   id="XMLID_109_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#cccccc;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop948" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop950" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 137.36523,206.04102 C 137.36523,210.73535 141.18457,214.55566 145.87891,214.55566 C 150.57324,214.55566 154.39258,210.73535 154.39258,206.04102 C 154.39258,201.34668 150.57324,197.52734 145.87891,197.52734 C 141.18457,197.52734 137.36523,201.34668 137.36523,206.04102 z"
+   style="fill:url(#XMLID_109_)"
+   id="path959" />
+          <svg:linearGradient
+   x1="181.6377"
+   y1="194.97266"
+   x2="181.6377"
+   y2="217.10947"
+   id="XMLID_110_"
+   gradientUnits="userSpaceOnUse">
+            <svg:stop
+   style="stop-color:#428aff;stop-opacity:1.0000000;"
+   offset="0.0000000"
+   id="stop963" />
+            <svg:stop
+   style="stop-color:#ffffff;stop-opacity:1.0000000;"
+   offset="1.0000000"
+   id="stop965" />
+            
+            
+            
+          </svg:linearGradient>
+          <svg:path
+   d="M 173.12305,206.04102 C 173.12305,210.73535 176.94434,214.55566 181.63867,214.55566 C 186.33301,214.55566 190.15234,210.73535 190.15234,206.04102 C 190.15234,201.34668 186.33301,197.52734 181.63867,197.52734 C 176.94434,197.52734 173.12305,201.34668 173.12305,206.04102 z"
+   style="fill:url(#XMLID_110_)"
+   id="path974" />
+        </svg:g>
+      </svg:g>
+    </svg:g>
+    <svg:polyline
+   id="_x3C_Slice_x3E_"
+   points="0,256 0,0 256,0 256,256 "
+   style="fill:none" />
+  </svg:g>
+</svg:svg>
