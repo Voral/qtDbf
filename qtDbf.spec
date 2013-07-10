@@ -1,6 +1,6 @@
 Version:	0.9.3
 Name:		qtDbf
-Release:	alt1
+Release:	alt0.M60T.1
 Summary:	A simple DBF viewer and editor
 License: 	GPLv2+
 Group: 		Databases
@@ -46,5 +46,8 @@ convert -resize 16x16 images/qtdbf.svg %buildroot%_miconsdir/%name.png
 %_datadir/%name
 
 %changelog
+* Wed Jul 10 2013 Motsyo Gennadi <drool@altlinux.ru> 0.9.3-alt0.M60T.1
+- build for t6
+
 * Wed Jul 10 2013 Motsyo Gennadi <drool@altlinux.ru> 0.9.3-alt1
 - initial build for ALT Linux
