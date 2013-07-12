@@ -973,17 +973,16 @@ void QDbfEditor::openDbfFile()
     unsigned char a,b,c,d,e,f,g,h;
     double db;
 
-    QFileInfo fileInfo(dbfFileName);
-    tableName = "d_"+fileInfo.baseName();
-    strTableName = "s_"+fileInfo.baseName();
+    tableName = "d_table";
+    strTableName = "s_table";
 
     file.setFileName(dbfFileName);
     if (!file.open(QIODevice::ReadOnly))
         {
-            QMessageBox::critical(this, tr("Error"), tr("DBF open error"));
+            QMessageBox::critical(this, tr("Error1"), tr("DBF open error"));
             return;
         }
-	QTextCodec::setCodecForCStrings(QTextCodec::codecForName(generalTextCodec.toAscii().data()));
+    QTextCodec::setCodecForCStrings(QTextCodec::codecForName(generalTextCodec.toAscii().data()));
 
     sizesHeader.clear();
 
@@ -1047,9 +1046,9 @@ void QDbfEditor::openDbfFile()
 
     QSqlQuery getData(QSqlDatabase::database("dbfEditor"));
 
-    query = "DROP TABLE IF EXISTS ";
+    query = "DROP TABLE IF EXISTS '";
     query += tableName;
-
+    query += "'";
     getData.prepare(query);
     getData.exec();
     if (getData.lastError().isValid())
@@ -1060,11 +1059,11 @@ void QDbfEditor::openDbfFile()
 
     QString tempValue;
 
-    query = "CREATE TABLE ";
+    query = "CREATE TABLE '";
     query += tableName;
-    query += " ( id_";
+    query += "' ( 'id_";
     query += tableName;
-    query += " integer primary key autoincrement,";
+    query += "' integer primary key autoincrement,";
     for (i=0; i<fieldsCollection.count(); ++i)
         {
             query += fieldsCollection.at(i)->fieldName;
@@ -1167,7 +1166,7 @@ void QDbfEditor::openDbfFile()
                         {
                             tempString = recordData.mid(fieldsItem->fieldOffset,fieldsItem->fieldSize);
                             fieldsItem->fields += tempString.replace("'","''");
-                        }                    
+                        }
                     else if ((fieldsItem->fieldType == "N") || (fieldsItem->fieldType == "F"))
                         {
                             tempString = recordData.mid(fieldsItem->fieldOffset,fieldsItem->fieldSize);
@@ -1267,7 +1266,7 @@ void QDbfEditor::openDbfFile()
 
 void QDbfEditor::saveDbfFile()
 {
-	qint32 nr;
+    qint32 nr;
     QSqlQuery getData(QSqlDatabase::database("dbfEditor"));
     QString query;
     bool ok;
@@ -1344,7 +1343,7 @@ void QDbfEditor::saveDbfFile()
     QDate tempDateValue;
     QString tempCharValue;
     QByteArray tempBinaryValue;
-	while (getData.next())
+    while (getData.next())
         {
             recordData.clear();
             recordData.append(QChar(' '));
@@ -1359,7 +1358,7 @@ void QDbfEditor::saveDbfFile()
                             l1 = tempCharValue.length();
                             tempCharValue.truncate(l);
 
-                            tempValue = tempCharValue;                                                        
+                            tempValue = tempCharValue;
 
                             for (j=0;j<l-l1;j++)
                                 tempValue+=" ";
@@ -1506,7 +1505,7 @@ void QDbfEditor::fillCells()
                         query += "=";
                         query += record.value(0).toString();
 
-                        getData.prepare(query);                    
+                        getData.prepare(query);
                         getData.exec();
 
                         if (getData.lastError().isValid())
@@ -2083,13 +2082,13 @@ void QDbfEditor::helpDbf()
     fileName +=dbfLocal+".html";
 
     QFile helpFile(fileName);
-	if (!helpFile.exists())
-	{
-		fileName =  qApp->applicationDirPath();
-		fileName += "/help/qtdbf_";
-		fileName +=dbfLocal+".html";
-		helpFile.setFileName(fileName);
-	}
+    if (!helpFile.exists())
+    {
+        fileName =  qApp->applicationDirPath();
+        fileName += "/help/qtdbf_";
+        fileName +=dbfLocal+".html";
+        helpFile.setFileName(fileName);
+    }
     if (!helpFile.open(QIODevice::ReadOnly))
         {
             QMessageBox::critical(this, tr("Error"), tr("Help file missing"));
@@ -2100,8 +2099,8 @@ void QDbfEditor::helpDbf()
 
     QByteArray data = helpFile.readAll();
 //    QTextCodec *codec = Qt::codecForHtml(data);
-	QString str(data);// = codec->toUnicode(data);
-	t->setHtml(str);
+    QString str(data);// = codec->toUnicode(data);
+    t->setHtml(str);
 
     //QTextStream textStream(&helpFile);
     //textStream.setCodec("UTF-8");
