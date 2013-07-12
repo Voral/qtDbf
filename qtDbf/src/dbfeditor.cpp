@@ -2073,7 +2073,7 @@ void QDbfEditor::helpDbf()
     QString fileName;
 
 #ifdef UNIX
-    fileName = "/usr/share/doc/qtDbf/help/qtdbf_";
+    fileName = "/usr/share/doc/qtdbf/help/qtdbf_";
 #else
     fileName +=  qApp->applicationDirPath();
     fileName += "/help/qtdbf_";
@@ -2158,7 +2158,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this, tr("qtDbf 0.9.3"), explic);
+   QMessageBox::about(this, tr("qtDbf 0.9.4"), explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)

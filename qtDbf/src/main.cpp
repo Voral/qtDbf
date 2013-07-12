@@ -82,10 +82,11 @@ int main(int argc, char *argv[])
     QString dbfDirPath="";
 
 #ifdef UNIX
-    dbfDirPath += "/usr/share/qtDbf/lang/qtDbf_";
+    dbfDirPath += "/usr/share/qtdbf/lang/qtDbf_";
     dbfDirPath += dbfLocal;
 #endif
-    QFileInfo f(dbfLocal+".qm");
+
+    QFileInfo f(dbfDirPath+".qm");
     if (!f.exists())
     {
         dbfDirPath = app.applicationDirPath();
