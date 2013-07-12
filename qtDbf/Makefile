@@ -15,10 +15,10 @@ CFLAGS        = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
 INCPATH       = -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtSql -I/usr/include/qt4/QtSvg -I/usr/include/qt4 -I.moc
 LINK          = g++
-LFLAGS        = 
-LIBS          = $(SUBLIBS)  -L/usr/lib/x86_64-linux-gnu -lQtSvg -lQtSql -lQtGui -lQtCore -lpthread 
+LFLAGS        =
+LIBS          = $(SUBLIBS)  -L/usr/lib/x86_64-linux-gnu -lQtSvg -lQtSql -lQtGui -lQtCore -lpthread
 AR            = ar cqs
-RANLIB        = 
+RANLIB        =
 QMAKE         = /usr/bin/qmake-qt4
 TAR           = tar -cf
 COMPRESS      = gzip -9f
@@ -99,7 +99,7 @@ DIST          = /usr/share/qt4/mkspecs/common/unix.conf \
 		/usr/share/qt4/mkspecs/features/include_source_dir.prf \
 		qtDbf.pro
 QMAKE_TARGET  = qtDbf
-DESTDIR       = 
+DESTDIR       =
 TARGET        = qtDbf
 
 first: all
@@ -126,7 +126,7 @@ first: all
 
 all: Makefile $(TARGET)
 
-$(TARGET):  $(OBJECTS)  
+$(TARGET):  $(OBJECTS)
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 	{ test -n "$(DESTDIR)" && DESTDIR="$(DESTDIR)" || DESTDIR=.; } && test $$(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $$DESTDIR" -ex quit '$(TARGET)' && test -f $(TARGET).gdb-index && objcopy --add-section '.gdb_index=$(TARGET).gdb-index' --set-section-flags '.gdb_index=readonly' '$(TARGET)' '$(TARGET)' && rm -f $(TARGET).gdb-index || true
 
@@ -192,12 +192,12 @@ Makefile: qtDbf.pro  /usr/share/qt4/mkspecs/linux-g++/qmake.conf /usr/share/qt4/
 qmake:  FORCE
 	@$(QMAKE) -spec /usr/share/qt4/mkspecs/linux-g++ -unix CONFIG+=debug -o Makefile qtDbf.pro
 
-dist: 
-	@$(CHK_DIR_EXISTS) .obj/qtDbf1.0.0 || $(MKDIR) .obj/qtDbf1.0.0 
+dist:
+	@$(CHK_DIR_EXISTS) .obj/qtDbf1.0.0 || $(MKDIR) .obj/qtDbf1.0.0
 	$(COPY_FILE) --parents $(SOURCES) $(DIST) .obj/qtDbf1.0.0/ && $(COPY_FILE) --parents src/structures.h src/dbfeditor.h src/mainwindow.h src/widgets.h src/qtcalculator.h src/globals.h src/customsqlmodel.h src/dbfconfig.h .obj/qtDbf1.0.0/ && $(COPY_FILE) --parents qtDbf.qrc .obj/qtDbf1.0.0/ && $(COPY_FILE) --parents src/dbfeditor.cpp src/main.cpp src/mainwindow.cpp src/widgets.cpp src/qtcalculator.cpp src/customsqlmodel.cpp src/dbfconfig.cpp src/saveconfig.cpp .obj/qtDbf1.0.0/ && $(COPY_FILE) --parents lang/qtDbf_en.ts lang/qtDbf_hu.ts lang/qtDbf_ro.ts .obj/qtDbf1.0.0/ && (cd `dirname .obj/qtDbf1.0.0` && $(TAR) qtDbf1.0.0.tar qtDbf1.0.0 && $(COMPRESS) qtDbf1.0.0.tar) && $(MOVE) `dirname .obj/qtDbf1.0.0`/qtDbf1.0.0.tar.gz . && $(DEL_FILE) -r .obj/qtDbf1.0.0
 
 
-clean:compiler_clean 
+clean:compiler_clean
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
 
@@ -205,7 +205,7 @@ clean:compiler_clean
 ####### Sub-libraries
 
 distclean: clean
-	-$(DEL_FILE) $(TARGET) 
+	-$(DEL_FILE) $(TARGET)
 	-$(DEL_FILE) Makefile
 
 
@@ -290,7 +290,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean compiler_rcc_clean 
+compiler_clean: compiler_moc_header_clean compiler_rcc_clean
 
 ####### Compile
 
@@ -339,40 +339,40 @@ compiler_clean: compiler_moc_header_clean compiler_rcc_clean
 		src/mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/saveconfig.o src/saveconfig.cpp
 
-.obj/moc_dbfeditor.o: .moc/moc_dbfeditor.cpp 
+.obj/moc_dbfeditor.o: .moc/moc_dbfeditor.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_dbfeditor.o .moc/moc_dbfeditor.cpp
 
-.obj/moc_mainwindow.o: .moc/moc_mainwindow.cpp 
+.obj/moc_mainwindow.o: .moc/moc_mainwindow.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_mainwindow.o .moc/moc_mainwindow.cpp
 
-.obj/moc_widgets.o: .moc/moc_widgets.cpp 
+.obj/moc_widgets.o: .moc/moc_widgets.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_widgets.o .moc/moc_widgets.cpp
 
-.obj/moc_qtcalculator.o: .moc/moc_qtcalculator.cpp 
+.obj/moc_qtcalculator.o: .moc/moc_qtcalculator.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_qtcalculator.o .moc/moc_qtcalculator.cpp
 
-.obj/moc_customsqlmodel.o: .moc/moc_customsqlmodel.cpp 
+.obj/moc_customsqlmodel.o: .moc/moc_customsqlmodel.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_customsqlmodel.o .moc/moc_customsqlmodel.cpp
 
-.obj/moc_dbfconfig.o: .moc/moc_dbfconfig.cpp 
+.obj/moc_dbfconfig.o: .moc/moc_dbfconfig.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/moc_dbfconfig.o .moc/moc_dbfconfig.cpp
 
-.obj/qrc_qtDbf.o: .rcc/qrc_qtDbf.cpp 
+.obj/qrc_qtDbf.o: .rcc/qrc_qtDbf.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj/qrc_qtDbf.o .rcc/qrc_qtDbf.cpp
 
 ####### Install
 
 install_target: first FORCE
-	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/bin/ || $(MKDIR) $(INSTALL_ROOT)/usr/bin/ 
+	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/bin/ || $(MKDIR) $(INSTALL_ROOT)/usr/bin/
 	-$(INSTALL_PROGRAM) "$(QMAKE_TARGET)" "$(INSTALL_ROOT)/usr/bin/$(QMAKE_TARGET)"
 
 uninstall_target:  FORCE
 	-$(DEL_FILE) "$(INSTALL_ROOT)/usr/bin/$(QMAKE_TARGET)"
-	-$(DEL_DIR) $(INSTALL_ROOT)/usr/bin/ 
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/bin/
 
 
 install_translations: first FORCE
-	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/share/qtDbf/lang/ || $(MKDIR) $(INSTALL_ROOT)/usr/share/qtDbf/lang/ 
+	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/share/qtDbf/lang/ || $(MKDIR) $(INSTALL_ROOT)/usr/share/qtDbf/lang/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/lang/qtDbf_en.qm $(INSTALL_ROOT)/usr/share/qtDbf/lang/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/lang/qtDbf_hu.qm $(INSTALL_ROOT)/usr/share/qtDbf/lang/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/lang/qtDbf_ro.qm $(INSTALL_ROOT)/usr/share/qtDbf/lang/
@@ -380,15 +380,15 @@ install_translations: first FORCE
 
 
 uninstall_translations:  FORCE
-	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_en.qm 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_hu.qm 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_ro.qm 
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_en.qm
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_hu.qm
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_ro.qm
 	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qtDbf/lang/qtDbf_ru.qm
-	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/qtDbf/lang/ 
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/qtDbf/lang/
 
 
 install_help: first FORCE
-	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/ || $(MKDIR) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/ 
+	@$(CHK_DIR_EXISTS) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/ || $(MKDIR) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/help/add.png $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/help/config.png $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/
 	-$(INSTALL_FILE) /home/alex/ProjectC/qtDbf/qtDbf/help/delete.png $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/
@@ -403,18 +403,18 @@ install_help: first FORCE
 
 
 uninstall_help:  FORCE
-	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/add.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/config.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/delete.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/edit.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/fill.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/help.png 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_en.html 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_hu.html 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_ro.html 
-	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_ru.html 
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/add.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/config.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/delete.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/edit.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/fill.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/help.png
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_en.html
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_hu.html
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_ro.html
+	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/qtdbf_ru.html
 	 -$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/save.png
-	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/ 
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/doc/qtDbf/help/
 
 
 install:  install_target install_translations install_help  FORCE

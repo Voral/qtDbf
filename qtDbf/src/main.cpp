@@ -74,25 +74,25 @@ int main(int argc, char *argv[])
     QSettings settings("Hevele-Hegyi-Istvan", "qtDbf");
     QString dbfLocal = settings.value("dbflocal", "en").toString();
 
-    QCoreApplication::setOrganizationName("Hevele-Hegyi-Istvan");
-    QCoreApplication::setOrganizationDomain("hevele.juniorcom.ro");
+    QCoreApplication::setOrganizationName("Voral"); // was Hevele-Hegyi-Istvan
+    QCoreApplication::setOrganizationDomain("va-soft.ru"); // was hevele.juniorcom.ro
     QCoreApplication::setApplicationName("qtDbf");
 
     QTranslator translator;
-	QString dbfDirPath="";
+    QString dbfDirPath="";
 
 #ifdef UNIX
-	dbfDirPath += "/usr/share/qtDbf/lang/qtDbf_";
-	dbfDirPath += dbfLocal;
+    dbfDirPath += "/usr/share/qtDbf/lang/qtDbf_";
+    dbfDirPath += dbfLocal;
 #endif
-	QFileInfo f(dbfLocal+".qm");
-	if (!f.exists())
-	{
-		dbfDirPath = app.applicationDirPath();
-		dbfDirPath += "/lang/qtDbf_";
-		dbfDirPath += dbfLocal;
-	}
-	translator.load(dbfDirPath);
+    QFileInfo f(dbfLocal+".qm");
+    if (!f.exists())
+    {
+        dbfDirPath = app.applicationDirPath();
+        dbfDirPath += "/lang/qtDbf_";
+        dbfDirPath += dbfLocal;
+    }
+    translator.load(dbfDirPath);
     app.installTranslator(&translator);
     QFont dbfFont("Verdana", 10, QFont::Normal);
 
@@ -115,7 +115,7 @@ int main(int argc, char *argv[])
             QSettings settings;
             currentDirectory= settings.value("dbfeditor/currentdir", "./").toString();
 
-			dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf)");
+            dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf)");
             if (dbfFileName.isEmpty())
                 {
                     return 1;
