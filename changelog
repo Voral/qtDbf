@@ -1,0 +1,17 @@
+v.0.9.4
+=======
+en
+* Problem with non-standard characters in the file name resolved
+
+v.0.9.3
+=======
+en
+- Added encoding setting DBF-file
+- Added Russian Language
+- For Linux systems, if the files of Help and translations are not found in the standard path, the application will try to find them in their catalog.
+- Fixed filter in file open dialog
+
+v.0.9.2
+=======
+en
+- Was developed by the first author Istvan Hevele Hegyi

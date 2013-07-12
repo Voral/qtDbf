@@ -1,4 +1,4 @@
-Version:	0.9.3
+Version:	0.9.4
 Name:		qtDbf
 Release:	alt1.M60T.1
 Summary:	A simple DBF viewer and editor
