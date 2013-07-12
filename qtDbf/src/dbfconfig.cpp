@@ -208,138 +208,138 @@ void QConfigAppTab::createInterface()
         romanaRadioButton = new QRadioButton(tr("Romana"),languageGroupBox);
         magyarRadioButton = new QRadioButton(tr("Magyar"),languageGroupBox);
         englishRadioButton = new QRadioButton(tr("English"),languageGroupBox);
-		russianRadioButton = new QRadioButton(tr("Russian"),languageGroupBox);
+        russianRadioButton = new QRadioButton(tr("Russian"),languageGroupBox);
 
         QLabel *romanaLabel = new QLabel(languageGroupBox);
         QLabel *magyarLabel = new QLabel(languageGroupBox);
         QLabel *englishLabel = new QLabel(languageGroupBox);
-		QLabel *russianLabel = new QLabel(languageGroupBox);
+        QLabel *russianLabel = new QLabel(languageGroupBox);
 
         QPixmap romanaSteag;
         QPixmap magyarZaszlo;
         QPixmap englishFlag;
-		QPixmap russianFlag;
+        QPixmap russianFlag;
 
         romanaSteag.load(":images/romana.png");
         magyarZaszlo.load(":images/magyar.png");
         englishFlag.load(":images/english.png");
-		russianFlag.load(":images/russia.png");
+        russianFlag.load(":images/russia.png");
 
         romanaLabel->setPixmap(romanaSteag);
         magyarLabel->setPixmap(magyarZaszlo);
         englishLabel->setPixmap(englishFlag);
-		russianLabel->setPixmap(russianFlag);
+        russianLabel->setPixmap(russianFlag);
 
         if (dbfLocal == "ro")
             {
                 romanaRadioButton->setChecked(true);
                 magyarRadioButton->setChecked(false);
                 englishRadioButton->setChecked(false);
-				russianRadioButton->setChecked(false);
-			}
+                russianRadioButton->setChecked(false);
+            }
 
         if (dbfLocal == "hu")
             {
                 romanaRadioButton->setChecked(false);
                 magyarRadioButton->setChecked(true);
                 englishRadioButton->setChecked(false);
-				russianRadioButton->setChecked(false);
-			}
+                russianRadioButton->setChecked(false);
+            }
 
         if (dbfLocal == "en")
             {
                 romanaRadioButton->setChecked(false);
                 magyarRadioButton->setChecked(false);
                 englishRadioButton->setChecked(true);
-				russianRadioButton->setChecked(false);
-			}
-		if (dbfLocal == "ru")
-			{
-				romanaRadioButton->setChecked(false);
-				magyarRadioButton->setChecked(false);
-				englishRadioButton->setChecked(false);
-				russianRadioButton->setChecked(true);
-			}
+                russianRadioButton->setChecked(false);
+            }
+        if (dbfLocal == "ru")
+            {
+                romanaRadioButton->setChecked(false);
+                magyarRadioButton->setChecked(false);
+                englishRadioButton->setChecked(false);
+                russianRadioButton->setChecked(true);
+            }
 
         QLabel *explicLanguage = new QLabel(tr("Requires application restart"),languageGroupBox);
         explicLanguage->setWordWrap(true);
-		QLabel *codecLabel = new QLabel(tr("Data file codepage"));
+        QLabel *codecLabel = new QLabel(tr("Data file codepage"));
 
         languageLayout->addWidget(romanaRadioButton,0,0);
         languageLayout->addWidget(magyarRadioButton,1,0);
         languageLayout->addWidget(englishRadioButton,2,0);
-		languageLayout->addWidget(russianRadioButton,3,0);
-		languageLayout->addWidget(romanaLabel,0,1);
+        languageLayout->addWidget(russianRadioButton,3,0);
+        languageLayout->addWidget(romanaLabel,0,1);
         languageLayout->addWidget(magyarLabel,1,1);
         languageLayout->addWidget(englishLabel,2,1);
-		languageLayout->addWidget(russianLabel,3,1);
-		codecs = new QComboBox(languageGroupBox);
-		languageLayout->addWidget(codecLabel,4,0);
-		languageLayout->addWidget(codecs,4,1);
-		languageLayout->addWidget(explicLanguage,6,0,1,2);
+        languageLayout->addWidget(russianLabel,3,1);
+        codecs = new QComboBox(languageGroupBox);
+        languageLayout->addWidget(codecLabel,4,0);
+        languageLayout->addWidget(codecs,4,1);
+        languageLayout->addWidget(explicLanguage,6,0,1,2);
 
-		codecs->addItems(QStringList() << "Apple Roman"
-						 << "Big5"
-						 << "Big5-HKSCS"
-						 << "CP949"
-						 << "EUC-JP"
-						 << "EUC-KR"
-						 << "GB18030-0"
-						 << "IBM 850"
-						 << "IBM 866"
-						 << "IBM 874"
-						 << "ISO 2022-JP"
-						 << "ISO 8859-1"
-						 << "ISO 8859-2"
-						 << "ISO 8859-3"
-						 << "ISO 8859-4"
-						 << "ISO 8859-5"
-						 << "ISO 8859-6"
-						 << "ISO 8859-7"
-						 << "ISO 8859-8"
-						 << "ISO 8859-9"
-						 << "ISO 8859-10"
-						 << "ISO 8859-13"
-						 << "ISO 8859-14"
-						 << "ISO 8859-15"
-						 << "ISO 8859-16"
-						 << "Iscii-Bng"
-						 << "Dev"
-						 << "Gjr"
-						 << "Knd"
-						 << "Mlm"
-						 << "Ori"
-						 << "Pnj"
-						 << "Tlg"
-						 << "Tml"
-						 << "JIS X 0201"
-						 << "JIS X 0208"
-						 << "KOI8-R"
-						 << "KOI8-U"
-						 << "MuleLao-1"
-						 << "ROMAN8"
-						 << "Shift-JIS"
-						 << "TIS-620"
-						 << "TSCII"
-						 << "UTF-8"
-						 << "UTF-16"
-						 << "UTF-16BE"
-						 << "UTF-16LE"
-						 << "UTF-32"
-						 << "UTF-32BE"
-						 << "UTF-32LE"
-						 << "Windows-1250"
-						 << "Windows-1251"
-						 << "Windows-1252"
-						 << "Windows-1253"
-						 << "Windows-1254"
-						 << "Windows-1255"
-						 << "Windows-1256"
-						 << "Windows-1257"
-						 << "Windows-1258"
-						 << "WINSAMI2"
-						);
-		codecs->setCurrentIndex(codecs->findText(generalTextCodec));
+        codecs->addItems(QStringList() << "Apple Roman"
+                         << "Big5"
+                         << "Big5-HKSCS"
+                         << "CP949"
+                         << "EUC-JP"
+                         << "EUC-KR"
+                         << "GB18030-0"
+                         << "IBM 850"
+                         << "IBM 866"
+                         << "IBM 874"
+                         << "ISO 2022-JP"
+                         << "ISO 8859-1"
+                         << "ISO 8859-2"
+                         << "ISO 8859-3"
+                         << "ISO 8859-4"
+                         << "ISO 8859-5"
+                         << "ISO 8859-6"
+                         << "ISO 8859-7"
+                         << "ISO 8859-8"
+                         << "ISO 8859-9"
+                         << "ISO 8859-10"
+                         << "ISO 8859-13"
+                         << "ISO 8859-14"
+                         << "ISO 8859-15"
+                         << "ISO 8859-16"
+                         << "Iscii-Bng"
+                         << "Dev"
+                         << "Gjr"
+                         << "Knd"
+                         << "Mlm"
+                         << "Ori"
+                         << "Pnj"
+                         << "Tlg"
+                         << "Tml"
+                         << "JIS X 0201"
+                         << "JIS X 0208"
+                         << "KOI8-R"
+                         << "KOI8-U"
+                         << "MuleLao-1"
+                         << "ROMAN8"
+                         << "Shift-JIS"
+                         << "TIS-620"
+                         << "TSCII"
+                         << "UTF-8"
+                         << "UTF-16"
+                         << "UTF-16BE"
+                         << "UTF-16LE"
+                         << "UTF-32"
+                         << "UTF-32BE"
+                         << "UTF-32LE"
+                         << "Windows-1250"
+                         << "Windows-1251"
+                         << "Windows-1252"
+                         << "Windows-1253"
+                         << "Windows-1254"
+                         << "Windows-1255"
+                         << "Windows-1256"
+                         << "Windows-1257"
+                         << "Windows-1258"
+                         << "WINSAMI2"
+                        );
+        codecs->setCurrentIndex(codecs->findText(generalTextCodec));
 
         mainLayout->addWidget(languageGroupBox);
 
@@ -356,9 +356,9 @@ void QConfigAppTab::saveEditedData()
         dbfLocal="hu";
     if (englishRadioButton->isChecked())
         dbfLocal="en";
-	if (russianRadioButton->isChecked())
-		dbfLocal="ru";
-	generalTextCodec = codecs->currentText();
+    if (russianRadioButton->isChecked())
+        dbfLocal="ru";
+    generalTextCodec = codecs->currentText();
     settings.setValue("dbflocal", dbfLocal);
 }
 
@@ -382,13 +382,13 @@ void QIconSizeTab::createInterface()
     QSize toolButtonSize = settings.value("toolbuttonsize", QSize(37,37)).toSize();
 
     toolButtonSpinBox = new QSpinBox(this);
-    toolButtonSpinBox->setMinimum(30);
+    toolButtonSpinBox->setMinimum(16);
     toolButtonSpinBox->setMaximum(100);
     toolButtonSpinBox->setValue(toolButtonSize.width());
 
     toolButtonSlider = new QSlider(this);
     toolButtonSlider->setOrientation(Qt::Horizontal);
-    toolButtonSlider->setMinimum(30);
+    toolButtonSlider->setMinimum(16);
     toolButtonSlider->setMaximum(100);
     toolButtonSlider->setValue(toolButtonSize.width());
 
@@ -494,7 +494,7 @@ QDbfFieldColorsTab::QDbfFieldColorsTab(QWidget *parent)
 
 void QDbfFieldColorsTab::createInterface()
 {
-	//QFont font;
+    //QFont font;
     QHBoxLayout *mainLayout;
 
     QGroupBox *colorButtonGroupBox = new QGroupBox(tr("Double click on the name to change color"),this);
