@@ -1,3 +1,4 @@
+TARGET = qtdbf
 TEMPLATE = app
 CONFIG += qt \
     warn_on
