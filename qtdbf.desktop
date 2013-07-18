@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.11
+Name=qtDbf
+Comment=A simple DBF viewer and editor
+Comment[ru]=Простой просмотрщик и редактор DBF
+Comment[uk]=Простий переглядач та редактор DBF
+GenericName=A DBF viewer and editor
+GenericName[ru]=Просмотрщик и редактор DBF
+GenericName[uk]=Переглядач та редактор DBF
+Exec=qtdbf %f
+Icon=qtdbf
+Terminal=false
+Type=Application
+Categories=Qt;Office;Database;
+MimeType=application/x-dbf;
