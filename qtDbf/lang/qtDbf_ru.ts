@@ -264,7 +264,7 @@
     <message>
         <location filename="../src/dbfeditor.cpp" line="174"/>
         <source>Configure</source>
-        <translation>Насройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../src/dbfeditor.cpp" line="178"/>

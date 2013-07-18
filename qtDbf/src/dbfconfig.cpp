@@ -197,7 +197,7 @@ void QConfigAppTab::createInterface()
         QSettings settings;
 
 
-        QString dbfLocal = settings.value("dbflocal", "ro").toString();
+        QString dbfLocal = settings.value("dbflocal", "en").toString();
 
         QVBoxLayout *mainLayout = new QVBoxLayout(this);
 

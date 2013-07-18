@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
 
-    QSettings settings("Hevele-Hegyi-Istvan", "qtDbf");
+    QSettings settings("Voral", "qtDbf");
     QString dbfLocal = settings.value("dbflocal", "en").toString();
 
     QCoreApplication::setOrganizationName("Voral"); // was Hevele-Hegyi-Istvan
