@@ -59,8 +59,6 @@ void QDetaliiTabDialog::saveConfiguration()
     QString settingsType;
     QString stringValue;
     bool okInt;
-    int i;
-
     for (j = settingsKeys.begin(); j != settingsKeys.end(); ++j)
         {
           settingsValue = settings.value(*j);
@@ -69,7 +67,7 @@ void QDetaliiTabDialog::saveConfiguration()
             {
               stringValue = settingsValue.toString();
 
-              i = stringValue.toInt(&okInt, 10);
+              stringValue.toInt(&okInt, 10);
 
               if (okInt)
                   {

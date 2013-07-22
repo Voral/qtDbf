@@ -50,7 +50,7 @@ public slots:
 protected:
      void focusOutEvent(QFocusEvent *event);
      void keyPressEvent(QKeyEvent *);
-     virtual void mouseDoubleClickEvent(QMouseEvent *event);
+     virtual void mouseDoubleClickEvent(QMouseEvent *);
 };
 
 class QNoEmptyLineEdit : public QDbfLineEdit
@@ -201,7 +201,7 @@ signals:
     void changeColor();
 
 protected:
-    virtual void mouseDoubleClickEvent(QMouseEvent *event);
+    virtual void mouseDoubleClickEvent(QMouseEvent *);
 
 };
 

@@ -97,7 +97,7 @@ int QDbfLineEdit::valid()
      return 1;
 }
 
-void QDbfLineEdit::mouseDoubleClickEvent(QMouseEvent *event)
+void QDbfLineEdit::mouseDoubleClickEvent(QMouseEvent */*event*/)
 {
     searchItem();
 }
@@ -469,7 +469,7 @@ QFieldColorLabel::QFieldColorLabel(QWidget *parent) :
     setFont(font);
 }
 
-void QFieldColorLabel::mouseDoubleClickEvent(QMouseEvent *event)
+void QFieldColorLabel::mouseDoubleClickEvent(QMouseEvent */*event*/)
 {
     emit changeColor();
 }

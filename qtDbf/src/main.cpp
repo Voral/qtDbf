@@ -22,6 +22,8 @@
 #/*                                                                              */
 #/********************************************************************************/
 
+// TODO: Total refactoring !!!
+
 #include <QtGui>
 #include <QtSvg>
 #include <QtSql>
