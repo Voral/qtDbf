@@ -69,9 +69,9 @@ QMAKE_EXTRA_COMPILERS += updateqm
 # install
 unix {
     target.path = /usr/bin
-    translations.files = lang/*.qm
+    translations.files = src/bin/lang/*.qm
     translations.path = /usr/share/qtdbf/lang
-    help.files = help/*
+    help.files = src/help/*
     help.path = /usr/share/doc/qtdbf/help
 }
 win32 {
