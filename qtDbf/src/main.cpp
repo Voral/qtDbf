@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
     }
 
     QString dbfFileName;
-    dbfFileName +=app.arguments().at(1);
+    if (app.arguments().count()>1) dbfFileName +=app.arguments().at(1);
 
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
 

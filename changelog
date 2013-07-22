@@ -1,3 +1,8 @@
+v.0.9.6
+=======
+en
+* Fixed bug with non-English characters in the DBF file name
+
 v.0.9.5
 =======
 en
