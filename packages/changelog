@@ -1,0 +1,31 @@
+qtdbf (0.9.6-1) testing; urgency=low
+
+
+  * Fixed bug with non-English characters in the DBF file name
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Mon, 22 Jul 2013 13:00:00 +0300
+
+qtdbf (0.9.5-1) testing; urgency=low
+
+
+  * Bug with 'The loss of settings' is closed
+  * Fixed a typo in Russian translation
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Thu, 18 Jul 2013 12:23:00 +0300
+
+qtdbf (0.9.4-1) testing; urgency=low
+
+
+  * Problem with non-standard characters in the file name resolved
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Fri, 12 Jul 2013 15:00:00 +0300
+
+qtdbf (0.9.3-1) testing; urgency=low
+
+
+  * Added encoding setting DBF-file
+  * Added Russian Language
+  * For Linux systems, if the files of Help and translations are not found in the standard path, the application will try to find them in their catalog.
+  * Fixed filter in file open dialog
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Thu, 25 Jan 2011 18:00:00 +0300

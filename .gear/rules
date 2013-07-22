@@ -1,2 +1,0 @@
-copy: *.desktop
-tar.gz: qtDbf name=137863-qtDbf-@version@ base=qtDbf-@version@

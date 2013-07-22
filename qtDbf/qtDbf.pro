@@ -45,23 +45,24 @@ SOURCES += src/dbfeditor.cpp \
     src/customsqlmodel.cpp \
     src/dbfconfig.cpp \
     src/saveconfig.cpp
-RESOURCES += qtDbf.qrc
+RESOURCES += src/res/qtDbf.qrc
 QT += sql \
     svg
 OBJECTS_DIR += ./.obj
 MOC_DIR += ./.moc
 RCC_DIR += ./.rcc
 
-win32:RC_FILE = qtDbf.rc
+win32:RC_FILE = src/res/qtDbf.rc
 
-TRANSLATIONS = lang/qtDbf_en.ts \
-    lang/qtDbf_hu.ts \
-    lang/qtDbf_ru.ts \
-    lang/qtDbf_ro.ts
+TRANSLATIONS = src/lang/qtDbf_en.ts \
+    src/lang/qtDbf_hu.ts \
+    src/lang/qtDbf_ru.ts \
+    src/lang/qtDbf_ro.ts
 
 updateqm.input = TRANSLATIONS
-updateqm.output = *.qm
-updateqm.commands = lrelease qtDbf.pro && $(MOVE) lang/*.qm ${DESTDIR}/lang/
+updateqm.output = ${QMAKE_FILE_BASE}.qm
+updateqm.commands = lrelease -silent qtDbf.pro && $(MOVE) src/lang/*.qm ${DESTDIR}lang/
+
 updateqm.CONFIG += no_link target_predeps
 
 QMAKE_EXTRA_COMPILERS += updateqm
@@ -69,9 +70,9 @@ QMAKE_EXTRA_COMPILERS += updateqm
 # install
 unix {
     target.path = /usr/bin
-    translations.files = lang/*.qm
+    translations.files = src/lang/*.qm
     translations.path = /usr/share/qtdbf/lang
-    help.files = help/*
+    help.files = src/help/*
     help.path = /usr/share/doc/qtdbf/help
 }
 win32 {
