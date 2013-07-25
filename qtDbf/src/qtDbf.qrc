@@ -20,7 +20,6 @@
         <file>images/help.svg</file>
         <file>images/structure.svg</file>
         <file>images/qt.png</file>
-        <file>images/calc.svg</file>
         <file>help/add.png</file>
         <file>help/config.png</file>
         <file>help/delete.png</file>
@@ -30,5 +29,7 @@
         <file>help/save.png</file>
         <file>images/colors.svg</file>
         <file>images/russia.png</file>
+        <file>images/calc.svg</file>
+        <file>images/document_open.png</file>
     </qresource>
 </RCC>

@@ -1,18 +1,37 @@
+v.0.9.7
+=======
+en:
+  * "Open file" button has been added
+  * The locale is automatically determined unless explicitly specified in the settings
+  * File encoding of Russian help fix
+ru:
+  + Добавлена кнопка "Открыть файл"
+  + Автоматическое определение локали если не задана явно в настройках
+  * Исправлена кодировка файла справки на русском
+
 v.0.9.6
 =======
-en
+en:
 * Fixed bug with non-English characters in the DBF file name
+ru:
+* Испавлена проблема с нестандартными символами в названии DBF файла при запуске из командной строки
+
 
 v.0.9.5
 =======
 en
 * Bug with 'The loss of settings' is closed
 * Fixed a typo in Russian translation
+ru:
+* Исправлен баг с потерей сохраненных настроек
+* Исправлена опечатка в русском интерфейсе
 
 v.0.9.4
 =======
 en
 * Problem with non-standard characters in the file name resolved
+ru:
+* Испавлена проблема с не стандартными символами в названии DBF файла
 
 v.0.9.3
 =======
@@ -21,8 +40,15 @@ en
 - Added Russian Language
 - For Linux systems, if the files of Help and translations are not found in the standard path, the application will try to find them in their catalog.
 - Fixed filter in file open dialog
+ru:
+- Добавлена настройка коировки DBF-файла
+- Добавлен русский язык интерфейса
+- Для Linux систем если файлы справки и переводов не найдены по стандартному пути, они ищутся в каталоге приложения.
+- Исправлены фильтры в диалогх открытия файлов
 
 v.0.9.2
 =======
 en
 - Was developed by the first author Istvan Hevele Hegyi
+ru:
+- До данной версии приложение разрабатывалось другим автором

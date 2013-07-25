@@ -51,8 +51,8 @@ int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
 
-    QSettings settings("Voral", "qtDbf");
-    QString dbfLocal = settings.value("dbflocal", "en").toString();
+    QSettings settings("voral", "qtDbf");
+    QString dbfLocal = settings.value("dbflocal", QLocale::system().name().left(2)).toString();
 
     QCoreApplication::setOrganizationName("Voral"); // was Hevele-Hegyi-Istvan
     QCoreApplication::setOrganizationDomain("va-soft.ru"); // was hevele.juniorcom.ro
@@ -61,20 +61,35 @@ int main(int argc, char *argv[])
     QTranslator translator;
     QString dbfDirPath="";
 
-#ifdef UNIX
-    dbfDirPath += "/usr/share/qtdbf/lang/qtDbf_";
-    dbfDirPath += dbfLocal;
-#endif
-
-    QFileInfo f(dbfDirPath+".qm");
-    if (!f.exists())
+#ifdef Q_OS_UNIX
+    if (QFile::exists("/usr/local/share/qtdbf/"))
     {
-        dbfDirPath = app.applicationDirPath();
-        dbfDirPath += "/lang/qtDbf_";
-        dbfDirPath += dbfLocal;
+        dbfDirPath = "/usr/local/share/qtdbf/";
     }
-    translator.load(dbfDirPath);
-    app.installTranslator(&translator);
+    else
+    {
+        if (QFile::exists("/usr/share/qtdbf/"))
+        {
+            dbfDirPath = "/usr/share/qtdbf/";
+        }
+        else
+        {
+            dbfDirPath = app.applicationDirPath();
+        }
+    }
+#else
+    dbfDirPath = app.applicationDirPath();
+#endif
+    dbfDirPath += "/lang/qtDbf_";
+    dbfDirPath += dbfLocal;
+    dbfDirPath += ".qm";
+
+    QFileInfo f(dbfDirPath);
+    if (f.exists())
+    {
+        translator.load(dbfDirPath);
+        app.installTranslator(&translator);
+    }
     QFont dbfFont("Verdana", 10, QFont::Normal);
 
     QApplication::setFont(dbfFont);

@@ -47,6 +47,7 @@ QDetaliiTabDialog::QDetaliiTabDialog(QString &tableName, QWidget *parent)
     : QDialog(parent)
 {
     QSettings settings;
+
     QSize size = settings.value("dbfdetalii/Size", QSize(870, 480)).toSize();
     resize(size);
     int  currentTab = settings.value("dbfdetalii/currenttab", 1).toInt();
@@ -175,7 +176,7 @@ void QConfigAppTab::createInterface()
         QSettings settings;
 
 
-        QString dbfLocal = settings.value("dbflocal", "en").toString();
+        QString dbfLocal = settings.value("dbflocal", QLocale::system().name().left(2)).toString();
 
         QVBoxLayout *mainLayout = new QVBoxLayout(this);
 

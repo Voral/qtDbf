@@ -51,6 +51,7 @@ public slots:
     void setToolButtonIconSize(int);
 
 private slots:
+    void openNewFile();
     void openDbfFile();
     void editRecord();
     void insertRecord();
@@ -77,6 +78,7 @@ private:
     void readDbtFile(int);
     void readFptFile(int);
     void readDbt4File(int);
+    void openFile(QString &a_dbfFileName, bool fresh);
 
     quint32 numberOfRecords;
     quint16 headerLength;
@@ -99,6 +101,7 @@ private:
     void writeSettings();
 
     QToolButton *editButton;
+    QToolButton *openButton;
     QToolButton *insertButton;
     QToolButton *deleteButton;
     QToolButton *fillButton;
@@ -120,6 +123,7 @@ private:
     QAction *helpAction;
     QAction *calcAction;
     QAction *quitAction;
+    QAction *openAction;
 
     QSize editDialogSize;
 

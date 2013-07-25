@@ -49,7 +49,6 @@ MainWindow::MainWindow(QString dbfFileName)
     memo4FieldColorString = settings.value("memo4FieldColor","009696").toString();
     generalFieldColorString = settings.value("generalFieldColor","000000").toString();
     generalTextCodec =  settings.value("generalTextCodec","Windows-1251").toString();
-
     mainWindow = this;
 
     QString windowTitle = "DBF Viewer - ";

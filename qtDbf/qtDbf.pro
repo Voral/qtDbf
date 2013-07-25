@@ -45,42 +45,66 @@ SOURCES += src/dbfeditor.cpp \
     src/customsqlmodel.cpp \
     src/dbfconfig.cpp \
     src/saveconfig.cpp
-RESOURCES += qtDbf.qrc
+RESOURCES += src/qtDbf.qrc
 QT += sql \
     svg
 OBJECTS_DIR += ./.obj
 MOC_DIR += ./.moc
 RCC_DIR += ./.rcc
 
-win32:RC_FILE = qtDbf.rc
+win32:RC_FILE = src/qtDbf.rc
 
-TRANSLATIONS = lang/qtDbf_en.ts \
-    lang/qtDbf_hu.ts \
-    lang/qtDbf_ru.ts \
-    lang/qtDbf_ro.ts
+TRANSLATIONS = src/lang/qtDbf_en.ts \
+    src/lang/qtDbf_hu.ts \
+    src/lang/qtDbf_ru.ts \
+    src/lang/qtDbf_ro.ts
 
+defineReplace(outname) {
+  $(MKDIR) $${DESTDIR}/lang
+  return($$1)
+}
+
+updateqm.name = Lang files compiler
 updateqm.input = TRANSLATIONS
-updateqm.output = *.qm
-updateqm.commands = lrelease qtDbf.pro && $(MOVE) lang/*.qm ${DESTDIR}/lang/
-updateqm.CONFIG += no_link target_predeps
+updateqm.output = $${DESTDIR}/lang/${QMAKE_FILE_BASE}.qm
+updateqm.commands = lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+updateqm.output_function = outname
 
+updateqm.CONFIG += no_link target_predeps
 QMAKE_EXTRA_COMPILERS += updateqm
 
 # install
+INSTALLS += target
+
 unix {
-    target.path = /usr/bin
-    translations.files = src/bin/lang/*.qm
-    translations.path = /usr/share/qtdbf/lang
-    help.files = src/help/*
-    help.path = /usr/share/doc/qtdbf/help
+    INSTALLS += help \
+       lang \
+       icon \
+       desktop
+    isEmpty(PREFIX)
+    {
+      PREFIX=/usr
+    }
+    target.path = $$PREFIX/bin
+    lang.files = $$DESTDIR/lang/*.qm
+    lang.path = $$PREFIX/share/qtdbf/lang
+    help.files = src/help/*.html
+    help.path = $$PREFIX/share/doc/qtdbf/help
+    icon.files = src/images/qtdbf.svg
+    icon.path = $$PREFIX/share/pixmaps
+    desktop.files = other/qtdbf.desktop
+    desktop.path = $$PREFIX/share/applications
 }
 win32 {
-    target.path = "c:/Program Files/qtDbf"
-    translations.path = "c:/Program Files/qtDbf/lang"
-    translations.files = *.qm
-    help.path = "c:/Program Files/qtDbf/help"
-    help.files = help/*.*
+    isEmpty(PREFIX)
+    {
+       PREFIX=c:\\Program Files\\qtDbf
+    }
+    target.path = $$quote(\"$$PREFIX\")
+    target.depends += copy_lang copy_help
+    copy_lang.target = copy_lang
+    copy_lang.commands = xcopy /I /Y \"$$DESTDIR\\lang\\*.qm\" \"$$PREFIX\\lang\\\"
+    copy_help.target = copy_help
+    copy_help.commands = xcopy /I /Y \"$$DESTDIR\\help\\*.html\" \"$$PREFIX\\help\\\"
+    QMAKE_EXTRA_TARGETS += copy_lang copy_help
 }
-INSTALLS += target \
-    translations \
-    help

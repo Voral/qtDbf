@@ -1,0 +1,11 @@
+Package: qtdbf
+Maintainer: Alexander Vorobyev <mvoral@mail.ru>
+Section: editors 
+Priority: optional
+Description: DBF editor and viewer. Просмотр и редактирование DBF файлов.
+ A simple DBF viewer and editor. Can be set as default dbf viewer.
+ Supports XBase, dBase III, IV, FoxPro 2.x, Visual Foxpro files. 
+ Небольшая программа для просмотра и редактирования DBF файлов.
+ Поддерживает XBase, dBase III, IV, FoxPro 2.x, Visual FoxPro файлы.
+Depends: libqt4-core (>=4.1.0-1), libqt4-gui (>=4.1.0-1), libc6 (>=2.3), libqt4-sql-sqlite
+
