@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     QSettings settings("voral", "qtDbf");
     QString dbfLocal = settings.value("dbflocal", QLocale::system().name().left(2)).toString();
 
-    QCoreApplication::setOrganizationName("Voral"); // was Hevele-Hegyi-Istvan
+    QCoreApplication::setOrganizationName("voral"); // was Hevele-Hegyi-Istvan
     QCoreApplication::setOrganizationDomain("va-soft.ru"); // was hevele.juniorcom.ro
     QCoreApplication::setApplicationName("qtDbf");
 
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 #else
     dbfDirPath = app.applicationDirPath();
 #endif
-    dbfDirPath += "/lang/qtDbf_";
+    dbfDirPath += "/lang/qtdbf_";
     dbfDirPath += dbfLocal;
     dbfDirPath += ".qm";
 
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
         db.open();
         if (db.lastError().isValid())
            {
-            QMessageBox::critical(0, "Eroare", db.lastError().text());
+            QMessageBox::critical(0, QObject::tr("Error"), db.lastError().text());
            }
     }
 

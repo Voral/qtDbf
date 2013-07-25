@@ -25,7 +25,7 @@
 TARGET = qtdbf
 TEMPLATE = app
 DESTDIR = bin
-
+CONFIG += debug_and_release
 CONFIG += qt \
     warn_on
 unix:DEFINES += UNIX
@@ -55,9 +55,9 @@ RCC_DIR += ./.rcc
 win32:RC_FILE = src/qtDbf.rc
 
 TRANSLATIONS = src/lang/qtDbf_en.ts \
-    src/lang/qtDbf_hu.ts \
-    src/lang/qtDbf_ru.ts \
-    src/lang/qtDbf_ro.ts
+    src/lang/qtdbf_hu.ts \
+    src/lang/qtdbf_ru.ts \
+    src/lang/qtdbf_ro.ts
 
 defineReplace(outname) {
   $(MKDIR) $${DESTDIR}/lang
@@ -67,7 +67,7 @@ defineReplace(outname) {
 updateqm.name = Lang files compiler
 updateqm.input = TRANSLATIONS
 updateqm.output = $${DESTDIR}/lang/${QMAKE_FILE_BASE}.qm
-updateqm.commands = lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+updateqm.commands = $$[QT_INSTALL_PREFIX]/bin/lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
 updateqm.output_function = outname
 
 updateqm.CONFIG += no_link target_predeps
@@ -80,18 +80,38 @@ unix {
     INSTALLS += help \
        lang \
        icon \
+       icon128 \
+       icon16 \
+       icon32 \
+       icon48 \
        desktop
     isEmpty(PREFIX)
     {
       PREFIX=/usr
     }
     target.path = $$PREFIX/bin
-    lang.files = $$DESTDIR/lang/*.qm
+
+    lang.files = bin/lang/*.qm
     lang.path = $$PREFIX/share/qtdbf/lang
+
     help.files = src/help/*.html
-    help.path = $$PREFIX/share/doc/qtdbf/help
+    help.path = $$PREFIX/share/qtdbf/help
+
     icon.files = src/images/qtdbf.svg
-    icon.path = $$PREFIX/share/pixmaps
+    icon.path = $$PREFIX/share/icons/hicolor/scalable/apps
+
+    icon128.files = src/images/qtdbf.png
+    icon128.path = $$PREFIX/share/icons/hicolor/128x128/apps
+
+    icon16.files = src/images/qtdbf.png
+    icon16.path = $$PREFIX/share/icons/hicolor/16x16/apps
+
+    icon32.files = src/images/qtdbf.png
+    icon32.path = $$PREFIX/share/icons/hicolor/32x32/apps
+
+    icon48.files = src/images/qtdbf.png
+    icon48.path = $$PREFIX/share/icons/hicolor/48x48/apps
+
     desktop.files = other/qtdbf.desktop
     desktop.path = $$PREFIX/share/applications
 }

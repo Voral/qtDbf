@@ -1,3 +1,9 @@
+qtdbf (0.9.8-1) testing; urgency=low
+
+  * Minor changes have been made to conform freedesktop.org
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Fri, 27 Jul 2013 02:53:00 +0300
+
 qtdbf (0.9.7-1) testing; urgency=low
 
   * "Open file" button has been added

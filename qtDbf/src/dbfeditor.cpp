@@ -2099,15 +2099,15 @@ void QDbfEditor::helpDbf()
     QString dbfDirPath;
 /**/
 #ifdef Q_OS_UNIX
-    if (QFile::exists("/usr/local/share/doc/qtdbf/help"))
+    if (QFile::exists("/usr/local/share/qtdbf/help"))
     {
-        dbfDirPath = "/usr/local/share/doc/qtdbf/help";
+        dbfDirPath = "/usr/local/share/qtdbf/help";
     }
     else
     {
-        if (QFile::exists("/usr/share/doc/qtdbf/help"))
+        if (QFile::exists("/usr/share/qtdbf/help"))
         {
-            dbfDirPath = "/usr/share/doc/qtdbf/help";
+            dbfDirPath = "/usr/share/qtdbf/help";
         }
         else
         {
@@ -2178,7 +2178,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this, tr("qtDbf 0.9.7"), explic);
+   QMessageBox::about(this, tr("qtDbf 0.9.8"), explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)
