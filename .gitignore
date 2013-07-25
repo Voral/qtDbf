@@ -9,8 +9,8 @@ moc_*.cpp
 qrc_*.cpp
 *.qm
 Makefile
-qtDbf/qtdbf.pro.user
-qtDbf/qtdbf.pro.user.*
+qtDbf.pro.user
+qtDbf.pro.user.*
 qtDbf/src/*.*.autosave
 qtDbf/bin/*
 packages/qtdbf/DEBIAN/md5sums

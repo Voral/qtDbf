@@ -1,3 +1,11 @@
+qtdbf (0.9.7-1) testing; urgency=low
+
+  * "Open file" button has been added
+  * The locale is automatically determined unless explicitly specified in the settings
+  * File encoding of Russian help fix
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Wed, 24 Jul 2013 09:00:00 +0300
+
 qtdbf (0.9.6-1) testing; urgency=low
 
 

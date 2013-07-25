@@ -1,0 +1,12 @@
+To install this package make the following:
+1) qmake
+2) make
+3) make install
+
+For Windows users:
+You need to copy libraries into install directory or any directory available in PATH
+
+Linux users:
+Default install path is /usr/. For other install patch please execute make this key. For example:
+qmake PREFIX=/usr/local
+And edit file other/qtdbf.desktop

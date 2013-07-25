@@ -1,6 +1,6 @@
 Package: qtdbf
 Maintainer: Alexander Vorobyev <mvoral@mail.ru>
-Section: Editors
+Section: editors 
 Priority: optional
 Description: DBF editor and viewer. Просмотр и редактирование DBF файлов.
  A simple DBF viewer and editor. Can be set as default dbf viewer.

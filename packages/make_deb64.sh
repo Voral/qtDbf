@@ -1,11 +1,15 @@
 #!/bin/sh
 #gzip -9
-VERSION="0.9.6"
+VERSION="0.9.7"
 VERSIONPKG="1"
 PLATFORM="amd64"
 ARCH=64
 PKGNAME=qtdbf
 
+cd ../qtDbf/
+./makeLinNativ.sh
+./clean.sh
+cd ../packages/
 ./copyfiles.sh
 
 DEBNAME=${PKGNAME}_${VERSION}-${VERSIONPKG}_$PLATFORM.deb

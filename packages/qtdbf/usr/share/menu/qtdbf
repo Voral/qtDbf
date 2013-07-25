@@ -1,4 +1,4 @@
-?package(qtdbf):needs="x11" section="Applications/Database" \
+?package(qtdbf):needs="x11" section="Applications/Office" \
         title="qtDbf" \
         longtitle="DBF editor and viewer" \
         icon="/usr/share/pixmaps/qtdbf.xpm" \

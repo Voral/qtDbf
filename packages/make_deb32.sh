@@ -1,20 +1,22 @@
 #!/bin/sh
 #gzip -9
-VERSION="1.5"
+VERSION="0.9.7"
 VERSIONPKG="1"
 PLATFORM="i386"
-ARCH=32
-PKGNAME=protimer
+ARCH=64
+PKGNAME=qtdbf
 
-SRCDIR=../bin$ARCH
+cd ../qtDbf/
+./makeLin32on64.sh
+./clean.sh
+cd ../packages/
+./copyfiles.sh
+
 DEBNAME=${PKGNAME}_${VERSION}-${VERSIONPKG}_$PLATFORM.deb
 
 SIZE=`du $PKGNAME --exclude=DEBIAN -s | sed -rn "s/^([0-9]+).*/\1/gp"`
 
-gzip -9 -c changelog > protimer/usr/share/doc/protimer/changelog.gz
-rm $PKGNAME/usr/bin/*
-cp $SRCDIR/* $PKGNAME/usr/bin/
-chmod 0755 $PKGNAME/usr/bin/*
+gzip -9 -c changelog > qtdbf/usr/share/qtdbf/changelog.gz
 
 strip --strip-unneeded $PKGNAME/usr/bin/*
 
@@ -28,10 +30,9 @@ cd ..
 fakeroot dpkg-deb --build $PKGNAME
 mv $PKGNAME.deb $DEBNAME
 lintian $DEBNAME
-alien --to-rpm --scripts ./$DEBNAME
-alien --to-tgz --scripts ./$DEBNAME
-                                                                             
-mv $PKGNAME-$VERSION.tgz ../distr/$PKGNAME-$VERSION-$PLATFORM-$VERSIONPKG.tgz
+#alien --to-rpm --scripts ./$DEBNAME
+#alien --to-tgz --scripts ./$DEBNAME
+#gzip -c -9 install/* >> $PKGNAME-$VERSION.tgz
+#mv $PKGNAME-$VERSION.tgz ../distr/$PKGNAME-$VERSION-$PLATFORM-$VERSIONPKG.tgz
 mv $DEBNAME ../distr/$DEBNAME
-mv *386.rpm ../distr/
-
+#mv *64.rpm ../distr/
