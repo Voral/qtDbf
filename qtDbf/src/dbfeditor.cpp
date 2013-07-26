@@ -357,7 +357,7 @@ void QDbfEditor::editRecord()
 
             //0xF5   FoxPro 2.x (or earlier) with memo
             if (dbfFileHeader[0] == '\xF5')
-                readFptFile(editValue.toInt(&ok,10));
+                (editValue.toInt(&ok,10));
             /*
             0x30   Visual FoxPro
             0x31   Visual FoxPro, autoincrement enabled

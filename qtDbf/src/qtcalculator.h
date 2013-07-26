@@ -84,6 +84,7 @@ private slots:
     void qtCalcComma();
     void qtCalcBraceOpen();
     void qtCalcBraceClose();
+    void qtCalcPercent();
 
 private:
     QGroupBox *editareGroupBox;

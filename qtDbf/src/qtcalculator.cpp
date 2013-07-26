@@ -177,6 +177,9 @@ QCalculatorDialog::QCalculatorDialog(const QString &title, QWidget *parent)
     connect(braceCloseAction, SIGNAL(triggered()), this, SLOT(qtCalcBraceClose()));
     addAction(braceCloseAction);
 
+    QAction *percentAction = new QAction(tr("%"),this);
+    connect(percentAction, SIGNAL(triggered()), this, SLOT(qtCalcPercent()));
+    addAction(percentAction);
 
     QToolButton *num1 = new QCalculatorToolButton(buttonsGroupBox);
     num1->setDefaultAction(num1Action);
@@ -214,6 +217,8 @@ QCalculatorDialog::QCalculatorDialog(const QString &title, QWidget *parent)
     braceOpenButton->setDefaultAction(braceOpenAction);
     QToolButton *braceCloseButton = new QCalculatorToolButton(buttonsGroupBox);
     braceCloseButton->setDefaultAction(braceCloseAction);
+    QToolButton *percentButton = new QCalculatorToolButton(buttonsGroupBox);
+    percentButton->setDefaultAction(percentAction);
 
     toolButtonsLayout->addWidget(num7, 0, 0);
     toolButtonsLayout->addWidget(num8, 0, 1);
@@ -237,7 +242,10 @@ QCalculatorDialog::QCalculatorDialog(const QString &title, QWidget *parent)
 
     toolButtonsLayout->addWidget(braceOpenButton, 5, 0);
     toolButtonsLayout->addWidget(braceCloseButton, 5, 1);
-    toolButtonsLayout->addWidget(clearButton, 5, 2);
+    toolButtonsLayout->addWidget(percentButton, 5, 2);
+
+    toolButtonsLayout->addWidget(clearButton, 6, 1);
+
 
     svgLayout->addWidget(buttonsGroupBox);
     svgLayout->addStretch(1);
@@ -338,8 +346,13 @@ double QCalculatorDialog::eval()
 double QCalculatorDialog::termen()
 {
     double r = factor();
-    while ((formula.data()[p] == '*') || (formula.data()[p] == '/'))
+    while ((formula.data()[p] == '*') || (formula.data()[p] == '/') || (formula.data()[p] == '%'))
         {
+        if (formula.data()[p] == '%')
+            {
+                ++p;
+                r = r / 100 * factor();
+            }
             if (formula.data()[p] == '*')
                 {
                     ++p;
@@ -475,6 +488,11 @@ void QCalculatorDialog::qtCalcComma()
 void QCalculatorDialog::qtCalcBraceOpen()
 {
     formulaEdit->insertPlainText("(");
+}
+
+void QCalculatorDialog::qtCalcPercent()
+{
+    formulaEdit->insertPlainText("%");
 }
 
 void QCalculatorDialog::qtCalcBraceClose()
