@@ -83,6 +83,7 @@ unix {
        icon16 \
        icon32 \
        icon48 \
+       icon64 \
        desktop
     isEmpty(PREFIX)
     {
@@ -103,14 +104,17 @@ unix {
     icon128.files = src/images/qtdbf.png
     icon128.path = $$PREFIX/share/icons/hicolor/128x128/apps
 
-    icon16.files = src/images/qtdbf.png
+    icon16.files = src/images/16/qtdbf.png
     icon16.path = $$PREFIX/share/icons/hicolor/16x16/apps
 
-    icon32.files = src/images/qtdbf.png
+    icon32.files = src/images/32/qtdbf.png
     icon32.path = $$PREFIX/share/icons/hicolor/32x32/apps
 
-    icon48.files = src/images/qtdbf.png
+    icon48.files = src/images/48/qtdbf.png
     icon48.path = $$PREFIX/share/icons/hicolor/48x48/apps
+
+    icon64.files = src/images/64/qtdbf.png
+    icon64.path = $$PREFIX/share/icons/hicolor/64x64/apps
 
     desktop.files = other/qtdbf.desktop
     desktop.path = $$PREFIX/share/applications

@@ -38,7 +38,6 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     modified = false;
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
     view = new QDbfTableView(this);
-
     openFile(a_dbfFileName,false);
 
     openAction = new QAction(QIcon(":images/document_open.png"),tr("Open - O"), this);
@@ -191,7 +190,7 @@ void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
     query += ",";
     for (i=0;i<fieldsCollection.count();i++)
         {
-            query += fieldsCollection.at(i)->fieldName;
+        query += ("`"+fieldsCollection.at(i)->fieldName+"`");
             if (i<fieldsCollection.count()-1)
                 query += ",";
         }
@@ -307,7 +306,8 @@ void QDbfEditor::editRecord()
     QByteArray editByteArray;
 
     query = "SELECT ";
-    query += fieldsCollection.at(c-1)->fieldName;
+    query += ("`"+fieldsCollection.at(c-1)->fieldName+"`");
+
     query += " FROM ";
     query += tableName;
     query += " WHERE id_";
@@ -576,7 +576,7 @@ void QDbfEditor::editRecord()
                 query = "UPDATE ";
                 query += tableName;
                 query += " SET ";
-                query += fieldsCollection.at(c-1)->fieldName;
+                query += ("`"+fieldsCollection.at(c-1)->fieldName+"`");
                 query += "='";
                 if ((fieldsCollection.at(c-1)->fieldType == "N") || ((fieldsCollection.at(c-1)->fieldType == "F")))
                     {
@@ -716,7 +716,7 @@ void QDbfEditor::insertRecord()
     query += " (";
     for (j=0; j<fieldsCollection.count(); ++j)
         {
-            query += fieldsCollection.at(j)->fieldName;
+        query += ("`"+fieldsCollection.at(j)->fieldName+"`");
             if (j<fieldsCollection.count()-1)
                 query += ",";
         }
@@ -1003,6 +1003,7 @@ void QDbfEditor::openDbfFile()
     tableName = "d_table";
     strTableName = "s_table";
     file.setFileName(dbfFileName);
+
     if (!file.open(QIODevice::ReadOnly))
         {
             QMessageBox::critical(this, tr("Error1"), tr("DBF open error"));
@@ -1068,6 +1069,8 @@ void QDbfEditor::openDbfFile()
             fieldsItem->fieldSize = e;
             fieldsItem->fieldDecimals = f;
             fieldsCollection.append(fieldsItem);
+
+
         }
 
     QSqlQuery getData(QSqlDatabase::database("dbfEditor"));
@@ -1092,7 +1095,7 @@ void QDbfEditor::openDbfFile()
     query += "' integer primary key autoincrement,";
     for (i=0; i<fieldsCollection.count(); ++i)
         {
-            query += fieldsCollection.at(i)->fieldName;
+            query += ("`"+fieldsCollection.at(i)->fieldName+"`");
 
             if (fieldsCollection.at(i)->fieldType == "C")
                 {
@@ -1134,9 +1137,7 @@ void QDbfEditor::openDbfFile()
             if (i<(fieldsCollection.count()-1))
                 query += ",\n";
         }
-
     query += ")";
-
     getData.prepare(query);
     getData.exec();
     if (getData.lastError().isValid())
@@ -1144,10 +1145,8 @@ void QDbfEditor::openDbfFile()
             QMessageBox::critical(this, tr("Error"), getData.lastError().text());
             return;
         }
-
     quint32 q;
     bool ok;
-
     for (q=0;q<numberOfRecords;q++)
         {
             query = "INSERT INTO ";
@@ -1155,7 +1154,8 @@ void QDbfEditor::openDbfFile()
             query += " (";
             for (j=0; j<fieldsCollection.count(); ++j)
                 {
-                    query += fieldsCollection.at(j)->fieldName;
+                query += ("`"+fieldsCollection.at(j)->fieldName+"`");
+
                     if (j<fieldsCollection.count()-1)
                         query += ",";
                 }
@@ -1267,7 +1267,7 @@ void QDbfEditor::openDbfFile()
             query = "INSERT INTO ";
             query += strTableName;
             query += " (fieldName, fieldType, fieldLength, fieldDecimals) VALUES ('";
-            query += fieldsCollection.at(i)->fieldName;
+            query += ("`"+fieldsCollection.at(i)->fieldName+"`");
             query += "','";
             query += fieldsCollection.at(i)->fieldType;
             query += "','";
@@ -1346,7 +1346,7 @@ void QDbfEditor::saveDbfFile()
     for (i=0;i<fieldsCollection.size();i++)
         {
             fieldsItem = fieldsCollection.at(i);
-            query += fieldsItem->fieldName;
+            query += ("`"+fieldsItem->fieldName+"`");
             if ( i != fieldsCollection.size()-1 )
                     query += ",";
             else
@@ -1518,7 +1518,7 @@ void QDbfEditor::fillCells()
                         query += tableName;
                         query += " SET ";
 
-                        query += fieldsItem->fieldName;
+                        query += ("`"+fieldsItem->fieldName+"`");
 
                         query += "=";
 
@@ -2190,7 +2190,7 @@ void QDbfEditor::sortDbf(const QModelIndex& index)
     query = "SELECT * FROM ";
     query += tableName;
     query += " ORDER BY ";
-    query += fieldsCollection.at(c-1)->fieldName;
+    query += ("`"+fieldsCollection.at(c-1)->fieldName+"`");
 
     model->setQuery(query, QSqlDatabase::database("dbfEditor"));
     if (model->lastError().isValid())

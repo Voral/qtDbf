@@ -52,7 +52,6 @@ MainWindow::MainWindow(QString dbfFileName)
     mainWindow = this;
 
     QString windowTitle = "DBF Viewer - ";
-
     dbfEditor = new QDbfEditor(dbfFileName, "", this);
     setCentralWidget(dbfEditor);
 
