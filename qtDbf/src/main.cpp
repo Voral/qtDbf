@@ -58,9 +58,9 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("va-soft.ru"); // was hevele.juniorcom.ro
     QCoreApplication::setApplicationName("qtDbf");
 
-    if (dbfLocal.compare("en") != 0)
+    QTranslator translator;
+    if (dbfLocal.compare("en"))
     {
-        QTranslator translator;
         QString dbfDirPath="";
 
 #ifdef Q_OS_UNIX
