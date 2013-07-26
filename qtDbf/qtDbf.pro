@@ -54,8 +54,7 @@ RCC_DIR += ./.rcc
 
 win32:RC_FILE = src/qtDbf.rc
 
-TRANSLATIONS = src/lang/qtDbf_en.ts \
-    src/lang/qtdbf_hu.ts \
+TRANSLATIONS = src/lang/qtdbf_hu.ts \
     src/lang/qtdbf_ru.ts \
     src/lang/qtdbf_ro.ts
 
@@ -78,7 +77,7 @@ INSTALLS += target
 
 unix {
     INSTALLS += help \
-       lang \
+       translations \
        icon \
        icon128 \
        icon16 \
@@ -91,8 +90,9 @@ unix {
     }
     target.path = $$PREFIX/bin
 
-    lang.files = bin/lang/*.qm
-    lang.path = $$PREFIX/share/qtdbf/lang
+    translations.files = bin/lang/*.qm
+    translations.path = $$PREFIX/share/qtdbf/lang
+    translations.CONFIG += no_check_exist
 
     help.files = src/help/*.html
     help.path = $$PREFIX/share/qtdbf/help
@@ -121,7 +121,7 @@ win32 {
        PREFIX=c:\\Program Files\\qtDbf
     }
     target.path = $$quote(\"$$PREFIX\")
-    target.depends += copy_lang copy_help
+    target.depends += copy_help copy_lang
     copy_lang.target = copy_lang
     copy_lang.commands = xcopy /I /Y \"$$DESTDIR\\lang\\*.qm\" \"$$PREFIX\\lang\\\"
     copy_help.target = copy_help

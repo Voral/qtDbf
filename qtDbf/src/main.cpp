@@ -58,37 +58,40 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("va-soft.ru"); // was hevele.juniorcom.ro
     QCoreApplication::setApplicationName("qtDbf");
 
-    QTranslator translator;
-    QString dbfDirPath="";
+    if (dbfLocal.compare("en") != 0)
+    {
+        QTranslator translator;
+        QString dbfDirPath="";
 
 #ifdef Q_OS_UNIX
-    if (QFile::exists("/usr/local/share/qtdbf/"))
-    {
-        dbfDirPath = "/usr/local/share/qtdbf/";
-    }
-    else
-    {
-        if (QFile::exists("/usr/share/qtdbf/"))
+        if (QFile::exists("/usr/local/share/qtdbf/"))
         {
-            dbfDirPath = "/usr/share/qtdbf/";
+            dbfDirPath = "/usr/local/share/qtdbf/";
         }
         else
         {
-            dbfDirPath = app.applicationDirPath();
+            if (QFile::exists("/usr/share/qtdbf/"))
+            {
+                dbfDirPath = "/usr/share/qtdbf/";
+            }
+            else
+            {
+                dbfDirPath = app.applicationDirPath();
+            }
         }
-    }
 #else
-    dbfDirPath = app.applicationDirPath();
+        dbfDirPath = app.applicationDirPath();
 #endif
-    dbfDirPath += "/lang/qtdbf_";
-    dbfDirPath += dbfLocal;
-    dbfDirPath += ".qm";
+        dbfDirPath += "/lang/qtdbf_";
+        dbfDirPath += dbfLocal;
+        dbfDirPath += ".qm";
 
-    QFileInfo f(dbfDirPath);
-    if (f.exists())
-    {
-        translator.load(dbfDirPath);
-        app.installTranslator(&translator);
+        QFileInfo f(dbfDirPath);
+        if (f.exists())
+        {
+            translator.load(dbfDirPath);
+            app.installTranslator(&translator);
+        }
     }
     QFont dbfFont("Verdana", 10, QFont::Normal);
 
