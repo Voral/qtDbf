@@ -2178,7 +2178,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this, tr("qtDbf 0.9.8"), explic);
+   QMessageBox::about(this, tr("qtDbf 0.9.9"), explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)
