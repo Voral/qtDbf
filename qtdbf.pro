@@ -116,7 +116,7 @@ unix {
     icon64.files = src/images/64/qtdbf.png
     icon64.path = $$PREFIX/share/icons/hicolor/64x64/apps
 
-    desktop.files = other/qtdbf.desktop
+    desktop.files = misc/qtdbf.desktop
     desktop.path = $$PREFIX/share/applications
 }
 win32 {
