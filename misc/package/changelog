@@ -1,3 +1,9 @@
+qtdbf (0.9.9-1) testing; urgency=low
+
+  * Sonme changes of repo-structure
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Sun, 28 Jul 2013 021:45:00 +0300
+
 qtdbf (0.9.8-1) testing; urgency=low
 
   * Minor changes have been made to conform freedesktop.org
