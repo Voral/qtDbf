@@ -891,7 +891,7 @@ void QDbfEditor::openNewFile()
     QSettings settings;
     currentDirectory= settings.value("dbfeditor/currentdir", "./").toString();
 
-    dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf)");
+    dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf);;All Files(*)");
     if (dbfFileName.isEmpty())
         {
             return;
