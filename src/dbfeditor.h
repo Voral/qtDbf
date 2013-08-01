@@ -56,6 +56,7 @@ private slots:
     void editRecord();
     void insertRecord();
     void deleteRecord();
+    void filter(bool on);
     //void sqlCommand();
     void fillCells();
     void saveDbfFile();
@@ -90,6 +91,9 @@ private:
     QByteArray dbfFileHeader;
     QByteArray recordData;
 
+
+    QString where;
+    QString order;
     QString dbfFileName;
     QString tableName;
     QString strTableName;
@@ -110,6 +114,7 @@ private:
     QToolButton *helpButton;
     QToolButton *calcButton;
     QToolButton *quitButton;
+    QToolButton *filterButton;
 
     QDbfSqlModel *model;
     QTableView *view;
@@ -124,6 +129,7 @@ private:
     QAction *calcAction;
     QAction *quitAction;
     QAction *openAction;
+    QAction *filterAction;
 
     QSize editDialogSize;
 

@@ -36,7 +36,8 @@ HEADERS += src/structures.h \
     src/qtcalculator.h \
     src/globals.h \
     src/customsqlmodel.h \
-    src/dbfconfig.h
+    src/dbfconfig.h \
+    src/dialogfilter.h
 SOURCES += src/dbfeditor.cpp \
     src/main.cpp \
     src/mainwindow.cpp \
@@ -44,7 +45,8 @@ SOURCES += src/dbfeditor.cpp \
     src/qtcalculator.cpp \
     src/customsqlmodel.cpp \
     src/dbfconfig.cpp \
-    src/saveconfig.cpp
+    src/saveconfig.cpp \
+    src/dialogfilter.cpp
 RESOURCES += src/qtDbf.qrc
 QT += sql \
     svg

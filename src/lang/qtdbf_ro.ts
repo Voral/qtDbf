@@ -30,6 +30,59 @@
     </message>
 </context>
 <context>
+    <name>DialogFilter</name>
+    <message>
+        <location filename="../dialogfilter.cpp" line="8"/>
+        <source>Field Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="9"/>
+        <source>Expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="29"/>
+        <source>contain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="30"/>
+        <source>equal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="31"/>
+        <source>not equal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="32"/>
+        <source>greater than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="33"/>
+        <source>equal or greater than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="34"/>
+        <source>less than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="35"/>
+        <source>equal or less than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="38"/>
+        <source>&lt; All fields &gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QCalculatorDialog</name>
     <message>
         <location filename="../qtcalculator.cpp" line="105"/>
@@ -239,250 +292,232 @@
 <context>
     <name>QDbfEditor</name>
     <message>
-        <location filename="../dbfeditor.cpp" line="233"/>
-        <location filename="../dbfeditor.cpp" line="323"/>
-        <location filename="../dbfeditor.cpp" line="859"/>
-        <location filename="../dbfeditor.cpp" line="866"/>
+        <location filename="../dbfeditor.cpp" line="909"/>
+        <location filename="../dbfeditor.cpp" line="916"/>
         <source>Eroare</source>
         <translation>Eroare</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="239"/>
+        <location filename="../dbfeditor.cpp" line="258"/>
         <source>ID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="47"/>
-        <source>Fill - F</source>
-        <translation>Umple - F</translation>
-    </message>
-    <message>
         <location filename="../dbfeditor.cpp" line="43"/>
-        <source>Open - O</source>
+        <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="51"/>
-        <source>Edit - Enter</source>
-        <translation>Editare - Enter</translation>
+        <location filename="../dbfeditor.cpp" line="48"/>
+        <location filename="../dbfeditor.cpp" line="1513"/>
+        <source>Fill</source>
+        <translation>Umple</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="56"/>
-        <source>Add - Ins</source>
-        <translation>Adăugare - INs</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="61"/>
-        <source>Delete - Del</source>
-        <translation>Ştergere - Del</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="66"/>
-        <source>Save - S</source>
-        <translation>Salvare - S</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="69"/>
-        <source>Configure</source>
-        <translation>Configurare</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="73"/>
-        <source>Help</source>
-        <translation>Ajutor</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="78"/>
-        <location filename="../dbfeditor.cpp" line="2209"/>
-        <source>Calculator</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="82"/>
-        <source>Close - Esc</source>
-        <translation>Închide - Esc</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="289"/>
-        <location filename="../dbfeditor.cpp" line="661"/>
-        <location filename="../dbfeditor.cpp" line="668"/>
-        <location filename="../dbfeditor.cpp" line="773"/>
-        <location filename="../dbfeditor.cpp" line="780"/>
-        <location filename="../dbfeditor.cpp" line="800"/>
-        <location filename="../dbfeditor.cpp" line="1085"/>
-        <location filename="../dbfeditor.cpp" line="1145"/>
-        <location filename="../dbfeditor.cpp" line="1232"/>
-        <location filename="../dbfeditor.cpp" line="1244"/>
-        <location filename="../dbfeditor.cpp" line="1262"/>
-        <location filename="../dbfeditor.cpp" line="1286"/>
-        <location filename="../dbfeditor.cpp" line="1311"/>
-        <location filename="../dbfeditor.cpp" line="1337"/>
-        <location filename="../dbfeditor.cpp" line="1364"/>
-        <location filename="../dbfeditor.cpp" line="1460"/>
-        <location filename="../dbfeditor.cpp" line="1540"/>
-        <location filename="../dbfeditor.cpp" line="1548"/>
-        <location filename="../dbfeditor.cpp" line="1657"/>
-        <location filename="../dbfeditor.cpp" line="1812"/>
-        <location filename="../dbfeditor.cpp" line="2013"/>
-        <location filename="../dbfeditor.cpp" line="2199"/>
-        <source>Error</source>
-        <translation>Eroare</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="289"/>
-        <location filename="../dbfeditor.cpp" line="1460"/>
-        <source>Select at least a cell</source>
-        <translation>Selectaţi cel puţin un câmp</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="380"/>
-        <source>Editare</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="509"/>
+        <location filename="../dbfeditor.cpp" line="52"/>
+        <location filename="../dbfeditor.cpp" line="430"/>
+        <location filename="../dbfeditor.cpp" line="559"/>
         <source>Edit</source>
         <translation>Editare</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="509"/>
-        <source>Unsupported field (yet)</source>
-        <translation>Câmp nesuportat (încă)</translation>
+        <location filename="../dbfeditor.cpp" line="57"/>
+        <source>Add</source>
+        <translation>Adăugare</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="527"/>
-        <location filename="../dbfeditor.cpp" line="1480"/>
-        <source>OK</source>
-        <translation></translation>
+        <location filename="../dbfeditor.cpp" line="62"/>
+        <source>Delete</source>
+        <translation>Ştergere</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="528"/>
-        <location filename="../dbfeditor.cpp" line="1481"/>
-        <source>Cancel</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="710"/>
-        <source>Insert</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="710"/>
-        <source>The file contains unsupported fields.</source>
-        <translation>Fişierul conţine câmpuri nesuportate</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="800"/>
-        <source>Select at least a row</source>
-        <translation>Selectaţi cel puţin un rând</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="842"/>
-        <source>Delete current row</source>
-        <translation>Ştergere rânduri selectate</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="842"/>
-        <source>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Warning !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;You are about to delete the current record&lt;/h3&gt;&lt;h2&gt;Are you sure?&lt;/h2&gt;&lt;/center&gt;</source>
-        <translation>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Atenţie !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;Aţi ales ştergerea rândurilor selectate&lt;/h3&gt;&lt;h2&gt;Sunteţi siguri?&lt;/h2&gt;&lt;/center&gt;</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1009"/>
-        <source>DBF open error</source>
-        <translation>Eroare la deschiderea fişierului DBF</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1009"/>
-        <source>Error1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1337"/>
-        <source>DBF write error</source>
-        <translation>Eroare la scrierea fişierului DBF</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1464"/>
-        <source>Fill</source>
-        <translation>Umplere</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1475"/>
-        <source>Fill value or expression</source>
-        <translation>Valoarea sau expresia cu care se va umple celulele selectate</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="2182"/>
-        <source>qtDbf 0.9.8</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="161"/>
-        <location filename="../dbfeditor.cpp" line="1580"/>
+        <location filename="../dbfeditor.cpp" line="67"/>
+        <location filename="../dbfeditor.cpp" line="177"/>
+        <location filename="../dbfeditor.cpp" line="1629"/>
         <source>Save</source>
         <translation>Salvare</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="161"/>
-        <location filename="../dbfeditor.cpp" line="1580"/>
-        <source>&lt;center&gt;&lt;h2&gt;Do you want to save the changes?&lt;/h2&gt;&lt;/center&gt;</source>
-        <translation>&lt;center&gt;&lt;h2&gt;Doriţi salvarea modificărilor?&lt;/h2&gt;&lt;/center&gt;</translation>
+        <location filename="../dbfeditor.cpp" line="71"/>
+        <source>Configure</source>
+        <translation>Configurare</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1657"/>
-        <location filename="../dbfeditor.cpp" line="2013"/>
-        <source>DBT open error</source>
-        <translation>Eroare la deschiderea fişierului DBT</translation>
+        <location filename="../dbfeditor.cpp" line="75"/>
+        <source>Help</source>
+        <translation>Ajutor</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1685"/>
-        <location filename="../dbfeditor.cpp" line="1848"/>
-        <location filename="../dbfeditor.cpp" line="2038"/>
-        <source>Memo data</source>
-        <translation>Memo data</translation>
+        <location filename="../dbfeditor.cpp" line="80"/>
+        <location filename="../dbfeditor.cpp" line="2261"/>
+        <source>Calculator</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1694"/>
-        <location filename="../dbfeditor.cpp" line="1857"/>
-        <location filename="../dbfeditor.cpp" line="2047"/>
-        <source>The text from the memo file</source>
-        <translation>Textul din fişierul memo</translation>
-    </message>
-    <message>
-        <location filename="../dbfeditor.cpp" line="1712"/>
-        <location filename="../dbfeditor.cpp" line="1872"/>
-        <location filename="../dbfeditor.cpp" line="2062"/>
-        <location filename="../dbfeditor.cpp" line="2141"/>
+        <location filename="../dbfeditor.cpp" line="85"/>
+        <location filename="../dbfeditor.cpp" line="1761"/>
+        <location filename="../dbfeditor.cpp" line="1921"/>
+        <location filename="../dbfeditor.cpp" line="2111"/>
+        <location filename="../dbfeditor.cpp" line="2190"/>
         <source>Close</source>
         <translation>Închide</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1812"/>
+        <location filename="../dbfeditor.cpp" line="90"/>
+        <source>Set filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="252"/>
+        <location filename="../dbfeditor.cpp" line="323"/>
+        <location filename="../dbfeditor.cpp" line="339"/>
+        <location filename="../dbfeditor.cpp" line="373"/>
+        <location filename="../dbfeditor.cpp" line="711"/>
+        <location filename="../dbfeditor.cpp" line="718"/>
+        <location filename="../dbfeditor.cpp" line="823"/>
+        <location filename="../dbfeditor.cpp" line="830"/>
+        <location filename="../dbfeditor.cpp" line="850"/>
+        <location filename="../dbfeditor.cpp" line="1059"/>
+        <location filename="../dbfeditor.cpp" line="1135"/>
+        <location filename="../dbfeditor.cpp" line="1195"/>
+        <location filename="../dbfeditor.cpp" line="1281"/>
+        <location filename="../dbfeditor.cpp" line="1293"/>
+        <location filename="../dbfeditor.cpp" line="1311"/>
+        <location filename="../dbfeditor.cpp" line="1335"/>
+        <location filename="../dbfeditor.cpp" line="1360"/>
+        <location filename="../dbfeditor.cpp" line="1386"/>
+        <location filename="../dbfeditor.cpp" line="1413"/>
+        <location filename="../dbfeditor.cpp" line="1509"/>
+        <location filename="../dbfeditor.cpp" line="1589"/>
+        <location filename="../dbfeditor.cpp" line="1597"/>
+        <location filename="../dbfeditor.cpp" line="1706"/>
+        <location filename="../dbfeditor.cpp" line="1861"/>
+        <location filename="../dbfeditor.cpp" line="2062"/>
+        <location filename="../dbfeditor.cpp" line="2251"/>
+        <source>Error</source>
+        <translation>Eroare</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="302"/>
+        <source>Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="339"/>
+        <location filename="../dbfeditor.cpp" line="1509"/>
+        <source>Select at least a cell</source>
+        <translation>Selectaţi cel puţin un câmp</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="559"/>
+        <source>Unsupported field (yet)</source>
+        <translation>Câmp nesuportat (încă)</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="577"/>
+        <location filename="../dbfeditor.cpp" line="1529"/>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="578"/>
+        <location filename="../dbfeditor.cpp" line="1530"/>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="760"/>
+        <source>Insert</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="760"/>
+        <source>The file contains unsupported fields.</source>
+        <translation>Fişierul conţine câmpuri nesuportate</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="850"/>
+        <source>Select at least a row</source>
+        <translation>Selectaţi cel puţin un rând</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="892"/>
+        <source>Delete current row</source>
+        <translation>Ştergere rânduri selectate</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="892"/>
+        <source>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Warning !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;You are about to delete the current record&lt;/h3&gt;&lt;h2&gt;Are you sure?&lt;/h2&gt;&lt;/center&gt;</source>
+        <translation>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Atenţie !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;Aţi ales ştergerea rândurilor selectate&lt;/h3&gt;&lt;h2&gt;Sunteţi siguri?&lt;/h2&gt;&lt;/center&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1059"/>
+        <source>DBF open error</source>
+        <translation>Eroare la deschiderea fişierului DBF</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1386"/>
+        <source>DBF write error</source>
+        <translation>Eroare la scrierea fişierului DBF</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1524"/>
+        <source>Fill value or expression</source>
+        <translation>Valoarea sau expresia cu care se va umple celulele selectate</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="177"/>
+        <location filename="../dbfeditor.cpp" line="1629"/>
+        <source>&lt;center&gt;&lt;h2&gt;Do you want to save the changes?&lt;/h2&gt;&lt;/center&gt;</source>
+        <translation>&lt;center&gt;&lt;h2&gt;Doriţi salvarea modificărilor?&lt;/h2&gt;&lt;/center&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1706"/>
+        <location filename="../dbfeditor.cpp" line="2062"/>
+        <source>DBT open error</source>
+        <translation>Eroare la deschiderea fişierului DBT</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1734"/>
+        <location filename="../dbfeditor.cpp" line="1897"/>
+        <location filename="../dbfeditor.cpp" line="2087"/>
+        <source>Memo data</source>
+        <translation>Memo data</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1743"/>
+        <location filename="../dbfeditor.cpp" line="1906"/>
+        <location filename="../dbfeditor.cpp" line="2096"/>
+        <source>The text from the memo file</source>
+        <translation>Textul din fişierul memo</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="1861"/>
         <source>FPT open error</source>
         <translation>Eroare la deschiderea fişierului FPT</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2088"/>
+        <location filename="../dbfeditor.cpp" line="2137"/>
         <source>qtDbf documentation</source>
         <translation>Documentaţie qtDbf</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2136"/>
+        <location filename="../dbfeditor.cpp" line="2185"/>
         <source>Help file missing</source>
         <translation>Lipseşte fişierul help</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2139"/>
+        <location filename="../dbfeditor.cpp" line="2188"/>
         <source>About</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2140"/>
+        <location filename="../dbfeditor.cpp" line="2189"/>
         <source>About Qt</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2180"/>
+        <location filename="../dbfeditor.cpp" line="2229"/>
         <source>&lt;b align=&apos;center&apos;&gt;qtDbf&lt;/b&gt; &lt;p&gt;- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.&lt;/p&gt;</source>
         <translation>&lt;b align=&apos;center&apos;&gt;qtDbf&lt;/b&gt; &lt;p&gt;- un DBF viewer şi editor open source, multiplatform scris în Qt, folosindu-se de SQLite.&lt;/p&gt;</translation>
     </message>
@@ -497,68 +532,68 @@
     <message>
         <location filename="../dbfconfig.cpp" line="485"/>
         <location filename="../dbfconfig.cpp" line="561"/>
-        <source>Character&lt;/font&gt;</source>
-        <translation>Caracter&lt;/font&gt;</translation>
+        <source>Character</source>
+        <translation>Caracter</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="487"/>
         <location filename="../dbfconfig.cpp" line="587"/>
-        <source>Currency&lt;/font&gt;</source>
-        <translation>Valută&lt;/font&gt;</translation>
+        <source>Currency</source>
+        <translation>Valută</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="489"/>
         <location filename="../dbfconfig.cpp" line="613"/>
-        <source>Numeric&lt;/font&gt;</source>
-        <translation>Numeric&lt;/font&gt;</translation>
+        <source>Numeric</source>
+        <translation>Numeric</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="491"/>
         <location filename="../dbfconfig.cpp" line="639"/>
-        <source>Date&lt;/font&gt;</source>
-        <translation>Dată&lt;/font&gt;</translation>
+        <source>Date</source>
+        <translation>Dată</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="493"/>
         <location filename="../dbfconfig.cpp" line="665"/>
-        <source>DateTime&lt;/font&gt;</source>
-        <translation>Data şi Ora&lt;/font&gt;</translation>
+        <source>DateTime</source>
+        <translation>Data şi Ora</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="495"/>
         <location filename="../dbfconfig.cpp" line="691"/>
-        <source>Double&lt;/font&gt;</source>
-        <translation>Real&lt;/font&gt;</translation>
+        <source>Double</source>
+        <translation>Real</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="497"/>
         <location filename="../dbfconfig.cpp" line="717"/>
-        <source>Integer&lt;/font&gt;</source>
-        <translation>Întreg&lt;/font&gt;</translation>
+        <source>Integer</source>
+        <translation>Întreg</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="499"/>
         <location filename="../dbfconfig.cpp" line="743"/>
-        <source>Logical&lt;/font&gt;</source>
-        <translation>Logic&lt;/font&gt;</translation>
+        <source>Logical</source>
+        <translation>Logic</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="501"/>
         <location filename="../dbfconfig.cpp" line="769"/>
-        <source>Memo&lt;/font&gt;</source>
-        <translation>Memo&lt;/font&gt;</translation>
+        <source>Memo</source>
+        <translation>Memo</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="503"/>
         <location filename="../dbfconfig.cpp" line="795"/>
-        <source>Memo4&lt;/font&gt;</source>
-        <translation>Memo4&lt;/font&gt;</translation>
+        <source>Memo4</source>
+        <translation>Memo4</translation>
     </message>
     <message>
         <location filename="../dbfconfig.cpp" line="505"/>
         <location filename="../dbfconfig.cpp" line="821"/>
-        <source>General&lt;/font&gt;</source>
-        <translation>General&lt;/font&gt;</translation>
+        <source>General</source>
+        <translation>General</translation>
     </message>
 </context>
 <context>
@@ -725,7 +760,7 @@
         <translation>Zecimale</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="894"/>
+        <location filename="../dbfeditor.cpp" line="944"/>
         <location filename="../main.cpp" line="120"/>
         <source>Open File</source>
         <translation>Deschidere fişier</translation>

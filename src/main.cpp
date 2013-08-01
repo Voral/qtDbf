@@ -117,17 +117,16 @@ int main(int argc, char *argv[])
             QSettings settings;
             currentDirectory= settings.value("dbfeditor/currentdir", "./").toString();
 
-            dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf);;All Files(*)");
+            dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf);;All Files (*)");
             if (dbfFileName.isEmpty())
-                {
-                    return 1;
-                }
+            {
+                return 1;
+            }
 
             QFileInfo fileInfo(dbfFileName);
             currentDirectory = fileInfo.absolutePath();
             settings.setValue("dbfeditor/currentdir", currentDirectory);
         }
-
     MainWindow mainWin(dbfFileName);
     mainWin.show();
     return app.exec();

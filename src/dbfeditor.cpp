@@ -32,56 +32,66 @@
 #include "qtcalculator.h"
 #include "dbfconfig.h"
 #include "globals.h"
+#include "dialogfilter.h"
 QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *parent)
     : QWidget(parent)
 {
     modified = false;
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
     view = new QDbfTableView(this);
-    openFile(a_dbfFileName,false);
 
-    openAction = new QAction(QIcon(":images/document_open.png"),tr("Open - O"), this);
+    openAction = new QAction(QIcon(":images/document_open.png"),tr("Open").append(" Ctrl + O"), this);
+    openAction->setShortcut(Qt::CTRL + Qt::Key_O);
     connect(openAction, SIGNAL(triggered()), this, SLOT(openNewFile()));
     addAction(openAction);
 
-    fillAction = new QAction(QIcon(":images/fill.svg"),tr("Fill - F"), this);
+    fillAction = new QAction(QIcon(":images/fill.svg"),tr("Fill"), this);
     connect(fillAction, SIGNAL(triggered()), this, SLOT(fillCells()));
     addAction(fillAction);
 
-    editAction = new QAction(QIcon(":images/edit.svg"),tr("Edit - Enter"), this);
+    editAction = new QAction(QIcon(":images/edit.svg"),tr("Edit").append(" Enter"), this);
     editAction->setShortcut(Qt::Key_Return);
     connect(editAction, SIGNAL(triggered()), this, SLOT(editRecord()));
     addAction(editAction);
 
-    insertAction = new QAction(QIcon(":images/add.svg"),tr("Add - Ins"), this);
+    insertAction = new QAction(QIcon(":images/add.svg"),tr("Add").append(" Ins"), this);
     insertAction->setShortcut(Qt::Key_Insert);
     connect(insertAction, SIGNAL(triggered()), this, SLOT(insertRecord()));
     addAction(insertAction);
 
-    deleteAction = new QAction(QIcon(":images/delete.svg"),tr("Delete - Del"), this);
+    deleteAction = new QAction(QIcon(":images/delete.svg"),tr("Delete").append(" Del"), this);
     deleteAction->setShortcut(Qt::Key_Delete);
     connect(deleteAction, SIGNAL(triggered()), this, SLOT(deleteRecord()));
     addAction(deleteAction);
 
-    saveAction = new QAction(QIcon(":images/save.svg"),tr("Save - S"), this);
+    saveAction = new QAction(QIcon(":images/save.svg"),tr("Save").append(" Ctrl + S"), this);
     connect(saveAction, SIGNAL(triggered()), this, SLOT(saveDbfFile()));
+    saveAction->setShortcut(Qt::CTRL + Qt::Key_S);
     addAction(saveAction);
     configAction = new QAction(QIcon(":images/config.svg"),tr("Configure"), this);
     connect(configAction, SIGNAL(triggered()), this, SLOT(configApp()));
     addAction(configAction);
 
-    helpAction = new QAction(QIcon(":images/help.svg"),tr("Help"), this);
+    helpAction = new QAction(QIcon(":images/help.svg"),tr("Help").append(" F1"), this);
     helpAction->setShortcut(Qt::Key_F1);
     connect(helpAction, SIGNAL(triggered()), this, SLOT(helpDbf()));
     addAction(helpAction);
 
-    calcAction = new QAction(QIcon(":images/calc.svg"),tr("Calculator"), this);
+    calcAction = new QAction(QIcon(":images/calc.svg"),tr("Calculator").append(" Ctrl + E"), this);
+    saveAction->setShortcut(Qt::CTRL + Qt::Key_E);
     connect(calcAction, SIGNAL(triggered()), this, SLOT(calculator()));
     addAction(calcAction);
 
-    quitAction = new QAction(QIcon(":images/quit.svg"),tr("Close - Esc"), this);
+    quitAction = new QAction(QIcon(":images/quit.svg"),tr("Close").append(" Esc"), this);
+    saveAction->setShortcut(Qt::Key_Escape);
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
     addAction(quitAction);
+
+    filterAction = new QAction(QIcon(":images/filter.png"),tr("Set filter").append(" Ctrl + F"), this);
+    filterAction->setShortcut(Qt::CTRL + Qt::Key_F);
+    filterAction->setCheckable(true);
+    connect(filterAction, SIGNAL(triggered(bool)), this, SLOT(filter(bool)));
+    addAction(filterAction);
 
     openButton = new QDbfToolButton(this);
     openButton->setDefaultAction(openAction);
@@ -103,6 +113,8 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     calcButton->setDefaultAction(calcAction);
     quitButton = new QDbfToolButton(this);
     quitButton->setDefaultAction(quitAction);
+    filterButton = new QDbfToolButton(this);
+    filterButton->setDefaultAction(filterAction);
 
     openButton->setFocusPolicy(Qt::NoFocus);
     editButton->setFocusPolicy(Qt::NoFocus);
@@ -114,6 +126,7 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     helpButton->setFocusPolicy(Qt::NoFocus);
     calcButton->setFocusPolicy(Qt::NoFocus);
     quitButton->setFocusPolicy(Qt::NoFocus);
+    filterButton->setFocusPolicy(Qt::NoFocus);
 
     QVBoxLayout *buttonLayout = new QVBoxLayout;
 
@@ -123,6 +136,7 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     buttonLayout->addWidget(insertButton);
     buttonLayout->addWidget(deleteButton);
     buttonLayout->addWidget(saveButton);
+    buttonLayout->addWidget(filterButton);
     buttonLayout->addWidget(configButton);
     buttonLayout->addWidget(calcButton);
     buttonLayout->addWidget(helpButton);
@@ -145,6 +159,8 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     connect(view, SIGNAL(quitSignal()), qApp, SLOT(closeAllWindows()));
     connect(parent, SIGNAL(setToolButtonIconSize(int)), this, SLOT(setToolButtonIconSize(int)));
 
+    openFile(a_dbfFileName,false);
+
     if (model->rowCount() == 0)
         emit modelIsEmpty(true);
     else
@@ -154,17 +170,9 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
 }
 void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
 {
-    // Временная мера. Пока не сделан рефактоинг кода.
-    if (modified)
-        {
-            QMessageBox::StandardButton reply;
-            reply = QMessageBox::question(this, tr("Save"),tr("<center><h2>Do you want to save the changes?</h2></center>"),
-                                     QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes );
-            if (reply == QMessageBox::Yes)
-                {
-                    saveDbfFile();
-                }
-        }
+    where = "";
+    order = "";
+    filterAction->setChecked(false);
     if (fresh)
     {
         delete this->model;
@@ -230,7 +238,7 @@ void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
     model->setQuery(query, QSqlDatabase::database("dbfEditor"));
     if (model->lastError().isValid())
         {
-            QMessageBox::critical(this, tr("Eroare"), model->lastError().text());
+            QMessageBox::critical(this, tr("Error"), model->lastError().text());
         }
 
     QString tempChar;
@@ -276,7 +284,38 @@ void QDbfEditor::readSettings()
     resize(size);
     editDialogSize = settings.value("dbfeditor/edSize", QSize(400,217)).toSize();
 }
+void QDbfEditor::filter(bool on)
+{
+    if (on)
+    {
+        DialogFilter *dlg = new DialogFilter(fieldsCollection,tr("Filter"),this);
+        if (dlg->exec() == QDialog::Accepted) where = dlg->getWhere();
+        else filterAction->setChecked(false);
+        dlg->deleteLater();
+    }
+    else
+    {
+        filterAction->setChecked(false);
+        where = "";
+    }
 
+    QString query;
+    query = "SELECT * FROM ";
+    query += tableName;
+    if (where != "") query += " WHERE " + where;
+    if (order != "") query += " ORDER BY " + order;
+
+    qDebug() << query;
+    model->setQuery(query, QSqlDatabase::database("dbfEditor"));
+    if (model->lastError().isValid())
+        {
+            QMessageBox::critical(this, tr("Error"), model->lastError().text());
+            return;
+        }
+
+    refresh(0);
+
+}
 void QDbfEditor::editRecord()
 {
     QModelIndexList currentSelection = view->selectionModel()->selectedIndexes();
@@ -320,7 +359,7 @@ void QDbfEditor::editRecord()
     getData.exec();
     if (getData.lastError().isValid())
         {
-            QMessageBox::critical(this, tr("Eroare"), getData.lastError().text());
+            QMessageBox::critical(this, tr("Error"), getData.lastError().text());
             return;
         }
 
@@ -377,7 +416,7 @@ void QDbfEditor::editRecord()
             return;
         }
 
-    QDbfDialog *d = new QDbfDialog(tr("Editare"), this);
+    QDbfDialog *d = new QDbfDialog(tr("Edit"), this);
     QSettings settings;
 
     d->resize(settings.value("dbfeditor/edsize", QSize(140,40)).toSize());
@@ -887,11 +926,22 @@ void QDbfEditor::deleteRecord()
 
 void QDbfEditor::openNewFile()
 {
+    // Временная мера. Пока не сделан рефактоинг кода.
+    if (modified)
+    {
+        QMessageBox::StandardButton reply;
+        reply = QMessageBox::question(this, tr("Save"),tr("<center><h2>Do you want to save the changes?</h2></center>"),
+                                      QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes );
+        if (reply == QMessageBox::Yes)
+        {
+            saveDbfFile();
+        }
+    }
     QString currentDirectory;
     QSettings settings;
     currentDirectory= settings.value("dbfeditor/currentdir", "./").toString();
 
-    dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf);;All Files(*)");
+    dbfFileName = QFileDialog::getOpenFileName(0, QObject::tr("Open File"),currentDirectory,"DBF Files(*.dbf);;All Files (*)");
     if (dbfFileName.isEmpty())
         {
             return;
@@ -1006,7 +1056,7 @@ void QDbfEditor::openDbfFile()
 
     if (!file.open(QIODevice::ReadOnly))
         {
-            QMessageBox::critical(this, tr("Error1"), tr("DBF open error"));
+            QMessageBox::critical(this, tr("Error"), tr("DBF open error"));
             return;
         }
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName(generalTextCodec.toAscii().data()));
@@ -2178,7 +2228,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this, tr("qtDbf 0.9.9"), explic);
+   QMessageBox::about(this,"qtDbf 0.9.10", explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)
@@ -2187,10 +2237,13 @@ void QDbfEditor::sortDbf(const QModelIndex& index)
     int c = index.column();
     QString query;
 
+    order = fieldsCollection.at(c-1)->fieldName;
+
     query = "SELECT * FROM ";
     query += tableName;
-    query += " ORDER BY ";
-    query += ("`"+fieldsCollection.at(c-1)->fieldName+"`");
+    if (where != "") query += ' WHERE ' + where;
+    if (order != "") query += " ORDER BY " + order;
+
 
     model->setQuery(query, QSqlDatabase::database("dbfEditor"));
     if (model->lastError().isValid())
@@ -2223,6 +2276,7 @@ void QDbfEditor::setToolButtonIconSize(int i)
     calcButton->setIconSize(size);
     helpButton->setIconSize(size);
     quitButton->setIconSize(size);
+    filterButton->setIconSize(size);
 }
 
 QDbfEditor::~QDbfEditor()

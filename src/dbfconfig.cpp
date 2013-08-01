@@ -482,27 +482,27 @@ void QDbfFieldColorsTab::createInterface()
 //    QVBoxLayout *colors2Layout = new QVBoxLayout;
 
     charFieldColorLabel = new QFieldColorLabel(this);
-    charFieldColorLabel->setText("<font color='#"+charFieldColorString+"'>"+tr("Character</font>"));
+    charFieldColorLabel->setText("<font color='#"+charFieldColorString+"'>"+tr("Character")+"</font>");
     currencyFieldColorLabel = new QFieldColorLabel(this);
-    currencyFieldColorLabel->setText("<font color='#"+currencyFieldColorString+"'>"+tr("Currency</font>"));
+    currencyFieldColorLabel->setText("<font color='#"+currencyFieldColorString+"'>"+tr("Currency")+"</font>");
     numericFieldColorLabel = new QFieldColorLabel(this);
-    numericFieldColorLabel->setText("<font color='#"+numericFieldColorString+"'>"+tr("Numeric</font>"));
+    numericFieldColorLabel->setText("<font color='#"+numericFieldColorString+"'>"+tr("Numeric")+"</font>");
     dateFieldColorLabel = new QFieldColorLabel(this);
-    dateFieldColorLabel->setText("<font color='#"+dateFieldColorString+"'>"+tr("Date</font>"));
+    dateFieldColorLabel->setText("<font color='#"+dateFieldColorString+"'>"+tr("Date")+"</font>");
     timeFieldColorLabel = new QFieldColorLabel(this);
-    timeFieldColorLabel->setText("<font color='#"+timeFieldColorString+"'>"+tr("DateTime</font>"));
+    timeFieldColorLabel->setText("<font color='#"+timeFieldColorString+"'>"+tr("DateTime")+"</font>");
     doubleFieldColorLabel = new QFieldColorLabel(this);
-    doubleFieldColorLabel->setText("<font color='#"+doubleFieldColorString+"'>"+tr("Double</font>"));
+    doubleFieldColorLabel->setText("<font color='#"+doubleFieldColorString+"'>"+tr("Double")+"</font>");
     intFieldColorLabel = new QFieldColorLabel(this);
-    intFieldColorLabel->setText("<font color='#"+intFieldColorString+"'>"+tr("Integer</font>"));
+    intFieldColorLabel->setText("<font color='#"+intFieldColorString+"'>"+tr("Integer")+"</font>");
     logicalFieldColorLabel = new QFieldColorLabel(this);
-    logicalFieldColorLabel->setText("<font color='#"+logicalFieldColorString+"'>"+tr("Logical</font>"));
+    logicalFieldColorLabel->setText("<font color='#"+logicalFieldColorString+"'>"+tr("Logical")+"</font>");
     memoFieldColorLabel = new QFieldColorLabel(this);
-    memoFieldColorLabel->setText("<font color='#"+memoFieldColorString+"'>"+tr("Memo</font>"));
+    memoFieldColorLabel->setText("<font color='#"+memoFieldColorString+"'>"+tr("Memo")+"</font>");
     memo4FieldColorLabel = new QFieldColorLabel(this);
-    memo4FieldColorLabel->setText("<font color='#"+memo4FieldColorString+"'>"+tr("Memo4</font>"));
+    memo4FieldColorLabel->setText("<font color='#"+memo4FieldColorString+"'>"+tr("Memo4")+"</font>");
     generalFieldColorLabel = new QFieldColorLabel(this);
-    generalFieldColorLabel->setText("<font color='#"+generalFieldColorString+"'>"+tr("General</font>"));
+    generalFieldColorLabel->setText("<font color='#"+generalFieldColorString+"'>"+tr("General")+"</font>");
 
     connect(charFieldColorLabel, SIGNAL(changeColor()), this, SLOT(charFieldColor()));
     connect(currencyFieldColorLabel, SIGNAL(changeColor()), this, SLOT(currencyFieldColor()));
@@ -558,7 +558,7 @@ void QDbfFieldColorsTab::charFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     charFieldColorString = tempByteArray.toHex().toUpper();
-                    charFieldColorLabel->setText("<font color='#"+charFieldColorString+"'>"+tr("Character</font>"));
+                    charFieldColorLabel->setText("<font color='#"+charFieldColorString+"'>"+tr("Character")+"</font>");
                 }
         }
 }
@@ -584,7 +584,7 @@ void QDbfFieldColorsTab::currencyFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     currencyFieldColorString = tempByteArray.toHex().toUpper();
-                    currencyFieldColorLabel->setText("<font color='#"+currencyFieldColorString+"'>"+tr("Currency</font>"));
+                    currencyFieldColorLabel->setText("<font color='#"+currencyFieldColorString+"'>"+tr("Currency")+"</font>");
                 }
         }
 }
@@ -610,7 +610,7 @@ void QDbfFieldColorsTab::numericFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     numericFieldColorString = tempByteArray.toHex().toUpper();
-                    numericFieldColorLabel->setText("<font color='#"+numericFieldColorString+"'>"+tr("Numeric</font>"));
+                    numericFieldColorLabel->setText("<font color='#"+numericFieldColorString+"'>"+tr("Numeric")+"</font>");
                 }
         }
 }
@@ -636,7 +636,7 @@ void QDbfFieldColorsTab::dateFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     dateFieldColorString = tempByteArray.toHex().toUpper();
-                    dateFieldColorLabel->setText("<font color='#"+dateFieldColorString+"'>"+tr("Date</font>"));
+                    dateFieldColorLabel->setText("<font color='#"+dateFieldColorString+"'>"+tr("Date")+"</font>");
                 }
         }
 }
@@ -662,7 +662,7 @@ void QDbfFieldColorsTab::timeFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     timeFieldColorString = tempByteArray.toHex().toUpper();
-                    timeFieldColorLabel->setText("<font color='#"+timeFieldColorString+"'>"+tr("DateTime</font>"));
+                    timeFieldColorLabel->setText("<font color='#"+timeFieldColorString+"'>"+tr("DateTime")+"</font>");
                 }
         }
 }
@@ -688,7 +688,7 @@ void QDbfFieldColorsTab::doubleFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     doubleFieldColorString = tempByteArray.toHex().toUpper();
-                    doubleFieldColorLabel->setText("<font color='#"+doubleFieldColorString+"'>"+tr("Double</font>"));
+                    doubleFieldColorLabel->setText("<font color='#"+doubleFieldColorString+"'>"+tr("Double")+"</font>");
                 }
         }
 }
@@ -714,7 +714,7 @@ void QDbfFieldColorsTab::intFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     intFieldColorString = tempByteArray.toHex().toUpper();
-                    intFieldColorLabel->setText("<font color='#"+intFieldColorString+"'>"+tr("Integer</font>"));
+                    intFieldColorLabel->setText("<font color='#"+intFieldColorString+"'>"+tr("Integer")+"</font>");
                 }
         }
 }
@@ -740,7 +740,7 @@ void QDbfFieldColorsTab::logicalFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     logicalFieldColorString = tempByteArray.toHex().toUpper();
-                    logicalFieldColorLabel->setText("<font color='#"+logicalFieldColorString+"'>"+tr("Logical</font>"));
+                    logicalFieldColorLabel->setText("<font color='#"+logicalFieldColorString+"'>"+tr("Logical")+"</font>");
                 }
         }
 }
@@ -766,7 +766,7 @@ void QDbfFieldColorsTab::memoFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     memoFieldColorString = tempByteArray.toHex().toUpper();
-                    memoFieldColorLabel->setText("<font color='#"+memoFieldColorString+"'>"+tr("Memo</font>"));
+                    memoFieldColorLabel->setText("<font color='#"+memoFieldColorString+"'>"+tr("Memo")+"</font>");
                 }
         }
 }
@@ -792,7 +792,7 @@ void QDbfFieldColorsTab::memo4FieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     memo4FieldColorString = tempByteArray.toHex().toUpper();
-                    memo4FieldColorLabel->setText("<font color='#"+memo4FieldColorString+"'>"+tr("Memo4</font>"));
+                    memo4FieldColorLabel->setText("<font color='#"+memo4FieldColorString+"'>"+tr("Memo4")+"</font>");
                 }
         }
 }
@@ -818,7 +818,7 @@ void QDbfFieldColorsTab::generalFieldColor()
                     tempByteArray.append(colorDialog->selectedColor().green());
                     tempByteArray.append(colorDialog->selectedColor().blue());
                     generalFieldColorString = tempByteArray.toHex().toUpper();
-                    generalFieldColorLabel->setText("<font color='#"+generalFieldColorString+"'>"+tr("General</font>"));
+                    generalFieldColorLabel->setText("<font color='#"+generalFieldColorString+"'>"+tr("General")+"</font>");
                 }
         }
 }

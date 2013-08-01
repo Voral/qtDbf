@@ -5,7 +5,7 @@
         <title>qtDbf Help</title>
 </head>
 <body>
-<h2 align='center'><font COLOR="#004586">qtDbf 0.9.9</font></h2>
+<h2 align='center'><font COLOR="#004586">qtDbf 0.9.10</font></h2>
 
 <h3><font color="red">Предупреждение!</font></h3>
 
@@ -19,50 +19,58 @@
 
 <p>Итак, давайте посмотрим, что мы можем сделать с приложением :-).</p>
 <p>Приложение может быть установлено как просотрщие dbf файлов по умолчанию.</p>
-<table border='0'>
+<table border="1" cellpadding="10">
 <tr>
-        <td width='50'>&nbsp;</td>
         <td><img src=":help/fill.png" width='40' hight='40'></td>
         <td>&nbsp;</td>
         <td>Заполнение полей заданным выражением.</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/edit.png" width='40' hight='40'></td>
-        <td>&nbsp;</td>
+        <td>Enter</td>
         <td>Редактирование занчений в ячейках.<br>
             Такой эффект достигается двойным киком по ячейке<br>
             Если ячека memo типа,содержимое будет отображено в новом окне .</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/add.png" width='40' hight='40'></td>
-        <td>&nbsp;</td>
+        <td>Ins</td>
         <td>Добавление пустых записей в конец файла.</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/delete.png" width='40' hight='40'></td>
-        <td>&nbsp;</td>
-        <td>Уаление записей.</td>
+        <td>Del</td>
+        <td>Уаление текущей записи.</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/save.png" width='40' hight='40'></td>
-        <td>&nbsp;</td>
+        <td>Ctrl + S</td>
         <td>Сохрание изменений в dbf файл.</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/config.png" width='40' hight='40'></td>
         <td>&nbsp;</td>
         <td>Конфигурационный диалог для выбора языка интерфейса приложения, кодировки dbf файла, размера иконок, просмотра структуры dbf файла и назначение цветов для типов полей.</td>
 </tr>
 <tr>
-        <td>&nbsp;</td>
         <td><img src=":help/help.png" width='40' hight='40'></td>
-        <td>&nbsp;</td>
+        <td>F1</td>
         <td>Открытие этого окна.</td>
+</tr>
+<tr>
+        <td><img src=":images/calc.svg" width='40' hight='40'></td>
+        <td>Ctrl + E</td>
+        <td>Вызов калькуляторв</td>
+</tr>
+<tr>
+        <td><img src=":images/document_open.png" width='40' hight='40'></td>
+        <td>Ctrl + O</td>
+        <td>Открыть dbf файл.</td>
+</tr>
+<tr>
+        <td><img src=":images/filter.png" width='40' hight='40'></td>
+        <td>Ctrl + F</td>
+        <td>Установить или снять фильтр</td>
 </tr>
 </table>
 </font>
@@ -71,7 +79,7 @@
 <li>Это приложение считывает dbf файл базу данных SQLite  в память.<br>
     Так, что загрузка больших файлов может быть медленной.<br>
     Все изменеия применяются в базе SQLite, и потом записываются в dbf файл при выборе операции сохранения.
-<li>Приложение поерживает форматы XBase, dBaseIII, IV, Foxpro 2.x, Visual Foxpro.
+<li>Приложение поддерживает форматы XBase, dBaseIII, IV, Foxpro 2.x, Visual Foxpro.
 <li>Следующие типы полей могут редактироваться: character, numeric, currency, double, integer, float, logical.
 </ul>
 </body>

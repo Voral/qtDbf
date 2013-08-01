@@ -31,5 +31,6 @@
         <file>images/russia.png</file>
         <file>images/calc.svg</file>
         <file>images/document_open.png</file>
+        <file>images/filter.png</file>
     </qresource>
 </RCC>
