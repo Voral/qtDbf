@@ -1,6 +1,6 @@
 #!/bin/sh
 #gzip -9
-VERSION="0.9.8"
+VERSION="0.9.10"
 VERSIONPKG="1"
 PLATFORM="i386"
 ARCH=64

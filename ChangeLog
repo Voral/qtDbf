@@ -1,3 +1,16 @@
+v.0.9.10
+=======
+en:
+  * Bugfix !!! Overwriting a file when it is opened after editing the
+      previous
+  + Added simple filter
+  + Filter "All files" was added into Open file dialog.
+ru:
+  * Исправлен баг. Открываемый файл перезаписывался предыдущим в случае сохранения.
+  + Добавлен простой фильтр/поисковик
+  + В диалог открытия файла добавлен фильтр "Все файлы"
+
+
 v.0.9.9
 =======
 en:
