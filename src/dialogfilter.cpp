@@ -90,15 +90,21 @@ void DialogFilter::onFieldChange(int index)
     }
     else if ((fieldsCollection.at(index)->fieldType == "N") || (fieldsCollection.at(index)->fieldType == "F"))
     {
-        edExpression->setInputMask("#0.00");
+        QRegExp rx(QString("^[0-9-]+(\\.0-9{0,%1})?$").arg(fieldsCollection.at(index)->fieldDecimals));
+        validator = new QRegExpValidator(rx, this);
+        edExpression->setMaxLength(fieldsCollection.at(index)->fieldSize);
+        edExpression->setValidator(validator);
     }
 /*    else if (fieldsCollection.at(index)->fieldType == "T")
     {
         edExpression->setInputMask("00.00.000 00:00:00.000");
     }
-  */  else if (fieldsCollection.at(index)->fieldType == "I")
+  */
+    else if (fieldsCollection.at(index)->fieldType == "I")
     {
-        edExpression->setInputMask("#0");
+        QRegExp rx(QString("^[0-9-]{1,%1}$").arg(fieldsCollection.at(index)->fieldSize));
+        validator = new QRegExpValidator(rx, this);
+        edExpression->setMaxLength(fieldsCollection.at(index)->fieldSize);
     }
 }
 QString DialogFilter::prepare(QFieldsItem *item, QString expression,QString filter)
