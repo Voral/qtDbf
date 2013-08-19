@@ -6,9 +6,9 @@ PLATFORM="i386"
 ARCH=64
 PKGNAME=qtdbf
 
-./makeLin32on64.sh
-./clean.sh
-./copyfiles.sh
+#./makeLin32on64.sh
+#./clean.sh
+#./copyfiles.sh
 
 DEBNAME=${PKGNAME}_${VERSION}-${VERSIONPKG}_$PLATFORM.deb
 

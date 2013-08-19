@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Languages files</DisplayName>
+    <Description>Languages files.</Description>
+    <Version>0.9.10</Version>
+    <ReleaseDate>2013-08-21</ReleaseDate>
+    <SortingPriority>96</SortingPriority>
+    <Name>ru.vasoft.qtdbf.lang</Name>
+</Package>

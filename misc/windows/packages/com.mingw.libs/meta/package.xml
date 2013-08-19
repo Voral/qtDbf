@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>MinGW Libraries</DisplayName>
+    <Description>MinGW Libraries</Description>
+    <Version>4.7.2</Version>
+    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Name>com.mingw.libs</Name>
+    <SortingPriority>97</SortingPriority>
+    <Default>True</Default>
+    <Licenses>
+        <License name="MinGW License" file="license.txt" />
+    </Licenses>
+    <Translations>
+    </Translations>
+</Package>

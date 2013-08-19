@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Main components of application</DisplayName>
+    <Description>Install this example.</Description>
+    <Version>0.9.10</Version>
+    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Name>ru.vasoft.qtdbf.main</Name>
+    <SortingPriority>99</SortingPriority>
+    <Licenses>
+        <License name="Beer Public License Agreement" file="license.txt" />
+    </Licenses>
+    <Translations>
+    </Translations>
+    <Default>Script</Default>
+    <Script>installscript.qs</Script>
+</Package>

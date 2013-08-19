@@ -8,6 +8,7 @@ moc_*.cpp
 *~
 qrc_*.cpp
 *.qm
+*.exe
 Makefile
 Makefile.*
 qtdbf.pro.user
@@ -19,7 +20,13 @@ misc/package/qtdbf/DEBIAN/control
 misc/package/qtdbf/usr/share/applications/qtdbf.desktop
 misc/package/qtdbf/usr/share/doc/qtdbf/help/*
 misc/package/qtdbf/usr/share/doc/qtdbf/changelog.gz
-misc/package/qtdbf/usr/share/pixmaps/qtdbf.svg
-misc/package/qtdbf/usr/bin
-misc/package/qtdbf/share/pixmaps/*/*
-misc/package/qtdbf/share/icons/*/*
+misc/package/qtdbf/usr/bin/*
+misc/package/qtdbf/usr/share/pixmaps/*/*
+misc/package/qtdbf/usr/share/pixmaps/*
+misc/package/qtdbf/usr/share/icons/*/*
+misc/package/qtdbf/usr/share/qtdbf/changelog.gz
+misc/package/qtdbf/usr/share/icons/*
+misc/package/qtdbf/usr/share/qtdbf/help/*
+misc/windows/packages/com.mingw.libs/data/*
+misc/windows/packages/com.nokia.libs/data/*
+misc/windows/packages/ru.vasoft.qtdbf.lang.*/data/help/*

@@ -2165,7 +2165,7 @@ void QDbfEditor::helpDbf()
         }
     }
 #else
-    dbfDirPath = app.applicationDirPath();
+    dbfDirPath = qApp->applicationDirPath();
 #endif
     dbfDirPath += "/qtdbf_";
     dbfDirPath += dbfLocal;

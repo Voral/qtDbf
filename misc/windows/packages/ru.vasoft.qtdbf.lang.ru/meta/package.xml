@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Russian</DisplayName>
+    <Description>Russian languages files.</Description>
+    <Version>0.9.10</Version>
+    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Name>ru.vasoft.qtdbf.lang.ru</Name>
+    <SortingPriority>95</SortingPriority>
+    <Translations>
+    </Translations>
+</Package>

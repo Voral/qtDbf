@@ -15,7 +15,7 @@ DEBNAME=${PKGNAME}_${VERSION}-${VERSIONPKG}_$PLATFORM.deb
 
 SIZE=`du package/$PKGNAME --exclude=DEBIAN -s | sed -rn "s/^([0-9]+).*/\1/gp"`
 
-gzip -9 -c package/changelog > package/qtdbf/usr/share/qtdbf/changelog.gz
+gzip -9 -c package/changelog > package/qtdbf/usr/share/doc/qtdbf/changelog.gz
 
 strip --strip-unneeded package/$PKGNAME/usr/bin/*
 
