@@ -32,17 +32,18 @@
 <context>
     <name>DialogFilter</name>
     <message>
-        <location filename="../dialogfilter.cpp" line="8"/>
+        <location filename="../dialogfilter.cpp" line="9"/>
         <source>Field Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="9"/>
+        <location filename="../dialogfilter.cpp" line="10"/>
         <source>Expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogfilter.cpp" line="29"/>
+        <location filename="../dialogfilter.cpp" line="75"/>
         <source>contain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -77,9 +78,9 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="38"/>
-        <source>&lt; All fields &gt;</source>
-        <translation type="unfinished"></translation>
+        <location filename="../dialogfilter.cpp" line="50"/>
+        <source>Error</source>
+        <translation>Hiba</translation>
     </message>
 </context>
 <context>
@@ -199,38 +200,48 @@
     <name>QConfigAppTab</name>
     <message>
         <location filename="../dbfconfig.cpp" line="183"/>
+        <location filename="../dbfconfig.cpp" line="197"/>
         <source>Application language</source>
         <translation>Az alkalmazás nyelve</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="187"/>
         <source>Romana</source>
-        <translation>Română</translation>
+        <translation type="obsolete">Română</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="188"/>
-        <source>Magyar</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../dbfconfig.cpp" line="189"/>
+        <location filename="../dbfconfig.cpp" line="190"/>
         <source>English</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="190"/>
+        <location filename="../dbfconfig.cpp" line="188"/>
         <source>Russian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="243"/>
+        <location filename="../dbfconfig.cpp" line="189"/>
+        <source>Ukrainian</source>
+        <translation>Ukrán</translation>
+    </message>
+    <message>
+        <location filename="../dbfconfig.cpp" line="191"/>
+        <source>Romanian</source>
+        <translation>Română</translation>
+    </message>
+    <message>
+        <location filename="../dbfconfig.cpp" line="192"/>
+        <source>Hungarian</source>
+        <translation>Magyar</translation>
+    </message>
+    <message>
+        <location filename="../dbfconfig.cpp" line="195"/>
         <source>Requires application restart</source>
         <translation>A nyelv megváltoztatásához újra kell indítani az alkalmazást</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="245"/>
+        <location filename="../dbfconfig.cpp" line="198"/>
         <source>Data file codepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Kódlapjára fájl</translation>
     </message>
 </context>
 <context>
@@ -292,20 +303,20 @@
 <context>
     <name>QDbfEditor</name>
     <message>
-        <location filename="../dbfeditor.cpp" line="909"/>
-        <location filename="../dbfeditor.cpp" line="916"/>
+        <location filename="../dbfeditor.cpp" line="898"/>
+        <location filename="../dbfeditor.cpp" line="905"/>
         <source>Eroare</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="258"/>
+        <location filename="../dbfeditor.cpp" line="247"/>
         <source>ID</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../dbfeditor.cpp" line="43"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyitott</translation>
     </message>
     <message>
         <location filename="../dbfeditor.cpp" line="48"/>
@@ -315,8 +326,8 @@
     </message>
     <message>
         <location filename="../dbfeditor.cpp" line="52"/>
-        <location filename="../dbfeditor.cpp" line="430"/>
-        <location filename="../dbfeditor.cpp" line="559"/>
+        <location filename="../dbfeditor.cpp" line="419"/>
+        <location filename="../dbfeditor.cpp" line="548"/>
         <source>Edit</source>
         <translation>Szerkeszt</translation>
     </message>
@@ -332,7 +343,7 @@
     </message>
     <message>
         <location filename="../dbfeditor.cpp" line="67"/>
-        <location filename="../dbfeditor.cpp" line="177"/>
+        <location filename="../dbfeditor.cpp" line="933"/>
         <location filename="../dbfeditor.cpp" line="1629"/>
         <source>Save</source>
         <translation>Ment</translation>
@@ -365,18 +376,18 @@
     <message>
         <location filename="../dbfeditor.cpp" line="90"/>
         <source>Set filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Adja meg a szűrési</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="252"/>
-        <location filename="../dbfeditor.cpp" line="323"/>
-        <location filename="../dbfeditor.cpp" line="339"/>
-        <location filename="../dbfeditor.cpp" line="373"/>
-        <location filename="../dbfeditor.cpp" line="711"/>
-        <location filename="../dbfeditor.cpp" line="718"/>
-        <location filename="../dbfeditor.cpp" line="823"/>
-        <location filename="../dbfeditor.cpp" line="830"/>
-        <location filename="../dbfeditor.cpp" line="850"/>
+        <location filename="../dbfeditor.cpp" line="241"/>
+        <location filename="../dbfeditor.cpp" line="312"/>
+        <location filename="../dbfeditor.cpp" line="328"/>
+        <location filename="../dbfeditor.cpp" line="362"/>
+        <location filename="../dbfeditor.cpp" line="700"/>
+        <location filename="../dbfeditor.cpp" line="707"/>
+        <location filename="../dbfeditor.cpp" line="812"/>
+        <location filename="../dbfeditor.cpp" line="819"/>
+        <location filename="../dbfeditor.cpp" line="839"/>
         <location filename="../dbfeditor.cpp" line="1059"/>
         <location filename="../dbfeditor.cpp" line="1135"/>
         <location filename="../dbfeditor.cpp" line="1195"/>
@@ -398,12 +409,12 @@
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="302"/>
+        <location filename="../dbfeditor.cpp" line="291"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Szűrő</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="339"/>
+        <location filename="../dbfeditor.cpp" line="328"/>
         <location filename="../dbfeditor.cpp" line="1509"/>
         <source>Select at least a cell</source>
         <translation>Válasszon ki legalább egy mezőt</translation>
@@ -413,44 +424,44 @@
         <translation type="obsolete">Szerkesztés</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="559"/>
+        <location filename="../dbfeditor.cpp" line="548"/>
         <source>Unsupported field (yet)</source>
         <translation>Nem támogatott mező (még)</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="577"/>
+        <location filename="../dbfeditor.cpp" line="566"/>
         <location filename="../dbfeditor.cpp" line="1529"/>
         <source>OK</source>
         <translation>Rendben</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="578"/>
+        <location filename="../dbfeditor.cpp" line="567"/>
         <location filename="../dbfeditor.cpp" line="1530"/>
         <source>Cancel</source>
         <translation>Elvet</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="760"/>
+        <location filename="../dbfeditor.cpp" line="749"/>
         <source>Insert</source>
         <translation>Beszúrás</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="760"/>
+        <location filename="../dbfeditor.cpp" line="749"/>
         <source>The file contains unsupported fields.</source>
-        <translation>Az állomány nem támogatott mezőket is tartalmaz</translation>
+        <translation>Az állomány nem támogatott mezőket is tartalmaz.</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="850"/>
+        <location filename="../dbfeditor.cpp" line="839"/>
         <source>Select at least a row</source>
         <translation>Válasszon ki legalább egy sort</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="892"/>
+        <location filename="../dbfeditor.cpp" line="881"/>
         <source>Delete current row</source>
         <translation>A kijelölt sorok törlése</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="892"/>
+        <location filename="../dbfeditor.cpp" line="881"/>
         <source>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Warning !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;You are about to delete the current record&lt;/h3&gt;&lt;h2&gt;Are you sure?&lt;/h2&gt;&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Figyelem !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;A kijelölt sorok törlésére készül&lt;/h3&gt;&lt;h2&gt;Biztos benne?&lt;/h2&gt;&lt;/center&gt;</translation>
     </message>
@@ -470,7 +481,7 @@
         <translation>Feltöltési érték vagy kifejezés</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="177"/>
+        <location filename="../dbfeditor.cpp" line="933"/>
         <location filename="../dbfeditor.cpp" line="1629"/>
         <source>&lt;center&gt;&lt;h2&gt;Do you want to save the changes?&lt;/h2&gt;&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt;Elmenti a változtatásokat?&lt;/h2&gt;&lt;/center&gt;</translation>
@@ -529,73 +540,73 @@
 <context>
     <name>QDbfFieldColorsTab</name>
     <message>
-        <location filename="../dbfconfig.cpp" line="479"/>
+        <location filename="../dbfconfig.cpp" line="416"/>
         <source>Double click on the name to change color</source>
         <translation>A szín megváltoztatásához dupla kattintás a névre</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="485"/>
-        <location filename="../dbfconfig.cpp" line="561"/>
+        <location filename="../dbfconfig.cpp" line="422"/>
+        <location filename="../dbfconfig.cpp" line="498"/>
         <source>Character</source>
         <translation>Karakteres</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="487"/>
-        <location filename="../dbfconfig.cpp" line="587"/>
+        <location filename="../dbfconfig.cpp" line="424"/>
+        <location filename="../dbfconfig.cpp" line="524"/>
         <source>Currency</source>
         <translation>Pénznem</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="489"/>
-        <location filename="../dbfconfig.cpp" line="613"/>
+        <location filename="../dbfconfig.cpp" line="426"/>
+        <location filename="../dbfconfig.cpp" line="550"/>
         <source>Numeric</source>
         <translation>Numerikus</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="491"/>
-        <location filename="../dbfconfig.cpp" line="639"/>
+        <location filename="../dbfconfig.cpp" line="428"/>
+        <location filename="../dbfconfig.cpp" line="576"/>
         <source>Date</source>
         <translation>Dátum</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="493"/>
-        <location filename="../dbfconfig.cpp" line="665"/>
+        <location filename="../dbfconfig.cpp" line="430"/>
+        <location filename="../dbfconfig.cpp" line="602"/>
         <source>DateTime</source>
         <translation>Dátum és idő</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="495"/>
-        <location filename="../dbfconfig.cpp" line="691"/>
+        <location filename="../dbfconfig.cpp" line="432"/>
+        <location filename="../dbfconfig.cpp" line="628"/>
         <source>Double</source>
         <translation>Valós</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="497"/>
-        <location filename="../dbfconfig.cpp" line="717"/>
+        <location filename="../dbfconfig.cpp" line="434"/>
+        <location filename="../dbfconfig.cpp" line="654"/>
         <source>Integer</source>
         <translation>Egész</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="499"/>
-        <location filename="../dbfconfig.cpp" line="743"/>
+        <location filename="../dbfconfig.cpp" line="436"/>
+        <location filename="../dbfconfig.cpp" line="680"/>
         <source>Logical</source>
         <translation>Logikai</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="501"/>
-        <location filename="../dbfconfig.cpp" line="769"/>
+        <location filename="../dbfconfig.cpp" line="438"/>
+        <location filename="../dbfconfig.cpp" line="706"/>
         <source>Memo</source>
         <translation>Memó</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="503"/>
-        <location filename="../dbfconfig.cpp" line="795"/>
+        <location filename="../dbfconfig.cpp" line="440"/>
+        <location filename="../dbfconfig.cpp" line="732"/>
         <source>Memo4</source>
         <translation>Memó4</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="505"/>
-        <location filename="../dbfconfig.cpp" line="821"/>
+        <location filename="../dbfconfig.cpp" line="442"/>
+        <location filename="../dbfconfig.cpp" line="758"/>
         <source>General</source>
         <translation>Általános</translation>
     </message>
@@ -603,8 +614,12 @@
 <context>
     <name>QDbfStructureTab</name>
     <message>
-        <location filename="../dbfconfig.cpp" line="440"/>
         <source>Eroare</source>
+        <translation type="obsolete">Hiba</translation>
+    </message>
+    <message>
+        <location filename="../dbfconfig.cpp" line="377"/>
+        <source>Error</source>
         <translation>Hiba</translation>
     </message>
 </context>
@@ -703,12 +718,12 @@
 <context>
     <name>QIconSizeTab</name>
     <message>
-        <location filename="../dbfconfig.cpp" line="358"/>
+        <location filename="../dbfconfig.cpp" line="295"/>
         <source>Tool button icon size</source>
         <translation>A gombok ikonjának mérete</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="397"/>
+        <location filename="../dbfconfig.cpp" line="334"/>
         <source>Default</source>
         <translation>Alapértelmezett</translation>
     </message>
@@ -725,7 +740,7 @@
         <location filename="../widgets.cpp" line="151"/>
         <location filename="../widgets.cpp" line="152"/>
         <source>This field cannot be empty.</source>
-        <translation>Ez a mező nem lehet üres</translation>
+        <translation>Ez a mező nem lehet üres.</translation>
     </message>
 </context>
 <context>
@@ -739,27 +754,27 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../dbfconfig.cpp" line="442"/>
+        <location filename="../dbfconfig.cpp" line="379"/>
         <source>ID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="443"/>
+        <location filename="../dbfconfig.cpp" line="380"/>
         <source>Name</source>
         <translation>Elnevezés</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="444"/>
+        <location filename="../dbfconfig.cpp" line="381"/>
         <source>Type</source>
         <translation>Típus</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="445"/>
+        <location filename="../dbfconfig.cpp" line="382"/>
         <source>Size</source>
         <translation>Méret</translation>
     </message>
     <message>
-        <location filename="../dbfconfig.cpp" line="446"/>
+        <location filename="../dbfconfig.cpp" line="383"/>
         <source>Decimals</source>
         <translation>Tizedesjegyek</translation>
     </message>

@@ -59,11 +59,7 @@ public:
     virtual void saveEditedData();
 
 private:
-
-    QRadioButton *romanaRadioButton;
-    QRadioButton *magyarRadioButton;
-    QRadioButton *englishRadioButton;
-    QRadioButton *russianRadioButton;
+    QComboBox *languages;
     QComboBox *codecs;
 
     QPushButton *restoreDefaultButton;

@@ -184,78 +184,25 @@ void QConfigAppTab::createInterface()
 
         QGridLayout *languageLayout = new QGridLayout(languageGroupBox);
 
-        romanaRadioButton = new QRadioButton(tr("Romana"),languageGroupBox);
-        magyarRadioButton = new QRadioButton(tr("Magyar"),languageGroupBox);
-        englishRadioButton = new QRadioButton(tr("English"),languageGroupBox);
-        russianRadioButton = new QRadioButton(tr("Russian"),languageGroupBox);
-
-        QLabel *romanaLabel = new QLabel(languageGroupBox);
-        QLabel *magyarLabel = new QLabel(languageGroupBox);
-        QLabel *englishLabel = new QLabel(languageGroupBox);
-        QLabel *russianLabel = new QLabel(languageGroupBox);
-
-        QPixmap romanaSteag;
-        QPixmap magyarZaszlo;
-        QPixmap englishFlag;
-        QPixmap russianFlag;
-
-        romanaSteag.load(":images/romana.png");
-        magyarZaszlo.load(":images/magyar.png");
-        englishFlag.load(":images/english.png");
-        russianFlag.load(":images/russia.png");
-
-        romanaLabel->setPixmap(romanaSteag);
-        magyarLabel->setPixmap(magyarZaszlo);
-        englishLabel->setPixmap(englishFlag);
-        russianLabel->setPixmap(russianFlag);
-
-        if (dbfLocal == "ro")
-            {
-                romanaRadioButton->setChecked(true);
-                magyarRadioButton->setChecked(false);
-                englishRadioButton->setChecked(false);
-                russianRadioButton->setChecked(false);
-            }
-
-        if (dbfLocal == "hu")
-            {
-                romanaRadioButton->setChecked(false);
-                magyarRadioButton->setChecked(true);
-                englishRadioButton->setChecked(false);
-                russianRadioButton->setChecked(false);
-            }
-
-        if (dbfLocal == "en")
-            {
-                romanaRadioButton->setChecked(false);
-                magyarRadioButton->setChecked(false);
-                englishRadioButton->setChecked(true);
-                russianRadioButton->setChecked(false);
-            }
-        if (dbfLocal == "ru")
-            {
-                romanaRadioButton->setChecked(false);
-                magyarRadioButton->setChecked(false);
-                englishRadioButton->setChecked(false);
-                russianRadioButton->setChecked(true);
-            }
+        languages = new QComboBox(languageGroupBox);
+        languages->addItem(tr("Russian"),"ru");
+        languages->addItem(tr("Ukrainian"),"uk");
+        languages->addItem(tr("English"),"en");
+        languages->addItem(tr("Romanian"),"ro");
+        languages->addItem(tr("Hungarian"),"hu");
+        languages->setCurrentIndex(languages->findData(dbfLocal));
 
         QLabel *explicLanguage = new QLabel(tr("Requires application restart"),languageGroupBox);
         explicLanguage->setWordWrap(true);
+        QLabel *GUILabel = new QLabel(tr("Application language"));
         QLabel *codecLabel = new QLabel(tr("Data file codepage"));
-
-        languageLayout->addWidget(romanaRadioButton,0,0);
-        languageLayout->addWidget(magyarRadioButton,1,0);
-        languageLayout->addWidget(englishRadioButton,2,0);
-        languageLayout->addWidget(russianRadioButton,3,0);
-        languageLayout->addWidget(romanaLabel,0,1);
-        languageLayout->addWidget(magyarLabel,1,1);
-        languageLayout->addWidget(englishLabel,2,1);
-        languageLayout->addWidget(russianLabel,3,1);
         codecs = new QComboBox(languageGroupBox);
-        languageLayout->addWidget(codecLabel,4,0);
-        languageLayout->addWidget(codecs,4,1);
-        languageLayout->addWidget(explicLanguage,6,0,1,2);
+
+        languageLayout->addWidget(GUILabel,0,0);
+        languageLayout->addWidget(codecLabel,1,0);
+        languageLayout->addWidget(languages,0,1);
+        languageLayout->addWidget(codecs,1,1);
+        languageLayout->addWidget(explicLanguage,3,0,1,2);
 
         codecs->addItems(QStringList() << "Apple Roman"
                          << "Big5"
@@ -327,18 +274,8 @@ void QConfigAppTab::createInterface()
 void QConfigAppTab::saveEditedData()
 {
     QSettings settings;
-    QString dbfLocal;
-
-    if (romanaRadioButton->isChecked())
-        dbfLocal="ro";
-    if (magyarRadioButton->isChecked())
-        dbfLocal="hu";
-    if (englishRadioButton->isChecked())
-        dbfLocal="en";
-    if (russianRadioButton->isChecked())
-        dbfLocal="ru";
     generalTextCodec = codecs->currentText();
-    settings.setValue("dbflocal", dbfLocal);
+    settings.setValue("dbflocal", languages->itemData(languages->currentIndex()).toString());
 }
 
 //QIconSizeTab
@@ -437,7 +374,7 @@ void QDbfStructureTab::createInterface()
     model = new QSqlQueryModel(this);
     model->setQuery(query, QSqlDatabase::database("dbfEditor"));
     if (model->lastError().isValid())
-       QMessageBox::critical(this, tr("Eroare"), model->lastError().text());
+       QMessageBox::critical(this, tr("Error"), model->lastError().text());
 
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Name"));

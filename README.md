@@ -18,3 +18,6 @@ Autor:		Alexander Vorobyev (Voral)
 
 AltLinux package: http://packages.altlinux.org/en/Sisyphus/srpms/qtdbf/get
 
+![screen1](http://www.va-soft.ru/index.php?module=project&action=thumb&id=11)
+![screen2](http://www.va-soft.ru/index.php?module=project&action=thumb&id=12)
+

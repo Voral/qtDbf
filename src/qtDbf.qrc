@@ -13,9 +13,6 @@
         <file>images/config.svg</file>
         <file>images/load.svg</file>
         <file>images/back.svg</file>
-        <file>images/romana.png</file>
-        <file>images/magyar.png</file>
-        <file>images/english.png</file>
         <file>images/qtdbf.svg</file>
         <file>images/help.svg</file>
         <file>images/structure.svg</file>
@@ -28,7 +25,6 @@
         <file>help/help.png</file>
         <file>help/save.png</file>
         <file>images/colors.svg</file>
-        <file>images/russia.png</file>
         <file>images/calc.svg</file>
         <file>images/document_open.png</file>
         <file>images/filter.png</file>

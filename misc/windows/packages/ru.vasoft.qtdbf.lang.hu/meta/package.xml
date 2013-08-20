@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
-    <DisplayName>Hurgadian</DisplayName>
-    <Description>Hurgadian languages files.</Description>
+    <DisplayName>Hungarian</DisplayName>
+    <Description>Hungarian languages files.</Description>
     <Version>0.9.10</Version>
     <ReleaseDate>2013-08-21</ReleaseDate>
     <Name>ru.vasoft.qtdbf.lang.hu</Name>

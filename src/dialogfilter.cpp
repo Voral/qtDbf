@@ -47,7 +47,7 @@ DialogFilter::DialogFilter(const FieldList fields, const QString &title, QWidget
     }
     if (cbField->count()==0)
     {
-        QMessageBox::warning(this,tr("error"),"Sorry! No supported fields for filter");
+        QMessageBox::warning(this,tr("Error"),"Sorry! No supported fields for filter");
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel);
     }
     edExpression->setMinimumWidth(200);

@@ -58,7 +58,8 @@ win32:RC_FILE = src/qtDbf.rc
 
 TRANSLATIONS = src/lang/qtdbf_hu.ts \
     src/lang/qtdbf_ru.ts \
-    src/lang/qtdbf_ro.ts
+    src/lang/qtdbf_ro.ts \
+	src/lang/qtdbf_uk.ts
 
 defineReplace(outname) {
   $(MKDIR) $${DESTDIR}/lang
