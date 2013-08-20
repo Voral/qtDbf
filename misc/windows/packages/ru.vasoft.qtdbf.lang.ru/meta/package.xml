@@ -6,6 +6,5 @@
     <ReleaseDate>2013-08-21</ReleaseDate>
     <Name>ru.vasoft.qtdbf.lang.ru</Name>
     <SortingPriority>95</SortingPriority>
-    <Translations>
-    </Translations>
+    <Default>True</Default>
 </Package>

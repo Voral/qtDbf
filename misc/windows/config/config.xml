@@ -4,8 +4,8 @@
     <Version>0.9.10</Version>
     <Title>qtDbf - simple DBF editor and viewer</Title>
     <Publisher>Alexander Vorobyev</Publisher>
-    <StartMenuDir>Applications</StartMenuDir>
-    <TargetDir>@ProgramFiles</TargetDir>
+    <StartMenuDir></StartMenuDir>
+    <TargetDir>@rootDir@/qtDbf</TargetDir>
     <ProductUrl>http://www.va-soft.ru/project_8.html</ProductUrl>
     <Icon>qtdbf</Icon>
     <Watermark>qtdbf.png</Watermark>

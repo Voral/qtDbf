@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
-    <DisplayName>Qt Libraries</DisplayName>
-    <Description>Qt Libraries of Qt and mingw.</Description>
+    <DisplayName>Qt Framework Libraries</DisplayName>
+    <Description>Install Qt Framework Libraries.</Description>
     <Version>4.7.2</Version>
     <ReleaseDate>2013-08-21</ReleaseDate>
     <Name>com.nokia.libs</Name>
     <SortingPriority>98</SortingPriority>
-    <Licenses>
-        <License name="GNU LESSER GENERAL PUBLIC LICENSE and EXCEPTION" file="license.txt" />
-    </Licenses>
-    <Translations>
-    </Translations>
 </Package>

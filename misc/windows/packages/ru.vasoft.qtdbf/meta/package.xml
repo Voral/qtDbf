@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+  <DisplayName>QtDBF Editor and Viewer</DisplayName>
+  <Description>Installs the QtDBF Editor and Viewer</Description>
+  <Version>0.9.10</Version>
+  <ReleaseDate>2013-07-08</ReleaseDate>
+  <Name>ru.vasoft.qtdbf</Name>
+</Package>
