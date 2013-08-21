@@ -15,7 +15,7 @@ http://qt-apps.org/content/show.php/qtDbf?content=109162
 Autor:		Alexander Vorobyev (Voral)
 Home Page:	http://va-soft.ru/
 
-AltLinux package: http://packages.altlinux.org/en/Sisyphus/srpms/qtdbf/get
+* In the official repositories ALT Linux 5.1 and above
 
 ![screen1](http://www.va-soft.ru/index.php?module=project&action=thumb&id=11)
 ![screen2](http://www.va-soft.ru/index.php?module=project&action=thumb&id=12)
