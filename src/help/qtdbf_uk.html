@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>qtDbf Help</title>
+</head>
+<body>
+<h2 align="center"><font color="#004586">qtDbf 0.9.10</font></h2>
+
+<h3><font color="red">УВАГА!</font></h3>
+
+<ul>
+<li>Не редагуйте dbf файл без заздалегідь зробленої резервної копії.
+</li><li>Не відкривайте і, особливо, не зберігайте файли в багатокористувацькому доступі.
+</li><li>Додаток может переглядати memo файли, але не дозволяє редагувати їх.
+</li><li>Структура dbf файла покищо не редагується.
+</li></ul>
+
+
+<p>Отже, давайте глянемо, що ми можемо зробити з додатком :-).</p>
+<p>Додаток може бути встановлено як переглядач dbf файлів за замовчанням.</p>
+<table cellpadding="10" border="1">
+
+<tbody><tr>
+        <td><img src=":help/fill.png" hight="40" width="40"></td>
+        <td>&nbsp;</td>
+        <td>Заповнення полів заданим виразом.</td>
+</tr>
+<tr>
+        <td><img src=":help/edit.png" hight="40" width="40"></td>
+        <td>Enter</td>
+        <td>
+<meta name="qrichtext" content="1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>Редагування значень у клітинках.<br>Такий ефект досягається подвійним кліком по клітинці<br>Якщо клітинка memo типу - вміст буде відображено в новому вікні.</td>
+</tr>
+<tr>
+        <td><img src=":help/add.png" hight="40" width="40"></td>
+        <td>Ins</td>
+        <td>Додавання пустих записів у кінець файлу.</td>
+</tr>
+<tr>
+        <td><img src=":help/delete.png" hight="40" width="40"></td>
+        <td>Del</td>
+        <td>Видалення поточного запису.</td>
+</tr>
+<tr>
+        <td><img src=":help/save.png" hight="40" width="40"></td>
+        <td>Ctrl + S</td>
+        <td>Збереження змін у dbf файл.</td>
+</tr>
+<tr>
+        <td><img src=":help/config.png" hight="40" width="40"></td>
+        <td>&nbsp;</td>
+        <td>Конфігураційний діалог для вибору мови інтерфейсу додатку, 
+кодування dbf файлу, розміру іконок, перегляду структури dbf файлу і 
+призначення кольорів для типів полів.</td>
+</tr>
+<tr>
+        <td><img src=":help/help.png" hight="40" width="40"></td>
+        <td>F1</td>
+        <td>Відкриття цього вікна.</td>
+</tr>
+<tr>
+        <td><img src=":images/calc.svg" hight="40" width="40"></td>
+        <td>Ctrl + E</td>
+        <td>Запуск калькулятора.<br>
+</td>
+</tr>
+<tr>
+        <td><img src=":images/document_open.png" hight="40" width="40"></td>
+        <td>Ctrl + O</td>
+        <td>Відкрити dbf файл.</td>
+</tr>
+<tr>
+        <td><img src=":images/filter.png" hight="40" width="40"></td>
+        <td>Ctrl + F</td>
+        <td>Встановити або зняти фільтр.<br>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Декілька технічних деталей.</p>
+<ul>
+<li>Цей додаток зчитує dbf файл в базу данных SQLite  в пам'ять.<br>
+    Так що завантаження великих файлів може бути повільним.<br>
+    Всі зміни застосовуються в базі SQLite, і потім записуються в dbf файл при виборі операції збереження.
+</li><li>Додаток підтримує формати XBase, dBaseIII, IV, Foxpro 2.x, Visual Foxpro.
+</li><li>Наступні типи полів можуть редагуватися: character, numeric, currency, double, integer, float, logical.
+</li></ul>
+
+
+</body></html>

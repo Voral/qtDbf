@@ -11,12 +11,12 @@ http://qt-apps.org/content/show.php/qtDbf?content=109162
 
 * Qt 4.1+
 
+~ Autor:
+
+* Autor:          Alexander Vorobyev (Voral)
+* Home Page:      http://va-soft.ru/
+
 ~ Availability:
-Autor:		Alexander Vorobyev (Voral)
-Home Page:	http://va-soft.ru/
 
-* In the official repositories ALT Linux 5.1 and above
-
-![screen1](http://www.va-soft.ru/index.php?module=project&action=thumb&id=11)
-![screen2](http://www.va-soft.ru/index.php?module=project&action=thumb&id=12)
-
+* [Projects home page](http://www.va-soft.ru/project_8.html)
+* The [official repositories](http://packages.altlinux.org/en/Sisyphus/srpms/qtdbf/get) ALT Linux 5.1 and above
