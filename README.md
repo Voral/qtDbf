@@ -12,9 +12,8 @@ http://qt-apps.org/content/show.php/qtDbf?content=109162
 * Qt 4.1+
 
 ~ Availability:
-
-Home Page:	http://va-soft.ru/
 Autor:		Alexander Vorobyev (Voral)
+Home Page:	http://va-soft.ru/
 
 AltLinux package: http://packages.altlinux.org/en/Sisyphus/srpms/qtdbf/get
 
