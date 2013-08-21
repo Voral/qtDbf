@@ -19,12 +19,14 @@ Availability
 -
 * [Projects home page](http://www.va-soft.ru/project_8.html)
 * The [official repositories](http://packages.altlinux.org/en/Sisyphus/srpms/qtdbf/get) ALT Linux 5.1 and above
+* Port for OS/2 and eComStation [ftp](ftp://ftp.netlabs.org/pub/qtapps/qtDbf-0.9.10-os2.7z)
 
 Fanks
 -
 * Istvan Hevele Hegyi
 * Motsyo Gennadi aka Drool (ALT Linux Team)  
 * Eugene Pivnev
+* Elbert Pol aka TeLLie
 
 Screenshots
 -

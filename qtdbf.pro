@@ -55,11 +55,12 @@ MOC_DIR += ./.moc
 RCC_DIR += ./.rcc
 
 win32:RC_FILE = src/qtDbf.rc
+os2:RC_FILE = src/qtDbf_os2.rc
 
 TRANSLATIONS = src/lang/qtdbf_hu.ts \
     src/lang/qtdbf_ru.ts \
     src/lang/qtdbf_ro.ts \
-	src/lang/qtdbf_uk.ts
+    src/lang/qtdbf_uk.ts
 
 defineReplace(outname) {
   $(MKDIR) $${DESTDIR}/lang
@@ -134,4 +135,21 @@ win32 {
     copy_help.target = copy_help
     copy_help.commands = xcopy /I /Y \"$$DESTDIR\\help\\*.html\" \"$$PREFIX\\help\\\"
     QMAKE_EXTRA_TARGETS += copy_lang copy_help
+}
+os2 {
+    INSTALLS += help \
+       translations
+    isEmpty(PREFIX)
+    {
+      PREFIX=/usr
+    }
+    target.path = $$PREFIX/bin
+
+    translations.files = bin/lang/*.qm
+    translations.path = $$PREFIX/share/qtdbf/lang
+    translations.CONFIG += no_check_exist
+
+    help.files = src/help/*.html
+    help.path = $$PREFIX/share/qtdbf/help
+    help.CONFIG += no_check_exist
 }

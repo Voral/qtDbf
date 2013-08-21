@@ -2148,7 +2148,7 @@ void QDbfEditor::helpDbf()
 
     QString dbfDirPath;
 /**/
-#ifdef Q_OS_UNIX
+#if (defined Q_OS_UNIX) || (defined Q_OS_OS2)
     if (QFile::exists("/usr/local/share/qtdbf/help"))
     {
         dbfDirPath = "/usr/local/share/qtdbf/help";
