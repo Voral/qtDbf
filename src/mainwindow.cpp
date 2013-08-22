@@ -36,7 +36,6 @@ MainWindow::MainWindow(QString dbfFileName)
 {
     QSettings settings;
     resize(settings.value("mainwindow/size",QSize(880,650)).toSize());
-
     charFieldColorString = settings.value("charFieldColor","000000").toString();
     currencyFieldColorString = settings.value("currencyFieldColor","007600").toString();
     numericFieldColorString = settings.value("numericFieldColor","007600").toString();

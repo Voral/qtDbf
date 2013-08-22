@@ -22,7 +22,7 @@ private:
 
     QString prepare(QFieldsItem *item, QString expression, QString filter);
 public:
-    explicit DialogFilter(const FieldList fields, const QString &title, QWidget *parent = 0);
+    explicit DialogFilter(const FieldList fields, const QString &title, const QString &field, QWidget *parent = 0);
     QString getWhere();
 
 private slots:

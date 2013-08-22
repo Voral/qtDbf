@@ -1,6 +1,6 @@
 #include "dialogfilter.h"
 
-DialogFilter::DialogFilter(const FieldList fields, const QString &title, QWidget *parent) :
+DialogFilter::DialogFilter(const FieldList fields, const QString &title, const QString &field = "", QWidget *parent) :
     QDbfDialog(title,parent),
     fieldsCollection(fields)
 {
@@ -45,6 +45,7 @@ DialogFilter::DialogFilter(const FieldList fields, const QString &title, QWidget
         cbField->addItem(fieldsCollection.at(i)->fieldName);
         cbField->setItemData(cbField->count()-1,i);
     }
+    cbField->setCurrentIndex(cbField->findText(field));
     if (cbField->count()==0)
     {
         QMessageBox::warning(this,tr("Error"),"Sorry! No supported fields for filter");
@@ -90,7 +91,7 @@ void DialogFilter::onFieldChange(int index)
     }
     else if ((fieldsCollection.at(index)->fieldType == "N") || (fieldsCollection.at(index)->fieldType == "F"))
     {
-        QRegExp rx(QString("^[0-9-]+(\\.0-9{0,%1})?$").arg(fieldsCollection.at(index)->fieldDecimals));
+        QRegExp rx(QString("-?^[0-9]+(\\.|,[0-9]{0,%1})?$").arg(fieldsCollection.at(index)->fieldDecimals));
         validator = new QRegExpValidator(rx, this);
         edExpression->setMaxLength(fieldsCollection.at(index)->fieldSize);
         edExpression->setValidator(validator);

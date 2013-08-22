@@ -288,7 +288,8 @@ void QDbfEditor::filter(bool on)
 {
     if (on)
     {
-        DialogFilter *dlg = new DialogFilter(fieldsCollection,tr("Filter"),this);
+        int c = view->currentIndex().column();
+        DialogFilter *dlg = new DialogFilter(fieldsCollection,tr("Filter"),fieldsCollection.at(c-1)->fieldName,this);
         if (dlg->exec() == QDialog::Accepted) where = dlg->getWhere();
         else filterAction->setChecked(false);
         dlg->deleteLater();
@@ -305,7 +306,6 @@ void QDbfEditor::filter(bool on)
     if (where != "") query += " WHERE " + where;
     if (order != "") query += " ORDER BY " + order;
 
-    qDebug() << query;
     model->setQuery(query, QSqlDatabase::database("dbfEditor"));
     if (model->lastError().isValid())
         {
