@@ -25,6 +25,9 @@
 TARGET = qtdbf
 TEMPLATE = app
 DESTDIR = bin
+macx{
+    DESTDIR = misc/macos
+}
 CONFIG += debug_and_release
 CONFIG += qt \
     warn_on
@@ -70,7 +73,12 @@ defineReplace(outname) {
 updateqm.name = Lang files compiler
 updateqm.input = TRANSLATIONS
 updateqm.output = $${DESTDIR}/lang/${QMAKE_FILE_BASE}.qm
-updateqm.commands = $$[QT_INSTALL_PREFIX]/bin/lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+macx{
+    updateqm.commands = lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+}
+!macx{
+    updateqm.commands = $$[QT_INSTALL_PREFIX]/bin/lrelease -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+}
 updateqm.output_function = outname
 
 updateqm.CONFIG += no_link target_predeps

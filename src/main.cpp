@@ -129,7 +129,8 @@ int main(int argc, char *argv[])
         }
     MainWindow mainWin(dbfFileName);
     mainWin.show();
-    return app.exec();
+    int result = app.exec();
     QSqlDatabase::removeDatabase("dbfEditor");
+    return result;
 }
 

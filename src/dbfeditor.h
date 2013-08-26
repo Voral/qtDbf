@@ -71,11 +71,14 @@ signals:
     void modelIsEmpty(bool);
     void showWaitDialog();
     void hideWaitDialog();
+    void fileOpened(QString);
+    void modifiedChanged(bool);
 
 protected:
     void closeEvent(QCloseEvent *event);
 
 private:
+    void setModified(bool value);
     void readDbtFile(int);
     void readFptFile(int);
     void readDbt4File(int);

@@ -36,7 +36,6 @@
 QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *parent)
     : QWidget(parent)
 {
-    modified = false;
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
     view = new QDbfTableView(this);
 
@@ -145,7 +144,6 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
 
     mainLayout->addWidget(view);
     mainLayout->addLayout(buttonLayout);
-    setWindowTitle(title);
 
     connect(this, SIGNAL(modelIsEmpty(bool)), editAction, SLOT(setDisabled(bool)));
     connect(this, SIGNAL(modelIsEmpty(bool)), deleteAction, SLOT(setDisabled(bool)));
@@ -165,9 +163,15 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
         emit modelIsEmpty(true);
     else
         emit modelIsEmpty(false);
-
     view->setFocus();
 }
+void QDbfEditor::setModified(bool value)
+{
+    modified = value;
+    emit modifiedChanged(value);
+    saveAction->setEnabled(value);
+}
+
 void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
 {
     where = "";
@@ -182,7 +186,7 @@ void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
                 fieldsCollection.removeLast();
             }
     }
-    modified = false;
+    setModified(false);
     dbfFileName = a_dbfFileName;
     int current;
 
@@ -268,6 +272,7 @@ void QDbfEditor::openFile(QString &a_dbfFileName,bool fresh = false)
     current = view->currentIndex().row();
     QSqlRecord record = model->record(current);
     recordId = record.value(0).toString();
+    setModified(false);
 }
 
 void QDbfEditor::writeSettings()
@@ -600,16 +605,18 @@ void QDbfEditor::editRecord()
             {
                 if (fieldsCollection.at(c-1)->fieldType == "T")
                     {
-                        modified = true;
+                        setModified(true);
                     }
                 else if (fieldsCollection.at(c-1)->fieldType == "D")
                     {
-                        modified = true;
+                    setModified(true);
                     }
                 else
                     {
                         if (l->text() != editValue)
-                            modified = true;
+                        {
+                            setModified(true);
+                        }
                     }
 
                 query = "UPDATE ";
@@ -825,7 +832,7 @@ void QDbfEditor::insertRecord()
     else
         emit modelIsEmpty(false);
 
-    modified = true;
+    setModified(true);
 }
 
 void QDbfEditor::deleteRecord()
@@ -915,7 +922,7 @@ void QDbfEditor::deleteRecord()
             QSqlRecord record = model->record(current);
             recordId = record.value(0).toString();
 
-            modified = true;
+            setModified(true);
         }
 
     if (model->rowCount() == 0)
@@ -946,7 +953,7 @@ void QDbfEditor::openNewFile()
         {
             return;
         }
-
+    emit fileOpened(dbfFileName);
     QFileInfo fileInfo(dbfFileName);
     currentDirectory = fileInfo.absolutePath();
     settings.setValue("dbfeditor/currentdir", currentDirectory);
@@ -1489,7 +1496,7 @@ void QDbfEditor::saveDbfFile()
     oldFile.setFileName(dbfFileName);
     oldFile.remove();
     dbfFile.rename(dbfFileName);
-    modified = false;
+    setModified(false);
 }
 
 void QDbfEditor::fillCells()
@@ -1600,7 +1607,7 @@ void QDbfEditor::fillCells()
 
                 refresh(1);
                 view->selectRow(0);
-                modified = true;
+                setModified(true);
             }
         }
 
@@ -2149,15 +2156,15 @@ void QDbfEditor::helpDbf()
     QString dbfDirPath;
 /**/
 #if (defined Q_OS_UNIX) || (defined Q_OS_OS2)
-    if (QFile::exists("/usr/local/share/qtdbf/help"))
+    if (QFile::exists("/usr/local/share/qtdbf"))
     {
-        dbfDirPath = "/usr/local/share/qtdbf/help";
+        dbfDirPath = "/usr/local/share/qtdbf";
     }
     else
     {
-        if (QFile::exists("/usr/share/qtdbf/help"))
+        if (QFile::exists("/usr/share/qtdbf"))
         {
-            dbfDirPath = "/usr/share/qtdbf/help";
+            dbfDirPath = "/usr/share/qtdbf";
         }
         else
         {
@@ -2167,7 +2174,7 @@ void QDbfEditor::helpDbf()
 #else
     dbfDirPath = qApp->applicationDirPath();
 #endif
-    dbfDirPath += "/qtdbf_";
+    dbfDirPath += "/help/qtdbf_";
     dbfDirPath += dbfLocal;
     dbfDirPath += ".html";
     QFile f(dbfDirPath);
@@ -2228,7 +2235,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this,"qtDbf 0.9.10", explic);
+   QMessageBox::about(this,"qtDbf 0.9.11", explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)

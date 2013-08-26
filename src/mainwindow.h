@@ -38,9 +38,13 @@ protected:
 
 signals:
     void setToolButtonIconSize(int);
+public slots:
+    void setTitle(QString title);
 
 private:
     QWidget *dbfEditor;
+private slots:
+    void setModified(bool value);
 };
 
 #endif // MAINWINDOW_H

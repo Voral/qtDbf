@@ -50,13 +50,24 @@ MainWindow::MainWindow(QString dbfFileName)
     generalTextCodec =  settings.value("generalTextCodec","Windows-1251").toString();
     mainWindow = this;
 
-    QString windowTitle = "DBF Viewer - ";
     dbfEditor = new QDbfEditor(dbfFileName, "", this);
     setCentralWidget(dbfEditor);
-
-    windowTitle.append(dbfFileName);
-
     setWindowIcon(QIcon(":images/qtdbf.svg"));
+    setTitle(dbfFileName);
+
+    connect(dbfEditor,SIGNAL(fileOpened(QString)),this,SLOT(setTitle(QString)));
+    connect(dbfEditor,SIGNAL(modifiedChanged(bool)),this,SLOT(setModified(bool)));
+
+}
+void MainWindow::setModified(bool value)
+{
+    setWindowModified(value);
+}
+
+void MainWindow::setTitle(QString title)
+{
+    QString windowTitle = "DBF Viewer - [*] ";
+    windowTitle.append(title);
     setWindowTitle(windowTitle);
 }
 
