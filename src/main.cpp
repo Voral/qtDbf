@@ -102,6 +102,7 @@ int main(int argc, char *argv[])
         if (db.lastError().isValid())
            {
             QMessageBox::critical(0, QObject::tr("Error"), db.lastError().text());
+            return 2;
            }
     }
 
