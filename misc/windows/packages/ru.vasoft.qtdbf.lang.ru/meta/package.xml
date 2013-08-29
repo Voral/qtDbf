@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Russian</DisplayName>
     <Description>Russian languages files.</Description>
-    <Version>0.9.10</Version>
-    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Version>0.9.11</Version>
+    <ReleaseDate>2013-08-29</ReleaseDate>
     <Name>ru.vasoft.qtdbf.lang.ru</Name>
     <SortingPriority>95</SortingPriority>
     <Default>True</Default>

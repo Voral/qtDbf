@@ -51,8 +51,7 @@ SOURCES += src/dbfeditor.cpp \
     src/saveconfig.cpp \
     src/dialogfilter.cpp
 RESOURCES += src/qtDbf.qrc
-QT += sql \
-    svg
+QT += sql
 OBJECTS_DIR += ./.obj
 MOC_DIR += ./.moc
 RCC_DIR += ./.rcc

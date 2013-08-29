@@ -24,7 +24,6 @@
 
 #include <QtGui>
 #include <QtSql>
-#include <QtSvg>
 
 #include "qtcalculator.h"
 
@@ -252,8 +251,8 @@ QCalculatorDialog::QCalculatorDialog(const QString &title, QWidget *parent)
 
     mainLayout->addLayout(svgLayout);
 
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), this);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), this);
+    QPushButton *okButton = new QPushButton(tr("OK"), this);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), this);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 

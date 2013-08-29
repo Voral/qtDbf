@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Main components of application</DisplayName>
     <Description>Install executable file of application.</Description>
-    <Version>0.9.10</Version>
-    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Version>0.9.11</Version>
+    <ReleaseDate>2013-08-29</ReleaseDate>
     <Name>ru.vasoft.qtdbf.main</Name>
     <SortingPriority>99</SortingPriority>
     <Licenses>

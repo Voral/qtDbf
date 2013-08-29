@@ -31,3 +31,4 @@ misc/package/qtdbf/usr/share/qtdbf/help/*
 misc/windows/packages/com.mingw.libs.libs/data/*
 misc/windows/packages/com.nokia.libs.libs/data/*
 misc/windows/packages/ru.vasoft.qtdbf.lang.*/data/help/*
+misc/distr/*

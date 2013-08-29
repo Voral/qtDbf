@@ -208,8 +208,8 @@ void QDateTimeLineEdit::searchItem()
 
     verticalLayout->addWidget(calendarWidget);
 
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), this);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), this);
+    QPushButton *okButton = new QPushButton(tr("OK"), this);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), this);
 
     connect(okButton, SIGNAL(clicked()), calendarDialog, SLOT(accept()));
     connect(cancelButton, SIGNAL(clicked()), calendarDialog, SLOT(reject()));
@@ -279,8 +279,8 @@ void QDateLineEdit::searchItem()
 
     verticalLayout->addWidget(calendarWidget);
 
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), this);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), this);
+    QPushButton *okButton = new QPushButton(tr("OK"), this);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), this);
 
     connect(okButton, SIGNAL(clicked()), calendarDialog, SLOT(accept()));
     connect(cancelButton, SIGNAL(clicked()), calendarDialog, SLOT(reject()));

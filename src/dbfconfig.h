@@ -26,7 +26,6 @@
 #define DBFCONFIG_H
 
 #include <QDialog>
-#include <QSvgWidget>
 #include <QSqlQueryModel>
 
 class QDialogButtonBox;
@@ -163,7 +162,8 @@ private slots:
 
 private:
     QTabWidget *tabWidget;
-    QSvgWidget *picture;
+    //QSvgWidget *picture;
+    QLabel *picture;
 
     QList<QDetaliiBaseTab *> detaliiTabList;
     QStringList pictures;

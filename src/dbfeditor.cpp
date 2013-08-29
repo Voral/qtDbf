@@ -39,54 +39,54 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     QHBoxLayout *mainLayout = new QHBoxLayout(this);
     view = new QDbfTableView(this);
 
-    openAction = new QAction(QIcon(":images/document_open.png"),tr("Open").append(" Ctrl + O"), this);
+    openAction = new QAction(QIcon(":/open.png"),tr("Open").append(" Ctrl + O"), this);
     openAction->setShortcut(Qt::CTRL + Qt::Key_O);
     connect(openAction, SIGNAL(triggered()), this, SLOT(openNewFile()));
     addAction(openAction);
 
-    fillAction = new QAction(QIcon(":images/fill.svg"),tr("Fill"), this);
+    fillAction = new QAction(QIcon(":/fill.png"),tr("Fill"), this);
     connect(fillAction, SIGNAL(triggered()), this, SLOT(fillCells()));
     addAction(fillAction);
 
-    editAction = new QAction(QIcon(":images/edit.svg"),tr("Edit").append(" Enter"), this);
+    editAction = new QAction(QIcon(":/edit.png"),tr("Edit").append(" Enter"), this);
     editAction->setShortcut(Qt::Key_Return);
     connect(editAction, SIGNAL(triggered()), this, SLOT(editRecord()));
     addAction(editAction);
 
-    insertAction = new QAction(QIcon(":images/add.svg"),tr("Add").append(" Ins"), this);
+    insertAction = new QAction(QIcon(":/add.png"),tr("Add").append(" Ins"), this);
     insertAction->setShortcut(Qt::Key_Insert);
     connect(insertAction, SIGNAL(triggered()), this, SLOT(insertRecord()));
     addAction(insertAction);
 
-    deleteAction = new QAction(QIcon(":images/delete.svg"),tr("Delete").append(" Del"), this);
+    deleteAction = new QAction(QIcon(":/remove.png"),tr("Delete").append(" Del"), this);
     deleteAction->setShortcut(Qt::Key_Delete);
     connect(deleteAction, SIGNAL(triggered()), this, SLOT(deleteRecord()));
     addAction(deleteAction);
 
-    saveAction = new QAction(QIcon(":images/save.svg"),tr("Save").append(" Ctrl + S"), this);
+    saveAction = new QAction(QIcon(":/save.png"),tr("Save").append(" Ctrl + S"), this);
     connect(saveAction, SIGNAL(triggered()), this, SLOT(saveDbfFile()));
     saveAction->setShortcut(Qt::CTRL + Qt::Key_S);
     addAction(saveAction);
-    configAction = new QAction(QIcon(":images/config.svg"),tr("Configure"), this);
+    configAction = new QAction(QIcon(":/config.png"),tr("Configure"), this);
     connect(configAction, SIGNAL(triggered()), this, SLOT(configApp()));
     addAction(configAction);
 
-    helpAction = new QAction(QIcon(":images/help.svg"),tr("Help").append(" F1"), this);
+    helpAction = new QAction(QIcon(":/help.png"),tr("Help").append(" F1"), this);
     helpAction->setShortcut(Qt::Key_F1);
     connect(helpAction, SIGNAL(triggered()), this, SLOT(helpDbf()));
     addAction(helpAction);
 
-    calcAction = new QAction(QIcon(":images/calc.svg"),tr("Calculator").append(" Ctrl + E"), this);
+    calcAction = new QAction(QIcon(":/calc.png"),tr("Calculator").append(" Ctrl + E"), this);
     saveAction->setShortcut(Qt::CTRL + Qt::Key_E);
     connect(calcAction, SIGNAL(triggered()), this, SLOT(calculator()));
     addAction(calcAction);
 
-    quitAction = new QAction(QIcon(":images/quit.svg"),tr("Close").append(" Esc"), this);
+    quitAction = new QAction(QIcon(":/quit.png"),tr("Close").append(" Esc"), this);
     saveAction->setShortcut(Qt::Key_Escape);
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(closeAllWindows()));
     addAction(quitAction);
 
-    filterAction = new QAction(QIcon(":images/filter.png"),tr("Set filter").append(" Ctrl + F"), this);
+    filterAction = new QAction(QIcon(":/filter.png"),tr("Set filter").append(" Ctrl + F"), this);
     filterAction->setShortcut(Qt::CTRL + Qt::Key_F);
     filterAction->setCheckable(true);
     connect(filterAction, SIGNAL(triggered(bool)), this, SLOT(filter(bool)));
@@ -425,7 +425,6 @@ void QDbfEditor::editRecord()
     QSettings settings;
 
     d->resize(settings.value("dbfeditor/edsize", QSize(140,40)).toSize());
-    d->setWindowIcon(QIcon(":images/edit.svg"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
@@ -568,8 +567,8 @@ void QDbfEditor::editRecord()
             label->setBuddy(l);
         }
 
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), d);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), d);
+    QPushButton *okButton = new QPushButton(tr("OK"), d);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), d);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -1521,20 +1520,18 @@ void QDbfEditor::fillCells()
     QSettings settings;
 
     d->resize(settings.value("dbfeditor/filledsize", QSize(140,40)).toSize());
-    d->setWindowIcon(QIcon(":images/fill.svg"));
 
     QString sql = settings.value("dbfeditor/fillcommand", "").toString();
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
-    QString labelText;
     QLabel *label = new QLabel(tr("Fill value or expression"), d);
 
     QDbfLineEdit *t = new QDbfLineEdit(sql,d);
     label->setBuddy(t);
 
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), d);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), d);
+    QPushButton *okButton = new QPushButton(tr("OK"), d);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), d);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -1742,11 +1739,9 @@ void QDbfEditor::readDbtFile(int i)
     QSettings settings;
 
     dialog->resize(settings.value("dbfeditor/memoedsize", QSize(880,560)).toSize());
-    dialog->setWindowIcon(QIcon(":images/edit.svg"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
-    QString labelText;
     QLabel *label = new QLabel(tr("The text from the memo file"), dialog);
 
     //QPlainTextEdit *t = new QPlainTextEdit(memoText,dialog);
@@ -1765,7 +1760,7 @@ void QDbfEditor::readDbtFile(int i)
     font.setItalic(false);
     t->setFont(font);
 
-    QPushButton *closeButton = new QPushButton(QIcon(":images/ok.svg"),tr("Close"), dialog);
+    QPushButton *closeButton = new QPushButton(tr("Close"), dialog);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -1905,11 +1900,9 @@ void QDbfEditor::readFptFile(int i)
     QSettings settings;
 
     dialog->resize(settings.value("dbfeditor/memoedsize", QSize(880,560)).toSize());
-    dialog->setWindowIcon(QIcon(":images/edit.svg"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
-    QString labelText;
     QLabel *label = new QLabel(tr("The text from the memo file"), dialog);
 
     QPlainTextEdit *t = new QPlainTextEdit(memoText,dialog);
@@ -1925,7 +1918,7 @@ void QDbfEditor::readFptFile(int i)
     font.setItalic(false);
     t->setFont(font);
 
-    QPushButton *closeButton = new QPushButton(QIcon(":images/ok.svg"),tr("Close"), dialog);
+    QPushButton *closeButton = new QPushButton(tr("Close"), dialog);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -2095,11 +2088,9 @@ void QDbfEditor::readDbt4File(int i)
     QSettings settings;
 
     dialog->resize(settings.value("dbfeditor/memoedsize", QSize(880,560)).toSize());
-    dialog->setWindowIcon(QIcon(":images/edit.svg"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
-    QString labelText;
     QLabel *label = new QLabel(tr("The text from the memo file"), dialog);
 
     QPlainTextEdit *t = new QPlainTextEdit(memoText,dialog);
@@ -2115,7 +2106,7 @@ void QDbfEditor::readDbt4File(int i)
     font.setItalic(false);
     t->setFont(font);
 
-    QPushButton *closeButton = new QPushButton(QIcon(":images/ok.svg"),tr("Close"), dialog);
+    QPushButton *closeButton = new QPushButton(tr("Close"), dialog);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -2145,16 +2136,9 @@ void QDbfEditor::helpDbf()
     QSettings settings;
 
     dialog->resize(settings.value("dbfeditor/helpsize", QSize(860,540)).toSize());
-    dialog->setWindowIcon(QIcon(":images/help.svg"));
-
     QString dbfLocal = settings.value("dbflocal", "en").toString();
-
     QVBoxLayout *mainLayout = new QVBoxLayout;
-
-//    QString helpText;
-
     QString dbfDirPath;
-/**/
 #if (defined Q_OS_UNIX) || (defined Q_OS_OS2)
     if (QFile::exists("/usr/local/share/qtdbf"))
     {
@@ -2192,9 +2176,9 @@ void QDbfEditor::helpDbf()
         t->setText(tr("Help file missing").append("\n").append(f.errorString()));
     }
 
-    QPushButton *aboutButton = new QPushButton(QIcon(":images/qtdbf.svg"),tr("About"), dialog);
-    QPushButton *aboutQtButton = new QPushButton(QIcon(":images/qt.png"),tr("About Qt"), dialog);
-    QPushButton *closeButton = new QPushButton(QIcon(":images/ok.svg"),tr("Close"), dialog);
+    QPushButton *aboutButton = new QPushButton(tr("About"), dialog);
+    QPushButton *aboutQtButton = new QPushButton(tr("About Qt"), dialog);
+    QPushButton *closeButton = new QPushButton(tr("Close"), dialog);
 
     QHBoxLayout *buttonLayout = new QHBoxLayout;
 
@@ -2209,8 +2193,6 @@ void QDbfEditor::helpDbf()
     connect(aboutButton, SIGNAL(clicked()), this, SLOT(about()));
     connect(aboutQtButton, SIGNAL(clicked()), qApp, SLOT(aboutQt()));
     connect(closeButton, SIGNAL(clicked()), dialog, SLOT(accept()));
-
-    //qApp->processEvents(QEventLoop::ExcludeUserInputEvents);
 
     dialog->setLayout(mainLayout);
 
@@ -2248,7 +2230,7 @@ void QDbfEditor::sortDbf(const QModelIndex& index)
 
     query = "SELECT * FROM ";
     query += tableName;
-    if (where != "") query += ' WHERE ' + where;
+    if (where != "") query += " WHERE " + where;
     if (order != "") query += " ORDER BY " + order;
 
 

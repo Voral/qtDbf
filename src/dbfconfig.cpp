@@ -24,7 +24,6 @@
 
 #include <QtGui>
 #include <QtSql>
-#include <QtSvg>
 
 #include "widgets.h"
 #include "structures.h"
@@ -54,8 +53,9 @@ QDetaliiTabDialog::QDetaliiTabDialog(QString &tableName, QWidget *parent)
 
     QHBoxLayout *mainLayout = new QHBoxLayout;
 
-    picture = new QSvgWidget(":images/config.svg", this);
-    picture->setFixedSize(QSize(128,128));
+    picture = new QLabel();
+    picture->setPixmap(QPixmap(":/config.png"));
+    picture->setFixedSize(QSize(64,64));
 
     QVBoxLayout *svgLayout = new QVBoxLayout;
     svgLayout->addWidget(picture);
@@ -69,31 +69,31 @@ QDetaliiTabDialog::QDetaliiTabDialog(QString &tableName, QWidget *parent)
     QConfigAppTab *configAppTab = new QConfigAppTab;
     detaliiTabList.append(configAppTab);
     tabWidget->addTab(detaliiTabList.at(i), tr("Application language"));
-    pictures.append("config.svg");
+    pictures.append("locale.png");
     i++;
 
     QIconSizeTab *iconSizeTab = new QIconSizeTab;
     detaliiTabList.append(iconSizeTab);
     tabWidget->addTab(detaliiTabList.at(i), tr("Icon sizes"));
-    pictures.append("tux.svg");
+    pictures.append("resize.png");
     i++;
 
     QDbfStructureTab *dbfStructureTab = new QDbfStructureTab(tableName);
     detaliiTabList.append(dbfStructureTab);
     tabWidget->addTab(detaliiTabList.at(i), tr("DBF file structure"));
-    pictures.append("structure.svg");
+    pictures.append("structure.png");
     i++;
 
     QDbfFieldColorsTab *dbfFieldColorsTab = new QDbfFieldColorsTab;
     detaliiTabList.append(dbfFieldColorsTab);
     tabWidget->addTab(detaliiTabList.at(i), tr("Field type's colors"));
-    pictures.append("colors.svg");
+    pictures.append("fontcolor.png");
     i++;
 
-    QPushButton *saveButton = new QPushButton(QIcon(":images/save.svg"),tr("Save configuration"), this);
-    QPushButton *loadButton = new QPushButton(QIcon(":images/load.svg"),tr("Load configuration"), this);
-    QPushButton *okButton = new QPushButton(QIcon(":images/ok.svg"),tr("OK"), this);
-    QPushButton *cancelButton = new QPushButton(QIcon(":images/cancel.svg"),tr("Cancel"), this);
+    QPushButton *saveButton = new QPushButton(tr("Save configuration"), this);
+    QPushButton *loadButton = new QPushButton(tr("Load configuration"), this);
+    QPushButton *okButton = new QPushButton(tr("OK"), this);
+    QPushButton *cancelButton = new QPushButton(tr("Cancel"), this);
 
     okButton->setDefault(true);
 
@@ -129,8 +129,8 @@ QDetaliiTabDialog::QDetaliiTabDialog(QString &tableName, QWidget *parent)
 
 void QDetaliiTabDialog::changePicture(int i)
 {
-    QString iconfilename = ":images/"+pictures.at(i);
-    picture->load(iconfilename);
+    QString iconfilename = ":/"+pictures.at(i);
+    picture->setPixmap(QPixmap(iconfilename));
 }
 
 QDetaliiTabDialog::~QDetaliiTabDialog()
@@ -295,24 +295,24 @@ void QIconSizeTab::createInterface()
     QGroupBox *toolButtonGroupBox = new QGroupBox(tr("Tool button icon size"),this);
     QVBoxLayout *toolButtonLayout = new QVBoxLayout(toolButtonGroupBox);
 
-    QSize toolButtonSize = settings.value("toolbuttonsize", QSize(37,37)).toSize();
+    QSize toolButtonSize = settings.value("toolbuttonsize", QSize(32,32)).toSize();
 
     toolButtonSpinBox = new QSpinBox(this);
     toolButtonSpinBox->setMinimum(16);
-    toolButtonSpinBox->setMaximum(100);
+    toolButtonSpinBox->setMaximum(64);
     toolButtonSpinBox->setValue(toolButtonSize.width());
 
     toolButtonSlider = new QSlider(this);
     toolButtonSlider->setOrientation(Qt::Horizontal);
     toolButtonSlider->setMinimum(16);
-    toolButtonSlider->setMaximum(100);
+    toolButtonSlider->setMaximum(64);
     toolButtonSlider->setValue(toolButtonSize.width());
 
     toolButtonLayout->addWidget(toolButtonSpinBox);
     toolButtonLayout->addWidget(toolButtonSlider);
 
     QDbfToolButton *toolButton = new QDbfToolButton(this);
-    toolButton->setIcon(QIcon(":images/edit.svg"));
+    toolButton->setIcon(QIcon(":/edit.png"));
     toolButtonLayout->addWidget(toolButton);
 
     verticalLayout->addWidget(toolButtonGroupBox);
@@ -331,7 +331,7 @@ void QIconSizeTab::createInterface()
 
     horizontalLayout->addItem(horizontalSpacer);
 
-    QPushButton *restoreDefaultButton = new QPushButton(QIcon(":images/back.svg"),tr("Default"), this);
+    QPushButton *restoreDefaultButton = new QPushButton(tr("Default"), this);
 
     horizontalLayout->addWidget(restoreDefaultButton);
 
@@ -351,7 +351,7 @@ void QIconSizeTab::saveEditedData()
 
 void QIconSizeTab::backToDefault()
 {
-    toolButtonSpinBox->setValue(37);
+    toolButtonSpinBox->setValue(32);
 }
 
 //QDbfStructureTab

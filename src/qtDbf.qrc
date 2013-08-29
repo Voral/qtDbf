@@ -1,32 +1,20 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/add.svg</file>
-        <file>images/delete.svg</file>
-        <file>images/edit.svg</file>
-        <file>images/cancel.svg</file>
-        <file>images/ok.svg</file>
-        <file>images/quit.svg</file>
-        <file>images/search.svg</file>
-        <file>images/save.svg</file>
-        <file>images/fill.svg</file>
-        <file>images/tux.svg</file>
-        <file>images/config.svg</file>
-        <file>images/load.svg</file>
-        <file>images/back.svg</file>
-        <file>images/qtdbf.svg</file>
-        <file>images/help.svg</file>
-        <file>images/structure.svg</file>
-        <file>images/qt.png</file>
-        <file>help/add.png</file>
-        <file>help/config.png</file>
-        <file>help/delete.png</file>
-        <file>help/edit.png</file>
-        <file>help/fill.png</file>
-        <file>help/help.png</file>
-        <file>help/save.png</file>
-        <file>images/colors.svg</file>
-        <file>images/calc.svg</file>
-        <file>images/document_open.png</file>
-        <file>images/filter.png</file>
+        <file alias="resize.png">images/everaldo/App-randr-icon.png</file>
+        <file alias="open.png">images/oxygen/Actions-document-open-icon.png</file>
+        <file alias="fill.png">images/gnome/gnome_format_justify_fill.png</file>
+        <file alias="edit.png">images/oxygen/Actions-document-edit-icon.png</file>
+        <file alias="add.png">images/oxygen/Actions-list-add-icon.png</file>
+        <file alias="remove.png">images/oxygen/Actions-list-remove-icon.png</file>
+        <file alias="save.png">images/oxygen/Actions-document-save-icon.png</file>
+        <file alias="config.png">images/oxygen/Actions-configure-icon.png</file>
+        <file alias="help.png">images/oxygen/Categories-system-help-icon.png</file>
+        <file alias="calc.png">images/oxygen/Apps-accessories-calculator-icon.png</file>
+        <file alias="quit.png">images/oxygen/Actions-application-exit-icon.png</file>
+        <file alias="filter.png">images/oxygen/Actions-view-filter-icon.png</file>
+        <file alias="locale.png">images/oxygen/Apps-preferences-desktop-locale-icon.png</file>
+        <file alias="structure.png">images/oxygen/Actions-view-list-tree-icon.png</file>
+        <file alias="fontcolor.png">images/oxygen/Apps-preferences-desktop-font-icon.png</file>
+        <file alias="qtdbf.png">images/qtdbf.png</file>
     </qresource>
 </RCC>

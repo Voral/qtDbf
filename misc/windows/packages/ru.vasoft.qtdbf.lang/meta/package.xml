@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Languages files</DisplayName>
     <Description>Languages files.</Description>
-    <Version>0.9.10</Version>
-    <ReleaseDate>2013-08-21</ReleaseDate>
+    <Version>0.9.11</Version>
+    <ReleaseDate>2013-08-29</ReleaseDate>
     <SortingPriority>96</SortingPriority>
     <Name>ru.vasoft.qtdbf.lang</Name>
 </Package>

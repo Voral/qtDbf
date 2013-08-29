@@ -22,7 +22,6 @@
 #/*                                                                              */
 #/********************************************************************************/
 #include <QtGui>
-#include <QtSvg>
 #include <QtSql>
 
 #include "mainwindow.h"
@@ -52,7 +51,7 @@ MainWindow::MainWindow(QString dbfFileName)
 
     dbfEditor = new QDbfEditor(dbfFileName, "", this);
     setCentralWidget(dbfEditor);
-    setWindowIcon(QIcon(":images/qtdbf.svg"));
+    setWindowIcon(QIcon(":/qtdbf.png"));
     setTitle(dbfFileName);
 
     connect(dbfEditor,SIGNAL(fileOpened(QString)),this,SLOT(setTitle(QString)));

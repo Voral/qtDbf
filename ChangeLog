@@ -1,3 +1,26 @@
+v.0.9.11
+=======
+en:
+  + Created icns file for MacOS
+  + At the opening of the filter current field is set by default
+  + Added some lines and icon-file for OS/2 and eComStation
+  + Ukrainian help and language files was added (Motsyo Gennadi aka Drool)
+  + Created scripts for building macOS application and dmg-file
+  + Configure files for Qt Installer Famework (for windows installer)
+  * Bugfix filter
+  * Fixed a typo in a Russian help
+  * Remove memory leak on application exit
+ru:
+  + Добавлены иконки для MacOS
+  + При открытии фильтра выбирается текущее поле
+  + Добавлены иконки и внесены изменения для OS/2 и eComStation
+  + Добавлены файлы справки и языковой для украинского языка (Геннадий Моцьо aka Drool)
+  + Добавлены скрипты для сборки приложения и dmg-файла для MacOS
+  + Доавлена конфигурация для QT Installer Framework (для Windows-установщика)
+  * Устранены ошибке в работе фильтра
+  * Исправлены оппечатки в русской справке
+  * Устранена утечка памяти при выходе из приложения
+
 v.0.9.10
 =======
 en:
@@ -9,7 +32,6 @@ ru:
   * Исправлен баг. Открываемый файл перезаписывался предыдущим в случае сохранения.
   + Добавлен простой фильтр/поисковик
   + В диалог открытия файла добавлен фильтр "Все файлы"
-
 
 v.0.9.9
 =======

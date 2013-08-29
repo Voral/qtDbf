@@ -1,14 +1,14 @@
 #!/bin/sh
 #gzip -9
-VERSION="0.9.10"
+VERSION="0.9.11"
 VERSIONPKG="1"
 PLATFORM="i386"
 ARCH=64
 PKGNAME=qtdbf
 
-#./makeLin32on64.sh
-#./clean.sh
-#./copyfiles.sh
+./makeLin32on64.sh
+./clean.sh
+./copyfiles.sh
 
 DEBNAME=${PKGNAME}_${VERSION}-${VERSIONPKG}_$PLATFORM.deb
 

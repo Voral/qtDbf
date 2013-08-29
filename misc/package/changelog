@@ -1,3 +1,17 @@
+qtdbf (0.9.11-1) stable; urgency=low
+
+  * Created icns file for MacOS
+  * At the opening of the filter current field is set by default
+  * Added some lines and icon-file for OS/2 and eComStation
+  * Ukrainian help and language files was added (Motsyo Gennadi aka Drool)
+  * Created scripts for building macOS application and dmg-file
+  * Configure files for Qt Installer Famework (for windows installer)
+  * Bugfix filter
+  * Fixed a typo in a Russian help
+  * Remove memory leak on application exit
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Thu, 29 Aug 2013 10:40:50 +0400
+
 qtdbf (0.9.10-1) stable; urgency=low
 
   * Bugfix !!! Overwriting a file when it is opened after editing the previous

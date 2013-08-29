@@ -25,7 +25,6 @@
 // TODO: Total refactoring !!!
 
 #include <QtGui>
-#include <QtSvg>
 #include <QtSql>
 #include "mainwindow.h"
 
