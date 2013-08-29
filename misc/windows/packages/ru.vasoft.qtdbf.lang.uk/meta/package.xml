@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Ukrainian</DisplayName>
+    <Description>Ukrainian languages files.</Description>
+    <Version>0.9.11</Version>
+    <ReleaseDate>2013-08-29</ReleaseDate>
+    <Name>ru.vasoft.qtdbf.lang.uk</Name>
+    <SortingPriority>94</SortingPriority>
+    <Translations>
+    </Translations>
+</Package>
