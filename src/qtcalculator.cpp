@@ -36,22 +36,22 @@ QCalculatorFormulaEdit::QCalculatorFormulaEdit(const QString &text, QWidget *par
 
 void QCalculatorFormulaEdit::keyPressEvent(QKeyEvent *event)
 {
-     switch (event->key())
+    switch (event->key())
+    {
+        case Qt::Key_Enter:
+        case Qt::Key_Return:
+            if (event->modifiers() & Qt::ControlModifier)
             {
-             case Qt::Key_Enter:
-             case Qt::Key_Return:
-                  if (event->modifiers() & Qt::ControlModifier)
-                     {
-            emit okSignal();
-                     }
-                  else
-             {
-                        QTextEdit::keyPressEvent(event);
-                     }
-                  break;
-             default:
-                  QTextEdit::keyPressEvent(event);
-        }
+                emit okSignal();
+            }
+            else
+            {
+                QTextEdit::keyPressEvent(event);
+            }
+            break;
+        default:
+            QTextEdit::keyPressEvent(event);
+    }
 }
 
 // QCalculatorDialog

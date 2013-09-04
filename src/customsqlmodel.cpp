@@ -28,7 +28,7 @@
 #include "globals.h"
 
 //QDbfSqlModel
-
+// TODO:test
 QDbfSqlModel::QDbfSqlModel(QObject *parent)
     : QSqlQueryModel(parent)
 {
