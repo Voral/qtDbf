@@ -64,6 +64,7 @@ private slots:
     void configApp();
     void calculator();
     void about();
+    void agregat();
 
     //void readMemoFile(int);
 
@@ -118,6 +119,7 @@ private:
     QToolButton *calcButton;
     QToolButton *quitButton;
     QToolButton *filterButton;
+    QToolButton *agregatButton;
 
     QDbfSqlModel *model;
     QTableView *view;
@@ -133,6 +135,7 @@ private:
     QAction *quitAction;
     QAction *openAction;
     QAction *filterAction;
+    QAction *agregatAction;
 
     QSize editDialogSize;
 

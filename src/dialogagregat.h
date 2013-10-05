@@ -21,38 +21,36 @@
 #/*    along with protime.  If not, see <http://www.gnu.org/licenses/>.          */
 #/*                                                                              */
 #/********************************************************************************/
+#ifndef DIALOGAGREGAT_H
+#define DIALOGAGREGAT_H
 
-#ifndef DIALOGFILTER_H
-#define DIALOGFILTER_H
-#include <QGridLayout>
 #include "widgets.h"
 #include "structures.h"
 
+
 typedef QList<QFieldsItem*> FieldList;
-class DialogFilter : public QDbfDialog
+class DialogAgregat : public QDbfDialog
 {
     Q_OBJECT
 private:
+    FieldList fieldsCollection;
     QGridLayout *laMain;
     QVBoxLayout *laButtons;
     QLabel *lbField;
-    QLabel *lbExpression;
+    QLabel *lbFunction;
     QComboBox *cbField;
-    QComboBox *cbExpression;
-    QLineEdit *edExpression;
+    QComboBox *cbFunction;
     QDialogButtonBox *buttonBox;
-    FieldList fieldsCollection;
-    QValidator *validator;
+//    QValidator *validator;
 
-    QString prepare(QFieldsItem *item, QString expression, QString filter);
 public:
-    explicit DialogFilter(const FieldList fields, const QString &title, const QString &field, QWidget *parent = 0);
-    QString getWhere();
+    explicit DialogAgregat(const FieldList fields, const int index, QWidget *parent = 0);
+    QString getFieldPart();
 
-private slots:
-    void onFieldChange(int index);
+signals:
 
+public slots:
 
 };
 
-#endif // DIALOGFILTER_H
+#endif // DIALOGAGREGAT_H

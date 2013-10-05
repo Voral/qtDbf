@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>qtdbf</Name>
-    <Version>0.9.10</Version>
+    <Version>1.0</Version>
     <Title>qtDbf - simple DBF editor and viewer</Title>
     <Publisher>Alexander Vorobyev</Publisher>
     <StartMenuDir></StartMenuDir>

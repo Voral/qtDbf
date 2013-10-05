@@ -1,3 +1,9 @@
+qtdbf (1.0.0-1) stable; urgency=low
+
+  * Aggregate functions was added
+
+ -- Alexander Vorobyev <mvoral@mail.ru>  Sat, 05 Oct 2013 11:34:56 +0400
+
 qtdbf (0.9.11-1) stable; urgency=low
 
   * Created icns file for MacOS

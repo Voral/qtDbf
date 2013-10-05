@@ -40,7 +40,8 @@ HEADERS += src/structures.h \
     src/globals.h \
     src/customsqlmodel.h \
     src/dbfconfig.h \
-    src/dialogfilter.h
+    src/dialogfilter.h \
+    src/dialogagregat.h
 SOURCES += src/dbfeditor.cpp \
     src/main.cpp \
     src/mainwindow.cpp \
@@ -49,7 +50,8 @@ SOURCES += src/dbfeditor.cpp \
     src/customsqlmodel.cpp \
     src/dbfconfig.cpp \
     src/saveconfig.cpp \
-    src/dialogfilter.cpp
+    src/dialogfilter.cpp \
+    src/dialogagregat.cpp
 RESOURCES += src/qtDbf.qrc
 QT += sql
 OBJECTS_DIR += ./.obj

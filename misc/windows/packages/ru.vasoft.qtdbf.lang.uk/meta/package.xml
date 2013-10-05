@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Ukrainian</DisplayName>
     <Description>Ukrainian languages files.</Description>
-    <Version>0.9.11</Version>
-    <ReleaseDate>2013-08-29</ReleaseDate>
+    <Version>1.0</Version>
+	<ReleaseDate>2013-10-05</ReleaseDate>
     <Name>ru.vasoft.qtdbf.lang.uk</Name>
     <SortingPriority>94</SortingPriority>
     <Translations>

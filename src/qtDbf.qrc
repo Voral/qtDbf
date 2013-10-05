@@ -16,5 +16,6 @@
         <file alias="structure.png">images/oxygen/Actions-view-list-tree-icon.png</file>
         <file alias="fontcolor.png">images/oxygen/Apps-preferences-desktop-font-icon.png</file>
         <file alias="qtdbf.png">images/qtdbf.png</file>
+        <file alias="functions.png">images/functions.png</file>
     </qresource>
 </RCC>

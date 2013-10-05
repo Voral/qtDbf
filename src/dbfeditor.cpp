@@ -24,6 +24,7 @@
 
 #include <QtGui>
 #include <QtSql>
+#include <QtGui/QClipboard>
 
 #include "structures.h"
 #include "dbfeditor.h"
@@ -33,6 +34,8 @@
 #include "dbfconfig.h"
 #include "globals.h"
 #include "dialogfilter.h"
+#include "dialogagregat.h"
+
 QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *parent)
     : QWidget(parent)
 {
@@ -92,6 +95,12 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     connect(filterAction, SIGNAL(triggered(bool)), this, SLOT(filter(bool)));
     addAction(filterAction);
 
+    agregatAction = new QAction(QIcon(":/functions.png"),tr("Average functions").append(" Ctrl + A"), this);
+    agregatAction->setShortcut(Qt::CTRL + Qt::Key_A);
+    connect(agregatAction, SIGNAL(triggered()), this, SLOT(agregat()));
+    addAction(agregatAction);
+
+
     openButton = new QDbfToolButton(this);
     openButton->setDefaultAction(openAction);
     editButton = new QDbfToolButton(this);
@@ -114,6 +123,8 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     quitButton->setDefaultAction(quitAction);
     filterButton = new QDbfToolButton(this);
     filterButton->setDefaultAction(filterAction);
+    agregatButton = new QDbfToolButton(this);
+    agregatButton->setDefaultAction(agregatAction);
 
     openButton->setFocusPolicy(Qt::NoFocus);
     editButton->setFocusPolicy(Qt::NoFocus);
@@ -126,6 +137,7 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     calcButton->setFocusPolicy(Qt::NoFocus);
     quitButton->setFocusPolicy(Qt::NoFocus);
     filterButton->setFocusPolicy(Qt::NoFocus);
+    agregatButton->setFocusPolicy(Qt::NoFocus);
 
     QVBoxLayout *buttonLayout = new QVBoxLayout;
 
@@ -136,6 +148,7 @@ QDbfEditor::QDbfEditor(QString &a_dbfFileName, const QString &title, QWidget *pa
     buttonLayout->addWidget(deleteButton);
     buttonLayout->addWidget(saveButton);
     buttonLayout->addWidget(filterButton);
+    buttonLayout->addWidget(agregatButton);
     buttonLayout->addWidget(configButton);
     buttonLayout->addWidget(calcButton);
     buttonLayout->addWidget(helpButton);
@@ -2217,7 +2230,7 @@ void QDbfEditor::about()
 
    explic = tr("<b align='center'>qtDbf</b> <p>- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.</p>");
 
-   QMessageBox::about(this,"qtDbf 0.9.11", explic);
+   QMessageBox::about(this,"qtDbf 1.0", explic);
 }
 
 void QDbfEditor::sortDbf(const QModelIndex& index)
@@ -2266,8 +2279,45 @@ void QDbfEditor::setToolButtonIconSize(int i)
     helpButton->setIconSize(size);
     quitButton->setIconSize(size);
     filterButton->setIconSize(size);
+    agregatButton->setIconSize(size);
 }
 
 QDbfEditor::~QDbfEditor()
 {
+}
+void QDbfEditor::agregat()
+{
+    int c = view->currentIndex().column();
+    DialogAgregat *dlg = new DialogAgregat(fieldsCollection,c-1,this);
+    if (dlg->exec() == QDialog::Accepted)
+    {
+        QString query = "SELECT "+dlg->getFieldPart()+" FROM ";
+        query += tableName;
+        if (where != "") query += " WHERE " + where;
+        dlg->deleteLater();
+        QSqlQuery getData(QSqlDatabase::database("dbfEditor"));
+        getData.prepare(query);
+        getData.exec();
+        if (getData.lastError().isValid())
+        {
+            QMessageBox::critical(this, tr("Error"), getData.lastError().text());
+            return;
+        }
+        if (getData.next())
+        {
+            QString val = getData.value(0).toString();
+            QMessageBox msgBox(QMessageBox::Information,
+                                                 tr("Result"),
+                                                 val,
+                                                 QMessageBox::Save | QMessageBox::Close,
+                                                 this);
+
+            msgBox.setButtonText(QMessageBox::Save, tr("Copy to Clipboard"));
+            if (msgBox.exec()==QMessageBox::Save)
+            {
+                QClipboard *clipboard = QApplication::clipboard();
+                clipboard->setText(val);
+            }
+        }
+    }
 }

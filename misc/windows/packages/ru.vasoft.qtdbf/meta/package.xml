@@ -2,7 +2,7 @@
 <Package>
   <DisplayName>QtDBF Editor and Viewer</DisplayName>
   <Description>Installs the QtDBF Editor and Viewer</Description>
-  <Version>0.9.11</Version>
-  <ReleaseDate>2013-08-29</ReleaseDate>
+  <Version>1.0</Version>
+  <ReleaseDate>2013-10-05</ReleaseDate>
   <Name>ru.vasoft.qtdbf</Name>
 </Package>

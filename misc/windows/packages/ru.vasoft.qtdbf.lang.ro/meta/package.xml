@@ -2,7 +2,7 @@
 <Package>
     <DisplayName>Romanian</DisplayName>
     <Description>Romanian languages files.</Description>
-    <Version>0.9.11</Version>
+    <Version>1.0</Version>
     <ReleaseDate>2013-08-29</ReleaseDate>
     <Name>ru.vasoft.qtdbf.lang.ro</Name>
     <SortingPriority>92</SortingPriority>

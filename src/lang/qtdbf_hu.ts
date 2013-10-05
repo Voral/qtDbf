@@ -4,194 +4,252 @@
 <context>
     <name>Dialog</name>
     <message>
-        <location filename="../qtcalculator.cpp" line="273"/>
+        <location filename="../qtcalculator.cpp" line="272"/>
         <source>Supports elementary operations and brackets</source>
         <translation>Használható a négy alapművelet és zárójelek</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="274"/>
+        <location filename="../qtcalculator.cpp" line="273"/>
         <source>Options</source>
         <translation>Lehetőségek</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="276"/>
+        <location filename="../qtcalculator.cpp" line="275"/>
         <source>&amp;Formula</source>
         <translation>&amp;Képlet</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="277"/>
+        <location filename="../qtcalculator.cpp" line="276"/>
         <source>&amp;Result</source>
         <translation>&amp;Eredmény</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="278"/>
+        <location filename="../qtcalculator.cpp" line="277"/>
         <source>&amp;Decimal places</source>
         <translation>&amp;Tizedes jegyek</translation>
     </message>
 </context>
 <context>
-    <name>DialogFilter</name>
+    <name>DialogAgregat</name>
     <message>
-        <location filename="../dialogfilter.cpp" line="9"/>
+        <location filename="../dialogagregat.cpp" line="28"/>
+        <source>Aggregate functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogagregat.cpp" line="32"/>
         <source>Field Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="10"/>
-        <source>Expression</source>
+        <location filename="../dialogagregat.cpp" line="33"/>
+        <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="29"/>
-        <location filename="../dialogfilter.cpp" line="75"/>
-        <source>contain</source>
+        <location filename="../dialogagregat.cpp" line="50"/>
+        <source>Sum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="30"/>
-        <source>equal</source>
+        <location filename="../dialogagregat.cpp" line="51"/>
+        <source>Count</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="31"/>
-        <source>not equal</source>
+        <location filename="../dialogagregat.cpp" line="52"/>
+        <source>Average</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="32"/>
-        <source>greater than</source>
+        <location filename="../dialogagregat.cpp" line="53"/>
+        <source>Min</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../dialogagregat.cpp" line="54"/>
+        <source>Max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogagregat.cpp" line="68"/>
+        <source>Error</source>
+        <translation>Hiba</translation>
+    </message>
+    <message>
+        <location filename="../dialogagregat.cpp" line="68"/>
+        <source>Sorry! No supported fields for average functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DialogFilter</name>
     <message>
         <location filename="../dialogfilter.cpp" line="33"/>
-        <source>equal or greater than</source>
+        <source>Field Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogfilter.cpp" line="34"/>
+        <source>Expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="53"/>
+        <location filename="../dialogfilter.cpp" line="100"/>
+        <source>contain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="54"/>
+        <source>equal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="55"/>
+        <source>not equal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="56"/>
+        <source>greater than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="57"/>
+        <source>equal or greater than</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="58"/>
         <source>less than</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="35"/>
+        <location filename="../dialogfilter.cpp" line="59"/>
         <source>equal or less than</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogfilter.cpp" line="50"/>
+        <location filename="../dialogfilter.cpp" line="75"/>
         <source>Error</source>
         <translation>Hiba</translation>
+    </message>
+    <message>
+        <location filename="../dialogfilter.cpp" line="75"/>
+        <source>Sorry! No supported fields for filter</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QCalculatorDialog</name>
     <message>
-        <location filename="../qtcalculator.cpp" line="105"/>
+        <location filename="../qtcalculator.cpp" line="104"/>
         <source>Thousands separator</source>
         <translation>Ezres választó</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="124"/>
+        <location filename="../qtcalculator.cpp" line="123"/>
         <source>1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="127"/>
+        <location filename="../qtcalculator.cpp" line="126"/>
         <source>2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="130"/>
+        <location filename="../qtcalculator.cpp" line="129"/>
         <source>3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="133"/>
+        <location filename="../qtcalculator.cpp" line="132"/>
         <source>4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="136"/>
+        <location filename="../qtcalculator.cpp" line="135"/>
         <source>5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="139"/>
+        <location filename="../qtcalculator.cpp" line="138"/>
         <source>6</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="142"/>
+        <location filename="../qtcalculator.cpp" line="141"/>
         <source>7</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="145"/>
+        <location filename="../qtcalculator.cpp" line="144"/>
         <source>8</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="148"/>
+        <location filename="../qtcalculator.cpp" line="147"/>
         <source>9</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="151"/>
+        <location filename="../qtcalculator.cpp" line="150"/>
         <source>0</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="155"/>
+        <location filename="../qtcalculator.cpp" line="154"/>
         <source>/</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="158"/>
+        <location filename="../qtcalculator.cpp" line="157"/>
         <source>*</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="161"/>
+        <location filename="../qtcalculator.cpp" line="160"/>
         <source>-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="164"/>
+        <location filename="../qtcalculator.cpp" line="163"/>
         <source>+</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="167"/>
+        <location filename="../qtcalculator.cpp" line="166"/>
         <source>.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="170"/>
+        <location filename="../qtcalculator.cpp" line="169"/>
         <source>C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="173"/>
+        <location filename="../qtcalculator.cpp" line="172"/>
         <source>(</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="176"/>
+        <location filename="../qtcalculator.cpp" line="175"/>
         <source>)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="180"/>
+        <location filename="../qtcalculator.cpp" line="179"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="255"/>
+        <location filename="../qtcalculator.cpp" line="254"/>
         <source>OK</source>
         <translation>Rendben</translation>
     </message>
     <message>
-        <location filename="../qtcalculator.cpp" line="256"/>
+        <location filename="../qtcalculator.cpp" line="255"/>
         <source>Cancel</source>
         <translation>Elvet</translation>
     </message>
@@ -303,236 +361,252 @@
 <context>
     <name>QDbfEditor</name>
     <message>
-        <location filename="../dbfeditor.cpp" line="898"/>
-        <location filename="../dbfeditor.cpp" line="905"/>
+        <location filename="../dbfeditor.cpp" line="917"/>
+        <location filename="../dbfeditor.cpp" line="924"/>
         <source>Eroare</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="247"/>
+        <location filename="../dbfeditor.cpp" line="264"/>
         <source>ID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="43"/>
+        <location filename="../dbfeditor.cpp" line="45"/>
         <source>Open</source>
         <translation>Nyitott</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="48"/>
-        <location filename="../dbfeditor.cpp" line="1513"/>
+        <location filename="../dbfeditor.cpp" line="50"/>
+        <location filename="../dbfeditor.cpp" line="1532"/>
         <source>Fill</source>
         <translation>Feltölt</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="52"/>
-        <location filename="../dbfeditor.cpp" line="419"/>
-        <location filename="../dbfeditor.cpp" line="548"/>
+        <location filename="../dbfeditor.cpp" line="54"/>
+        <location filename="../dbfeditor.cpp" line="437"/>
+        <location filename="../dbfeditor.cpp" line="565"/>
         <source>Edit</source>
         <translation>Szerkeszt</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="57"/>
+        <location filename="../dbfeditor.cpp" line="59"/>
         <source>Add</source>
         <translation>Hozzáad</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="62"/>
+        <location filename="../dbfeditor.cpp" line="64"/>
         <source>Delete</source>
         <translation>Töröl</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="67"/>
-        <location filename="../dbfeditor.cpp" line="933"/>
-        <location filename="../dbfeditor.cpp" line="1629"/>
+        <location filename="../dbfeditor.cpp" line="69"/>
+        <location filename="../dbfeditor.cpp" line="952"/>
+        <location filename="../dbfeditor.cpp" line="1646"/>
         <source>Save</source>
         <translation>Ment</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="71"/>
+        <location filename="../dbfeditor.cpp" line="73"/>
         <source>Configure</source>
         <translation>Beállítás</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="75"/>
+        <location filename="../dbfeditor.cpp" line="77"/>
         <source>Help</source>
         <translation>Segítség</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="80"/>
-        <location filename="../dbfeditor.cpp" line="2261"/>
+        <location filename="../dbfeditor.cpp" line="82"/>
+        <location filename="../dbfeditor.cpp" line="2263"/>
         <source>Calculator</source>
         <translation>Számológép</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="85"/>
-        <location filename="../dbfeditor.cpp" line="1761"/>
-        <location filename="../dbfeditor.cpp" line="1921"/>
-        <location filename="../dbfeditor.cpp" line="2111"/>
-        <location filename="../dbfeditor.cpp" line="2190"/>
+        <location filename="../dbfeditor.cpp" line="87"/>
+        <location filename="../dbfeditor.cpp" line="1776"/>
+        <location filename="../dbfeditor.cpp" line="1934"/>
+        <location filename="../dbfeditor.cpp" line="2122"/>
+        <location filename="../dbfeditor.cpp" line="2194"/>
         <source>Close</source>
         <translation>Bezár</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="90"/>
+        <location filename="../dbfeditor.cpp" line="92"/>
         <source>Set filter</source>
         <translation>Adja meg a szűrési</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="241"/>
-        <location filename="../dbfeditor.cpp" line="312"/>
-        <location filename="../dbfeditor.cpp" line="328"/>
-        <location filename="../dbfeditor.cpp" line="362"/>
-        <location filename="../dbfeditor.cpp" line="700"/>
-        <location filename="../dbfeditor.cpp" line="707"/>
-        <location filename="../dbfeditor.cpp" line="812"/>
-        <location filename="../dbfeditor.cpp" line="819"/>
-        <location filename="../dbfeditor.cpp" line="839"/>
-        <location filename="../dbfeditor.cpp" line="1059"/>
-        <location filename="../dbfeditor.cpp" line="1135"/>
-        <location filename="../dbfeditor.cpp" line="1195"/>
-        <location filename="../dbfeditor.cpp" line="1281"/>
-        <location filename="../dbfeditor.cpp" line="1293"/>
-        <location filename="../dbfeditor.cpp" line="1311"/>
-        <location filename="../dbfeditor.cpp" line="1335"/>
-        <location filename="../dbfeditor.cpp" line="1360"/>
-        <location filename="../dbfeditor.cpp" line="1386"/>
-        <location filename="../dbfeditor.cpp" line="1413"/>
-        <location filename="../dbfeditor.cpp" line="1509"/>
-        <location filename="../dbfeditor.cpp" line="1589"/>
-        <location filename="../dbfeditor.cpp" line="1597"/>
-        <location filename="../dbfeditor.cpp" line="1706"/>
-        <location filename="../dbfeditor.cpp" line="1861"/>
-        <location filename="../dbfeditor.cpp" line="2062"/>
-        <location filename="../dbfeditor.cpp" line="2251"/>
+        <location filename="../dbfeditor.cpp" line="98"/>
+        <source>Average functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="258"/>
+        <location filename="../dbfeditor.cpp" line="330"/>
+        <location filename="../dbfeditor.cpp" line="346"/>
+        <location filename="../dbfeditor.cpp" line="380"/>
+        <location filename="../dbfeditor.cpp" line="719"/>
+        <location filename="../dbfeditor.cpp" line="726"/>
+        <location filename="../dbfeditor.cpp" line="831"/>
+        <location filename="../dbfeditor.cpp" line="838"/>
+        <location filename="../dbfeditor.cpp" line="858"/>
+        <location filename="../dbfeditor.cpp" line="1078"/>
+        <location filename="../dbfeditor.cpp" line="1154"/>
+        <location filename="../dbfeditor.cpp" line="1214"/>
+        <location filename="../dbfeditor.cpp" line="1300"/>
+        <location filename="../dbfeditor.cpp" line="1312"/>
+        <location filename="../dbfeditor.cpp" line="1330"/>
+        <location filename="../dbfeditor.cpp" line="1354"/>
+        <location filename="../dbfeditor.cpp" line="1379"/>
+        <location filename="../dbfeditor.cpp" line="1405"/>
+        <location filename="../dbfeditor.cpp" line="1432"/>
+        <location filename="../dbfeditor.cpp" line="1528"/>
+        <location filename="../dbfeditor.cpp" line="1606"/>
+        <location filename="../dbfeditor.cpp" line="1614"/>
+        <location filename="../dbfeditor.cpp" line="1723"/>
+        <location filename="../dbfeditor.cpp" line="1876"/>
+        <location filename="../dbfeditor.cpp" line="2075"/>
+        <location filename="../dbfeditor.cpp" line="2253"/>
+        <location filename="../dbfeditor.cpp" line="2303"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="291"/>
+        <location filename="../dbfeditor.cpp" line="310"/>
         <source>Filter</source>
         <translation>Szűrő</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="328"/>
-        <location filename="../dbfeditor.cpp" line="1509"/>
+        <location filename="../dbfeditor.cpp" line="346"/>
+        <location filename="../dbfeditor.cpp" line="1528"/>
         <source>Select at least a cell</source>
         <translation>Válasszon ki legalább egy mezőt</translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="2310"/>
+        <source>Result</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dbfeditor.cpp" line="2315"/>
+        <source>Copy to Clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Editare</source>
         <translation type="obsolete">Szerkesztés</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="548"/>
+        <location filename="../dbfeditor.cpp" line="565"/>
         <source>Unsupported field (yet)</source>
         <translation>Nem támogatott mező (még)</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="566"/>
-        <location filename="../dbfeditor.cpp" line="1529"/>
+        <location filename="../dbfeditor.cpp" line="583"/>
+        <location filename="../dbfeditor.cpp" line="1546"/>
         <source>OK</source>
         <translation>Rendben</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="567"/>
-        <location filename="../dbfeditor.cpp" line="1530"/>
+        <location filename="../dbfeditor.cpp" line="584"/>
+        <location filename="../dbfeditor.cpp" line="1547"/>
         <source>Cancel</source>
         <translation>Elvet</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="749"/>
+        <location filename="../dbfeditor.cpp" line="768"/>
         <source>Insert</source>
         <translation>Beszúrás</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="749"/>
+        <location filename="../dbfeditor.cpp" line="768"/>
         <source>The file contains unsupported fields.</source>
         <translation>Az állomány nem támogatott mezőket is tartalmaz.</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="839"/>
+        <location filename="../dbfeditor.cpp" line="858"/>
         <source>Select at least a row</source>
         <translation>Válasszon ki legalább egy sort</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="881"/>
+        <location filename="../dbfeditor.cpp" line="900"/>
         <source>Delete current row</source>
         <translation>A kijelölt sorok törlése</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="881"/>
+        <location filename="../dbfeditor.cpp" line="900"/>
         <source>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Warning !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;You are about to delete the current record&lt;/h3&gt;&lt;h2&gt;Are you sure?&lt;/h2&gt;&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h1&gt;&lt;font color=&apos;red&apos;&gt;Figyelem !&lt;/font&gt;&lt;/h1&gt;&lt;h3&gt;A kijelölt sorok törlésére készül&lt;/h3&gt;&lt;h2&gt;Biztos benne?&lt;/h2&gt;&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1059"/>
+        <location filename="../dbfeditor.cpp" line="1078"/>
         <source>DBF open error</source>
         <translation>A DBF állomány nem nyitható</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1386"/>
+        <location filename="../dbfeditor.cpp" line="1405"/>
         <source>DBF write error</source>
         <translation>A DBF állomány nem írható</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1524"/>
+        <location filename="../dbfeditor.cpp" line="1541"/>
         <source>Fill value or expression</source>
         <translation>Feltöltési érték vagy kifejezés</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="933"/>
-        <location filename="../dbfeditor.cpp" line="1629"/>
+        <location filename="../dbfeditor.cpp" line="952"/>
+        <location filename="../dbfeditor.cpp" line="1646"/>
         <source>&lt;center&gt;&lt;h2&gt;Do you want to save the changes?&lt;/h2&gt;&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt;Elmenti a változtatásokat?&lt;/h2&gt;&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1706"/>
-        <location filename="../dbfeditor.cpp" line="2062"/>
+        <location filename="../dbfeditor.cpp" line="1723"/>
+        <location filename="../dbfeditor.cpp" line="2075"/>
         <source>DBT open error</source>
         <translation>A DBT állomány nem nyitható</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1734"/>
-        <location filename="../dbfeditor.cpp" line="1897"/>
-        <location filename="../dbfeditor.cpp" line="2087"/>
+        <location filename="../dbfeditor.cpp" line="1751"/>
+        <location filename="../dbfeditor.cpp" line="1912"/>
+        <location filename="../dbfeditor.cpp" line="2100"/>
         <source>Memo data</source>
         <translation>Memo adatok</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1743"/>
-        <location filename="../dbfeditor.cpp" line="1906"/>
-        <location filename="../dbfeditor.cpp" line="2096"/>
+        <location filename="../dbfeditor.cpp" line="1758"/>
+        <location filename="../dbfeditor.cpp" line="1919"/>
+        <location filename="../dbfeditor.cpp" line="2107"/>
         <source>The text from the memo file</source>
         <translation>A memo állományban talált szöveg</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="1861"/>
+        <location filename="../dbfeditor.cpp" line="1876"/>
         <source>FPT open error</source>
         <translation>Az FPT állomány nem nyitható</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2137"/>
+        <location filename="../dbfeditor.cpp" line="2148"/>
         <source>qtDbf documentation</source>
         <translation>qtDbf leírás</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2185"/>
+        <location filename="../dbfeditor.cpp" line="2189"/>
         <source>Help file missing</source>
         <translation>Hiányzik a segítő állomány</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2188"/>
+        <location filename="../dbfeditor.cpp" line="2192"/>
         <source>About</source>
         <translation>Információk</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2189"/>
+        <location filename="../dbfeditor.cpp" line="2193"/>
         <source>About Qt</source>
         <translation>Információk a Qt-ről</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="2229"/>
+        <location filename="../dbfeditor.cpp" line="2231"/>
         <source>&lt;b align=&apos;center&apos;&gt;qtDbf&lt;/b&gt; &lt;p&gt;- an open source, multiplatform DBF viewer and editor written in Qt and using SQLite.&lt;/p&gt;</source>
         <translation>&lt;b align=&apos;center&apos;&gt;qtDbf&lt;/b&gt; &lt;p&gt;- egy szabad forráskódú többplatformos Qt-ben írott, SQLite-ot használó DBF néző és szerkesztő alkalmazás.&lt;/p&gt;</translation>
     </message>
@@ -779,13 +853,13 @@
         <translation>Tizedesjegyek</translation>
     </message>
     <message>
-        <location filename="../dbfeditor.cpp" line="944"/>
+        <location filename="../dbfeditor.cpp" line="963"/>
         <location filename="../main.cpp" line="120"/>
         <source>Open File</source>
         <translation>Állomány megnyitása</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="105"/>
+        <location filename="../main.cpp" line="104"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
