@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Alexander Vorobyev <mvoral@mail.ru> -->
+<application>
+ <id type="desktop">qtdbf.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-3.0+</project_license>
+ <description>
+  <p>
+   A simple DBF viewer and editor. Can be set as default dbf viewer. Supports XBase, dDbase III, IV, FoxPro 2.x, Visual Foxpro files with memos..
+  </p>
+ </description>
+ <screenshots>
+  <screenshot type="default" width="994" height="481">http://www.va-soft.ru/index.php?module=project&action=thumb&id=11</screenshot>
+  <screenshot width="1003" height="513">http://www.va-soft.ru/index.php?module=project&action=thumb&id=12</screenshot>
+ </screenshots>
+ <url type="homepage">https://github.com/Voral/qtDbf/releases</url>
+ <updatecontact>mvoral@mail.ru</updatecontact>
+</application>
