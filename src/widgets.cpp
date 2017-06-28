@@ -22,7 +22,7 @@
 #/*                                                                              */
 #/********************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QtSql>
 
 #include "widgets.h"
