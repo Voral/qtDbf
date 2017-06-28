@@ -24,8 +24,8 @@
 
 // TODO: Total refactoring !!!
 
-#include <QtGui>
-#include <QtSql>
+#include <QtWidgets>
+#include <QApplication>
 #include "mainwindow.h"
 
 MainWindow *mainWindow;
@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
     QString dbfFileName;
     if (app.arguments().count()>1) dbfFileName +=app.arguments().at(1);
 
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
+    //QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
 
     if (dbfFileName.isEmpty())
         {
