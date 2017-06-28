@@ -1078,7 +1078,7 @@ void QDbfEditor::openDbfFile()
             QMessageBox::critical(this, tr("Error"), tr("DBF open error"));
             return;
         }
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName(generalTextCodec.toAscii().data()));
+    //QTextCodec::setCodecForCStrings(QTextCodec::codecForName(generalTextCodec.toAscii().data()));
 
     sizesHeader.clear();
 
