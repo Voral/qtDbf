@@ -22,7 +22,7 @@
 #/*                                                                              */
 #/********************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QtSql>
 
 #include "qtcalculator.h"
@@ -269,12 +269,12 @@ QCalculatorDialog::QCalculatorDialog(const QString &title, QWidget *parent)
 
     setLayout(mainLayout);
 
-    editareGroupBox->setTitle(QApplication::translate("Dialog", "Supports elementary operations and brackets", 0, QApplication::UnicodeUTF8));
-    optionsGroupBox->setTitle(QApplication::translate("Dialog", "Options", 0, QApplication::UnicodeUTF8));
+    editareGroupBox->setTitle(QApplication::translate("Dialog", "Supports elementary operations and brackets"));
+    optionsGroupBox->setTitle(QApplication::translate("Dialog", "Options"));
 
-    formulaLabel->setText(QApplication::translate("Dialog", "&Formula", 0, QApplication::UnicodeUTF8));
-    resultLabel->setText(QApplication::translate("Dialog", "&Result", 0, QApplication::UnicodeUTF8));
-    decimalLabel->setText(QApplication::translate("Dialog", "&Decimal places", 0, QApplication::UnicodeUTF8));
+    formulaLabel->setText(QApplication::translate("Dialog", "&Formula"));
+    resultLabel->setText(QApplication::translate("Dialog", "&Result"));
+    decimalLabel->setText(QApplication::translate("Dialog", "&Decimal places"));
 
     connect(formulaEdit, SIGNAL(textChanged()), this, SLOT(refreshResult()));
     connect(thousandCheckBox, SIGNAL(stateChanged(int)), this, SLOT(refreshResult()));
