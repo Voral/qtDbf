@@ -53,7 +53,8 @@ SOURCES += src/dbfeditor.cpp \
     src/dialogfilter.cpp \
     src/dialogagregat.cpp
 RESOURCES += src/qtDbf.qrc
-QT += sql
+QT += sql  \
+    widgets
 OBJECTS_DIR += ./.obj
 MOC_DIR += ./.moc
 RCC_DIR += ./.rcc
