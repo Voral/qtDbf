@@ -25,7 +25,7 @@
 #ifndef WIDGETS_H
 #define WIDGETS_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 class QTableView;
 class QLineEdit;
